@@ -1965,9 +1965,7 @@ function closeSideAd(side) {
             const allTriggers = document.querySelectorAll('#topbar-styles-library .seoturbo-style-trigger');
             
             const activeTriggers = Array.from(allTriggers).filter(el => {
-                const widget = el.closest('.widget');
-                if (!widget) return false;
-                return widget.offsetParent !== null;
+                return el.closest('.widget') !== null;
             });
 
             if (activeTriggers.length === 0) {
