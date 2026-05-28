@@ -1,0 +1,233 @@
+====================================================================
+تقرير التعديلات - SEOTurbo Apex v12.0 (WavePro7.xml)
+التاريخ: 25 مايو 2026
+====================================================================
+
+الملف الأصلي: A-Minimal-Flat.17 WavePro7.xml
+النسخة الاحتياطية: (عندك نسخة احتياطية)
+====================================================================
+
+إجمالي التعديلات: 5 تعديلات
+
+
+====================================================================
+التعديل 1: إضافة روابط اتصال مسبق (Preconnect)
+====================================================================
+الموقع: <head> — بين السطر 15 و 16
+الوصف: إضافة preconnect و dns-prefetch لمصادر خارجية
+السبب: تحسين PageSpeed - تقليل وقت الاتصال بالـ CDN
+
+المضاف:
+    <link href='https://pagead2.googlesyndication.com' rel='preconnect'/>
+    <link href='https://pub-57ef426b3c444b87a113798c0b9d92d2.r2.dev' rel='preconnect'/>
+    <link href='https://www.googletagmanager.com' rel='preconnect'/>
+    <link href='https://pagead2.googlesyndication.com' rel='dns-prefetch'/>
+    <link href='https://pub-57ef426b3c444b87a113798c0b9d92d2.r2.dev' rel='dns-prefetch'/>
+    <link href='https://www.googletagmanager.com' rel='dns-prefetch'/>
+
+للرجوع: احذف الـ 6 سطور دي من <head>
+
+
+====================================================================
+التعديل 2: تغيير CSS شريط الكوكيز (Cookie Consent)
+====================================================================
+الموقع: السطر 3926 — 3939
+الوصف: إعادة تصميم شريط الكوكيز بخلفية لون القالب (Gradient)
+        وشكل زجاجي حديث مع border-radius 16px
+السبب: تحسين المظهر وجعله بلون القالب مع زرار Accept أبيض بارز
+
+التفاصيل:
+    - background: gradient بلون القالب ← أغمق
+    - bottom: 20px (في نص الشاشة بدل تحت)
+    - max-width: 680px (متمركز)
+    - border-radius: 16px
+    - زرار Accept: أبيض × لون القالب
+    - زرار Reject: شفاف × أبيض
+    - animation: scale + translate
+    - responsive: يتحول لـ column في الموبايل
+
+الـ CSS القديم (للرجوع):
+    html body #cookieConsent{position:fixed;z-index:9999999;bottom:0;left:0;right:0;width:100%;max-width:100%;box-sizing:border-box;background:#ffffff;padding:5px 15px;display:flex;visibility:hidden;opacity:0;transform:translateY(100%);transition:all 0.5s ease;align-items:center;justify-content:space-between;gap:10px;border:none;border-top:1px solid var(--border-color);direction:rtl;height:45px;box-shadow:0 -2px 10px rgba(0,0,0,0.1)}
+    body.dark-mode #cookieConsent{background:var(--darkmode-widget-bg);border-top-color:var(--darkmode-border-color)}
+    html body #cookieConsent.show{visibility:visible;opacity:1;transform:translateY(0)}
+    .cookie-text{flex:1;font-size:11px;color:#1a1a1a;font-weight:700;line-height:1.2;margin:0;text-align:right;display:block;overflow:visible}
+    body.dark-mode .cookie-text{color:var(--darkmode-text-meta)}
+    .cookie-text a{color:var(--blogcolor);text-decoration:underline;font-weight:800;font-size:10px;margin-right:5px;display:inline-block;white-space:nowrap}
+    body.dark-mode .cookie-text a{color:var(--softcolor)}
+    .cookie-buttons{display:flex;gap:5px;flex-shrink:0}
+    .cookie-btn{padding:4px 12px;border-radius:4px;font-size:11px;font-weight:bold;cursor:pointer;border:none;transition:0.2s;min-height:28px;display:flex;align-items:center;justify-content:center;font-family:inherit}
+    .cookie-btn.accept{background:var(--blogcolor);color:#ffffff}
+    .cookie-btn.reject{background:#333333;color:#ffffff}
+    body.dark-mode .cookie-btn.reject{background:var(--softcolor);color:#000000}
+    @media (max-width:768px){html body #cookieConsent{height:auto;min-height:42px;padding:5px 10px;gap:8px;flex-direction:row}.cookie-text{font-size:12px;line-height:1.1;flex:1}.cookie-text a{font-size:11px}.cookie-btn{padding:0 8px;min-height:24px;font-size:10px;flex:none}}
+
+
+====================================================================
+التعديل 3: تغيير JavaScript شريط الكوكيز (حفظ 3 أيام)
+====================================================================
+الموقع: السطر 17156 — 17200
+الوصف: إضافة localStorage بحيث بعد ما المستخدم يضغط "قبول"
+        ما يظهرش تاني إلا بعد 3 أيام
+السبب: تحسين تجربة المستخدم
+
+الـ JS القديم (للرجوع):
+    (function(){
+        'use strict';
+        var cookieTriggered = false;
+
+        function showCookieBar() {
+            if (cookieTriggered) return;
+            var bar = document.getElementById('cookieConsent');
+            if (bar) {
+                bar.classList.add('show');
+                cookieTriggered = true;
+                
+                var acceptBtn = document.getElementById('acceptCookies');
+                var rejectBtn = document.getElementById('rejectCookies');
+                if (acceptBtn) acceptBtn.onclick = function(e) { e.preventDefault(); hideCookieBar(); };
+                if (rejectBtn) rejectBtn.onclick = function(e) { e.preventDefault(); hideCookieBar(); };
+            }
+        }
+
+        function hideCookieBar() {
+            var bar = document.getElementById('cookieConsent');
+            if (bar) {
+                bar.classList.remove('show');
+            }
+        }
+
+        window.addEventListener('load', function() {
+            setTimeout(showCookieBar, 8000); 
+        });
+
+        var userInteractions = ['mouseover', 'keydown', 'touchstart', 'scroll'];
+        userInteractions.forEach(function(event) {
+            window.addEventListener(event, showCookieBar, {once: true, passive: true});
+        });
+
+    })();
+
+الـ JS الجديد (الموجود حالياً):
+    (function(){
+        'use strict';
+        var cookieTriggered = false;
+        var COOKIE_KEY = 'seoturbo_cookie_consent';
+        var THREE_DAYS = 3 * 24 * 60 * 60 * 1000;
+
+        function shouldShowBar() {
+            var saved = localStorage.getItem(COOKIE_KEY);
+            if (!saved) return true;
+            var ts = parseInt(saved, 10);
+            if (isNaN(ts)) return true;
+            return (Date.now() - ts) >= THREE_DAYS;
+        }
+
+        function showCookieBar() {
+            if (cookieTriggered) return;
+            if (!shouldShowBar()) return;
+            var bar = document.getElementById('cookieConsent');
+            if (bar) {
+                bar.classList.add('show');
+                cookieTriggered = true;
+                
+                var acceptBtn = document.getElementById('acceptCookies');
+                var rejectBtn = document.getElementById('rejectCookies');
+                if (acceptBtn) acceptBtn.onclick = function(e) { 
+                    e.preventDefault(); 
+                    localStorage.setItem(COOKIE_KEY, Date.now().toString());
+                    hideCookieBar(); 
+                };
+                if (rejectBtn) rejectBtn.onclick = function(e) { 
+                    e.preventDefault(); 
+                    hideCookieBar(); 
+                };
+            }
+        }
+
+        function hideCookieBar() {
+            var bar = document.getElementById('cookieConsent');
+            if (bar) {
+                bar.classList.remove('show');
+            }
+        }
+
+        window.addEventListener('load', function() {
+            setTimeout(showCookieBar, 8000); 
+        });
+
+        var userInteractions = ['mouseover', 'keydown', 'touchstart', 'scroll'];
+        userInteractions.forEach(function(event) {
+            window.addEventListener(event, showCookieBar, {once: true, passive: true});
+        });
+
+    })();
+
+
+====================================================================
+التعديل 4: تغيير ألوان شريط التسميات (Post Tags)
+====================================================================
+الموقع: السطور 3732 — 3735 (CSS أساسي)
+        السطور 5291 — 5303 (CSS Override)
+الوصف: تغيير لون نص التسميات من var(--text-color) إلى var(--blogcolor)
+        إزالة hover effect (الخلفية كانت تتغير للون القالب)
+        إزالة hover::before (كانت بتتغير للون الفاتح)
+السبب: طلب المستخدم — خلي النص والأيكون بلون القالب فقط
+
+الـ CSS القديم (للرجوع):
+    // السطر 3732-3736 (CSS أساسي)
+    .post-tags-container a { ... color:var(--text-color); ... }
+    body.dark-mode .post-tags-container a { ... color:var(--darkmode-text-color); ... }
+    .post-tags-container a:hover { background-color:var(--blogcolor); color:var(--softcolor); border-color:var(--blogcolor); }
+    .post-tags-container a::before { content:'#'; margin-left:5px; color:var(--blogcolor); }
+    .post-tags-container a:hover::before { color:var(--softcolor); }
+
+    // السطر 5292-5308 (CSS Override)
+    html body .post-tags-container a,
+    html body .post-tags-container .post-tag {
+      background: var(--seoturbo-smooth);
+      color: var(--blogcolor);
+      padding: 6px 14px;
+      border-radius: var(--modern-radius);
+      font-size: 12px;
+      font-weight: 700;
+      border: 1px solid var(--border-color);
+      transition: all 0.3s ease;
+    }
+    html body .post-tags-container a:hover {
+      background: var(--blogcolor);
+      color: var(--softcolor);
+      border-color: var(--blogcolor);
+      transform: translateY(-2px);
+    }
+
+
+====================================================================
+التعديل 5: إزالة التعليقات من CSS (b:skin)
+====================================================================
+الموقع: السطر 5880 — داخل <b:skin>
+الوصف: إزالة التعليقات الكبيرة (14.7 KB) من أعلى ملف CSS
+        والتعليقات الصغيرة المتفرقة
+السبب: تقليل حجم الملف (PageSpeed - Minify CSS)
+ملاحظة: مش بيأثر على شكل القالب ولا أدواته خالص.
+         مجرد تعليقات (documentation) اتشالت.
+
+التعليقات اللي اتشالت:
+    - /* SEOTurbo Control Panel v12.0... */ (كبير)
+    - /* --- قائمة التصنيفات  --- */
+    - /* --- تذييل المقال --- */
+    - /* ===== SEOTurbo Grid System (v13) ===== */
+    - /* ar-style2 mobile comprehensive */
+    - /* --- Source Numbering System --- */
+
+
+====================================================================
+ختام التقرير
+====================================================================
+كل التعديلات آمنة ومافيش حاجة اتغيرت في:
+    - شكل القالب
+    - الأدوات والمميزات
+    - الأداء العام
+
+للرجوع للنسخة الأصلية: استخدم النسخة الاحتياطية
+    (F:\opencode.judy\SEOTurbo Apex v12.0\A-Minimal-Flat.17 WavePro7.xml الأصلي)
+====================================================================
