@@ -5,9 +5,11 @@
 <head>
 <b:attr expr:value='data:view.isSingleItem ? &quot;og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#&quot; : &quot;og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#&quot;' name='prefix'/>
   
+<b:if cond='data:view.isPost'>
 <!--  كود إعلانات أدسنس -->
 <script async='async' crossorigin='anonymous' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7216024737782659'/>
   <meta content='ca-pub-7216024737782659' name='google-adsense-account'/>
+</b:if>
   
 <!-- اللغة والترميز -->
 <meta charset='UTF-8'/>
@@ -485,14 +487,13 @@ Control Panel: 70+ toggles | Live preview | Import/Export
 
 <!-- معلومات معرف العميل الاعلاني  ومصدر ونوع الإعلان -->
 
-<!-- شفرة جوجل انالتكس -->
+<!-- شفرة جوجل انالتكس (مؤجل لتحسين الأداء) -->
 <script async='async' src='https://www.googletagmanager.com/gtag/js?id=G-KEGH4KK403'/>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag(&#39;js&#39;, new Date());
-
-  gtag(&#39;config&#39;, &#39;G-KEGH4KK403&#39;);
+  window.addEventListener('load', function() { setTimeout(function() { gtag('config', 'G-KEGH4KK403'); }, 1000); });
 </script>
   
 <!--  شفرة بنترست -->   
@@ -11957,7 +11958,7 @@ Version: 12.0
 
 
 <b:if cond='not data:view.isLayoutMode'>&lt;!--</b:if>
-<script>!function(){function f(){document.querySelectorAll('a.snippet-fade:not([aria-label])').forEach(function(a){a.setAttribute('aria-label','اقرأ المزيد')})}f();var g=new MutationObserver(f);g.observe(document.documentElement,{childList:!0,subtree:!0})}();</script>
+<style>a.snippet-fade:before{content:"اقرأ المزيد";position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}body.dark-mode a.snippet-fade:before{color:#fff}</style><script>!function(){function f(){document.querySelectorAll('a.snippet-fade:not([aria-label])').forEach(function(a){a.setAttribute('aria-label','اقرأ المزيد')})}f();var g=new MutationObserver(f);g.observe(document.documentElement,{childList:!0,subtree:!0});var h=setInterval(function(){var a=document.querySelector('a.snippet-fade:not([aria-label])');if(!a){clearInterval(h)}f()},500)}();</script>
 </body>
 <b:if cond='not data:view.isLayoutMode'>--&gt;&lt;/body&gt;</b:if>
 </html>
