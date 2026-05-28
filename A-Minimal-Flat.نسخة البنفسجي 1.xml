@@ -7744,6 +7744,47 @@ window._critical=1;window._defer=function(fn){function exec(){var dcl=document.r
             </b:includable>
       </b:widget>
     </b:section>
+<style>
+.seoturbo-topbar-wave-wrapper {
+  position: absolute;
+  bottom: -180px;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  z-index: 0;
+  pointer-events: none;
+  margin: 0;
+  padding: 0;
+}
+.seoturbo-topbar-wave-wrapper svg {
+  display: block;
+  width: 100%;
+  height: 189px;
+}
+.swl-1 { fill: var(--wave-1-color, var(--blogcolor)); opacity: 0.05; }
+.swl-2 { fill: var(--wave-2-color, var(--blogcolor)); opacity: 0.11; }
+.swl-3 { fill: var(--wave-3-color, var(--blogcolor)); opacity: 0.20; }
+.swl-4 { fill: var(--wave-4-color, var(--blogcolor)); opacity: 0.33; }
+.swl-5 { fill: var(--wave-5-color, var(--blogcolor)); opacity: 0.52; }
+body.dark-mode .swl-1 { fill: #0a0a1a; opacity: 0.07; }
+body.dark-mode .swl-2 { fill: #0a0a1a; opacity: 0.15; }
+body.dark-mode .swl-3 { fill: #0a0a1a; opacity: 0.25; }
+body.dark-mode .swl-4 { fill: #0a0a1a; opacity: 0.38; }
+body.dark-mode .swl-5 { fill: #0a0a1a; opacity: 0.55; }
+@media (max-width: 768px) {
+  .seoturbo-topbar-wave-wrapper { bottom: -90px; }
+  .seoturbo-topbar-wave-wrapper svg { height: 95px; }
+}
+</style>
+<div class='st-dynamic-shape-container seoturbo-topbar-wave-wrapper'>
+  <svg preserveAspectRatio='none' viewBox='0 0 1440 300'>
+    <path class='swl-1' d='M0,30 C360,5 720,45 1080,20 C1260,8 1350,38 1440,30 L1440,0 L0,0 Z'/>
+    <path class='swl-2' d='M0,65 C240,25 480,100 720,55 C960,15 1200,110 1440,65 L1440,0 L0,0 Z'/>
+    <path class='swl-3' d='M0,105 C180,45 360,160 540,90 C720,30 900,160 1080,105 C1260,55 1440,160 1440,105 L1440,0 L0,0 Z'/>
+    <path class='swl-4' d='M0,150 C150,80 300,215 450,135 C600,55 750,215 900,150 C1050,80 1200,215 1350,150 C1400,125 1420,185 1440,150 L1440,0 L0,0 Z'/>
+    <path class='swl-5' d='M0,198 C100,135 200,270 300,180 C400,95 500,270 600,195 C700,135 800,270 900,195 C1000,135 1100,270 1200,195 C1300,135 1400,270 1440,198 L1440,0 L0,0 Z'/>
+  </svg>
+</div>
 </div>
         </div>
     </div> 
