@@ -160,3 +160,30 @@
     setTimeout(centralizeGoogleWidget, 1000);
     setTimeout(centralizeGoogleWidget, 3000);
 })();
+// ======================================================
+// Module 70: Ad-Block Detection - فحص حجب الإعلانات
+(function() {
+    'use strict';
+    if (!window.ST_ADBLOCK_ACTIVE) return;
+    function startDetection() {
+        const bait = document.createElement('div');
+        bait.className = 'adsbygoogle ad-unit ad-zone';
+        bait.style.cssText = 'width:1px!important;height:1px!important;position:fixed!important;left:-100px!important;top:-100px!important;visibility:hidden!important;';
+        document.documentElement.appendChild(bait);
+        window.setTimeout(function() {
+            const forceScreen = document.getElementById('seoturbo-force-screen');
+            const isBlocked = bait.offsetHeight === 0 || bait.offsetParent === null;
+            if (isBlocked && forceScreen) {
+                forceScreen.style.display = 'flex';
+                document.documentElement.classList.add('seoturbo-lock-active');
+            }
+            if (bait.parentNode) bait.parentNode.removeChild(bait);
+        }, 1000);
+    }
+    const events = ['touchstart', 'scroll', 'mousedown', 'keydown'];
+    const trigger = function() {
+        startDetection();
+        events.forEach(e => window.removeEventListener(e, trigger));
+    };
+    events.forEach(e => window.addEventListener(e, trigger, { passive: true }));
+})();
