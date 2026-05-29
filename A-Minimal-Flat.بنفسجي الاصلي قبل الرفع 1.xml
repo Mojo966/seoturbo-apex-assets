@@ -21997,28 +21997,37 @@ window.addEventListener('load',addSignature);
 
 
 <!-- ========== سجل روابط CDN ========== -->
-  <!-- موديول 66 - Wave System (نظام الأمواج) -->
-  <script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/waves.js'></script>
-  <!-- موديول 63 - QR Code -->
-  <script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='63'></script>
-  <!-- موديول 64 - Schema Identity -->
-  <b:if cond='data:view.isHomepage'>
+
+<!-- 1. waves.js → موديول 66 - نظام رشق الأمواج - يحقن 10 أشكال SVG أمواج ديناميكية في أعلى القالب -->
+<script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/waves.js'></script>
+
+<!-- 2. batch-63-69.js → موديول 63 - ينشئ رمز QR للموقع تلقائياً -->
+<script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='63'></script>
+
+<!-- 3. batch-63-69.js → موديول 64 - يحدث سكيما المنظمة (Organization) تلقائياً من بيانات meta -->
+<b:if cond='data:view.isHomepage'>
 <script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='64'></script>
 </b:if>
-  <!-- موديول 65 - Homepage Desc -->
-  <b:if cond='data:view.isHomepage'>
+
+<!-- 4. batch-63-69.js → موديول 65 - يضبط وصف الصفحة الرئيسية ديناميكياً -->
+<b:if cond='data:view.isHomepage'>
 <script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='65'></script>
 </b:if>
-  <!-- موديول 67 - Trust-Box (مصداقية المحتوى) -->
-  <b:if cond='data:view.isPost'>
+
+<!-- 5. trust-box67.js → موديول 67 - صندوق مصداقية المحتوى E-E-A-T - يظهر في المقالات -->
+<b:if cond='data:view.isPost'>
 <script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/trust-box67.js'></script>
 </b:if>
-  <!-- موديول 68 - Dark Mode -->
-  <script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='68'></script>
-  <!-- موديول 69 - Google Share -->
-  <script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='69'></script>
-  <!-- موديول 70 - Ad-Block -->
-  <script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='70'></script>
+
+<!-- 6. batch-63-69.js → موديول 68 - يحول الصناديق والجداول للوضع المظلم تلقائياً -->
+<script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='68'></script>
+
+<!-- 7. batch-63-69.js → موديول 69 - أداة مشاركة جوجل - تجميل واجهة المشاركة -->
+<script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='69'></script>
+
+<!-- 8. batch-63-69.js → موديول 70 - كشف مانع الإعلانات - يظهر شاشة إجبارية عند وجود adblock -->
+<script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='70'></script>
+
 <!-- ========== نهاية سجل CDN ========== -->
 </body>
 <b:if cond='not data:view.isLayoutMode'>--&gt;&lt;/body&gt;</b:if>
