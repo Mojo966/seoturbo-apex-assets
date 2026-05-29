@@ -7019,7 +7019,7 @@ body#layout #topbar-styles-library div.widget {
   box-sizing: border-box !important;
 }
 
-/* إخفاء مكتبة الثيمات من الموقع مع بقائها في DOM */
+/* ========== [CSS لـ Wave Injection System] بداية تعريفات الأمواج ========== */
 #topbar-styles-library { height:0; overflow:hidden; opacity:0; margin:0; padding:0; position:absolute; pointer-events:none; }
 body#layout #topbar-styles-library { height:auto; overflow:visible; opacity:1; position:static; pointer-events:auto; }
 
@@ -7117,8 +7117,7 @@ body#layout #topbar-styles-library { height:auto; overflow:visible; opacity:1; p
 .seoturbo-style-trigger[data-style='horizon'] {
   background: linear-gradient(90deg, #111827 0%, #1e3a8a 40%, #38bdf8 100%);
 }
-
-
+/* ========== [CSS لـ Wave Injection System] نهاية تعريفات الأمواج ========== */
 /* إزالة الفراغ بين الإعلان والفوتر */
 body#layout .ad-wrapper-home-footer {
   min-height: 0 !important;
@@ -7850,8 +7849,12 @@ window._critical=1;window._defer=function(fn){function exec(){var dcl=document.r
         </div>
       </b:includable>
    </b:widget>
- </b:section>  
-   
+  </b:section>
+<!-- ============================ [نظام رشق الأمواج - Wave Injection System] ============================ -->
+<!-- CDN: waves.js (مستخرج بالكامل - يحقن SVG + CSS ديناميكياً في .seoturpo-topbar)                     -->
+<script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/waves.js'></script>
+<!-- ================================================================================================== -->
+    
 <!-- بداية الهيدر الموحد -->
 <header class='site-header-master' id='master-header' role='banner'> 
 <!-- هيدر اللوجو والإدارة والإعلان -->
@@ -19677,9 +19680,6 @@ window._defer(function() {
 </script>
 </b:if>    
 
-<!-- 66-متنوع-مظهر-الشريط-العلوي.js -->
-<script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/waves.js'></script>
-  
 <!-- ========== MODULE 67: Trust-Box (مصداقية المحتوى) → CDN ========== -->
 <b:if cond='data:view.isPost'>
 <script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/trust-box67.js'></script>
@@ -22255,6 +22255,16 @@ window.addEventListener('load',addSignature);
 
 <b:if cond='not data:view.isLayoutMode'>&lt;!--</b:if>
 <script>!function(){function f(){document.querySelectorAll(&#39;a.snippet-fade:not([aria-label])&#39;).forEach(function(a){a.setAttribute(&#39;aria-label&#39;,&#39;اقرأ المزيد&#39;)})}f();var g=new MutationObserver(f);g.observe(document.documentElement,{childList:!0,subtree:!0})}();</script>
+
+<!-- ================================================================================== -->
+<!-- ====== سجل روابط CDN المستخرجة من القالب (للتأكيد والمراجعة) ====== -->
+<!-- ================================================================================== -->
+<!-- 1. waves.js       ← نظام رشق الأمواج (10 ثيمات)                                   -->
+<!--    https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/waves.js   -->
+<!--                                                                                    -->
+<!-- 2. trust-box67.js ← مصداقية المحتوى (E-E-A-T Trust Box)                           -->
+<!--    https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/trust-box67.js -->
+<!-- ================================================================================== -->
 </body>
 <b:if cond='not data:view.isLayoutMode'>--&gt;&lt;/body&gt;</b:if>
 </html>
