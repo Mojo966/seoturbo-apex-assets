@@ -1241,11 +1241,11 @@ Documented by: Dr. Mohamed Elgendy | Date: 2026-04-12
         &quot;   &#10003; Long Development Cycle (3+ Years of Continuous Development)&quot;,
         &quot;&quot;,
         &quot; SEOTurbo Apex v12.0 is recognized as:&quot;,
-        &quot;   &#8594; AN ADVANCED BLOGGER TEMPLATE&quot;,
-        &quot;   &#8594; AN INTEGRATED SEO FRAMEWORK FOR BLOGGER&quot;,
-        &quot;   &#8594; A HIGH-PERFORMANCE BLOGGER TEMPLATE&quot;,
-        &quot;   &#8594; A FEATURE-RICH BLOGGER TEMPLATE&quot;,
-        &quot;   &#8594; A TEMPLATE WITH COMPLETE CONNECTED KNOWLEDGE GRAPH&quot;
+        &quot;   - AN ADVANCED BLOGGER TEMPLATE&quot;,
+        &quot;   - AN INTEGRATED SEO FRAMEWORK FOR BLOGGER&quot;,
+        &quot;   - A HIGH-PERFORMANCE BLOGGER TEMPLATE&quot;,
+        &quot;   - A FEATURE-RICH BLOGGER TEMPLATE&quot;,
+        &quot;   - A TEMPLATE WITH COMPLETE CONNECTED KNOWLEDGE GRAPH&quot;
       ],
       &quot;additionalProperty&quot;: [
         {
@@ -7852,7 +7852,7 @@ window._critical=1;window._defer=function(fn){function exec(){var dcl=document.r
   </b:section>
 <!-- ============================ [نظام رشق الأمواج - Wave Injection System] ============================ -->
 <!-- CDN: waves.js (مستخرج بالكامل - يحقن SVG + CSS ديناميكياً في .seoturpo-topbar)                     -->
-<!-- CDN: waves.js → منقول لسجل CDN آخر القالب -->
+<!-- CDN: waves.js - منقول لسجل CDN آخر القالب -->
 <!-- ================================================================================================== -->
     
 <!-- بداية الهيدر الموحد -->
@@ -19568,25 +19568,25 @@ window._defer(function() {
 //]]>
 </script>
    
-<!-- ===== MODULE 63: رمز الإستجابة السريعة (QR Code) → CDN ===== -->
-<!-- CDN: موديول 63 → منقول لسجل CDN آخر القالب -->
+<!-- ===== MODULE 63: رمز الإستجابة السريعة (QR Code) - CDN ===== -->
+<!-- CDN: موديول 63 - منقول لسجل CDN آخر القالب -->
 
-<!-- ===== MODULE 64: تحديث سكيما الهوية (Schema Identity) → CDN ===== -->
-<!-- CDN: موديول 64 → منقول لسجل CDN آخر القالب -->
+<!-- ===== MODULE 64: تحديث سكيما الهوية (Schema Identity) - CDN ===== -->
+<!-- CDN: موديول 64 - منقول لسجل CDN آخر القالب -->
 
-<!-- ===== MODULE 65: وصف رئيسي طويل (Homepage Description) → CDN ===== -->
-<!-- CDN: موديول 65 → منقول لسجل CDN آخر القالب -->
-<!-- ========== MODULE 67: Trust-Box (مصداقية المحتوى) → CDN ========== -->
-<!-- CDN: trust-box67.js → منقول لسجل CDN آخر القالب -->
+<!-- ===== MODULE 65: وصف رئيسي طويل (Homepage Description) - CDN ===== -->
+<!-- CDN: موديول 65 - منقول لسجل CDN آخر القالب -->
+<!-- ========== MODULE 67: Trust-Box (مصداقية المحتوى) - CDN ========== -->
+<!-- CDN: trust-box67.js - منقول لسجل CDN آخر القالب -->
   
-<!-- ===== MODULE 68: الوضع المظلم (Dark Mode Tables) → CDN ===== -->
-<!-- CDN: موديول 68 → منقول لسجل CDN آخر القالب -->
+<!-- ===== MODULE 68: الوضع المظلم (Dark Mode Tables) - CDN ===== -->
+<!-- CDN: موديول 68 - منقول لسجل CDN آخر القالب -->
 
-<!-- ===== MODULE 69: أداة مشاركة جوجل (Google Share Widget) → CDN ===== -->
-<!-- CDN: موديول 69 → منقول لسجل CDN آخر القالب -->
+<!-- ===== MODULE 69: أداة مشاركة جوجل (Google Share Widget) - CDN ===== -->
+<!-- CDN: موديول 69 - منقول لسجل CDN آخر القالب -->
  
-<!-- ===== MODULE 70: فحص حجب الإعلانات (Ad-Block Detection) → CDN ===== -->
-<!-- CDN: موديول 70 → منقول لسجل CDN آخر القالب -->
+<!-- ===== MODULE 70: فحص حجب الإعلانات (Ad-Block Detection) - CDN ===== -->
+<!-- CDN: موديول 70 - منقول لسجل CDN آخر القالب -->
 
 <!-- 71-متنوع-زر-نسخ-الكود-البرمجي.js -->
 <script type='text/javascript'>
@@ -21998,34 +21998,34 @@ window.addEventListener('load',addSignature);
 
 <!-- ========== سجل روابط CDN ========== -->
 
-<!-- 1. waves.js → موديول 66 - نظام رشق الأمواج - يحقن 10 أشكال SVG أمواج ديناميكية في أعلى القالب -->
+<!-- 1. waves.js - موديول 66 - نظام رشق الأمواج - يحقن 10 أشكال SVG أمواج ديناميكية في أعلى القالب -->
 <script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/waves.js'></script>
 
-<!-- 2. batch-63-69.js → موديول 63 - ينشئ رمز QR للموقع تلقائياً -->
+<!-- 2. batch-63-69.js - موديول 63 - ينشئ رمز QR للموقع تلقائياً -->
 <script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='63'></script>
 
-<!-- 3. batch-63-69.js → موديول 64 - يحدث سكيما المنظمة (Organization) تلقائياً من بيانات meta -->
+<!-- 3. batch-63-69.js - موديول 64 - يحدث سكيما المنظمة (Organization) تلقائياً من بيانات meta -->
 <b:if cond='data:view.isHomepage'>
 <script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='64'></script>
 </b:if>
 
-<!-- 4. batch-63-69.js → موديول 65 - يضبط وصف الصفحة الرئيسية ديناميكياً -->
+<!-- 4. batch-63-69.js - موديول 65 - يضبط وصف الصفحة الرئيسية ديناميكياً -->
 <b:if cond='data:view.isHomepage'>
 <script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='65'></script>
 </b:if>
 
-<!-- 5. trust-box67.js → موديول 67 - صندوق مصداقية المحتوى E-E-A-T - يظهر في المقالات -->
+<!-- 5. trust-box67.js - موديول 67 - صندوق مصداقية المحتوى E-E-A-T - يظهر في المقالات -->
 <b:if cond='data:view.isPost'>
 <script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/trust-box67.js'></script>
 </b:if>
 
-<!-- 6. batch-63-69.js → موديول 68 - يحول الصناديق والجداول للوضع المظلم تلقائياً -->
+<!-- 6. batch-63-69.js - موديول 68 - يحول الصناديق والجداول للوضع المظلم تلقائياً -->
 <script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='68'></script>
 
-<!-- 7. batch-63-69.js → موديول 69 - أداة مشاركة جوجل - تجميل واجهة المشاركة -->
+<!-- 7. batch-63-69.js - موديول 69 - أداة مشاركة جوجل - تجميل واجهة المشاركة -->
 <script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='69'></script>
 
-<!-- 8. batch-63-69.js → موديول 70 - كشف مانع الإعلانات - يظهر شاشة إجبارية عند وجود adblock -->
+<!-- 8. batch-63-69.js - موديول 70 - كشف مانع الإعلانات - يظهر شاشة إجبارية عند وجود adblock -->
 <script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='70'></script>
 
 <!-- ========== نهاية سجل CDN ========== -->
