@@ -7852,7 +7852,7 @@ window._critical=1;window._defer=function(fn){function exec(){var dcl=document.r
   </b:section>
 <!-- ============================ [نظام رشق الأمواج - Wave Injection System] ============================ -->
 <!-- CDN: waves.js (مستخرج بالكامل - يحقن SVG + CSS ديناميكياً في .seoturpo-topbar)                     -->
-<!-- CDN: waves.js ⤑ منقول لسجل CDN آخر القالب -->
+<!-- CDN: waves.js → منقول لسجل CDN آخر القالب -->
 <!-- ================================================================================================== -->
     
 <!-- بداية الهيدر الموحد -->
@@ -19569,24 +19569,24 @@ window._defer(function() {
 </script>
    
 <!-- ===== MODULE 63: رمز الإستجابة السريعة (QR Code) → CDN ===== -->
-<!-- CDN: موديول 63 ⤑ منقول لسجل CDN آخر القالب -->
+<!-- CDN: موديول 63 → منقول لسجل CDN آخر القالب -->
 
 <!-- ===== MODULE 64: تحديث سكيما الهوية (Schema Identity) → CDN ===== -->
-<!-- CDN: موديول 64 ⤑ منقول لسجل CDN آخر القالب -->
+<!-- CDN: موديول 64 → منقول لسجل CDN آخر القالب -->
 
 <!-- ===== MODULE 65: وصف رئيسي طويل (Homepage Description) → CDN ===== -->
-<!-- CDN: موديول 65 ⤑ منقول لسجل CDN آخر القالب -->
+<!-- CDN: موديول 65 → منقول لسجل CDN آخر القالب -->
 <!-- ========== MODULE 67: Trust-Box (مصداقية المحتوى) → CDN ========== -->
-<!-- CDN: trust-box67.js ⤑ منقول لسجل CDN آخر القالب -->
+<!-- CDN: trust-box67.js → منقول لسجل CDN آخر القالب -->
   
 <!-- ===== MODULE 68: الوضع المظلم (Dark Mode Tables) → CDN ===== -->
-<!-- CDN: موديول 68 ⤑ منقول لسجل CDN آخر القالب -->
+<!-- CDN: موديول 68 → منقول لسجل CDN آخر القالب -->
 
 <!-- ===== MODULE 69: أداة مشاركة جوجل (Google Share Widget) → CDN ===== -->
-<!-- CDN: موديول 69 ⤑ منقول لسجل CDN آخر القالب -->
+<!-- CDN: موديول 69 → منقول لسجل CDN آخر القالب -->
  
 <!-- ===== MODULE 70: فحص حجب الإعلانات (Ad-Block Detection) → CDN ===== -->
-<!-- CDN: موديول 70 ⤑ منقول لسجل CDN آخر القالب -->
+<!-- CDN: موديول 70 → منقول لسجل CDN آخر القالب -->
 
 <!-- 71-متنوع-زر-نسخ-الكود-البرمجي.js -->
 <script type='text/javascript'>
@@ -21996,10 +21996,7 @@ window.addEventListener('load',addSignature);
 <script>!function(){function f(){document.querySelectorAll(&#39;a.snippet-fade:not([aria-label])&#39;).forEach(function(a){a.setAttribute(&#39;aria-label&#39;,&#39;اقرأ المزيد&#39;)})}f();var g=new MutationObserver(f);g.observe(document.documentElement,{childList:!0,subtree:!0})}();</script>
 
 
-<!-- ════════════════════════════════════════════════════════════════ -->
-        سجل روابط CDN - جميع السكربتات المستخرجة
-        CDN Registry - All External Scripts
-════════════════════════════════════════════════════════════════════ -->
+<!-- ========== سجل روابط CDN ========== -->
   <!-- موديول 66 - Wave System (نظام الأمواج) -->
   <script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/waves.js'></script>
   <!-- موديول 63 - QR Code -->
@@ -22022,7 +22019,7 @@ window.addEventListener('load',addSignature);
   <script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='69'></script>
   <!-- موديول 70 - Ad-Block -->
   <script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='70'></script>
-════════════════════════════════════════════════════════════════════ -->
+<!-- ========== نهاية سجل CDN ========== -->
 </body>
 <b:if cond='not data:view.isLayoutMode'>--&gt;&lt;/body&gt;</b:if>
 </html>
