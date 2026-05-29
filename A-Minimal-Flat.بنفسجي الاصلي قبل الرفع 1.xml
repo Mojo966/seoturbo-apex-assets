@@ -7852,7 +7852,7 @@ window._critical=1;window._defer=function(fn){function exec(){var dcl=document.r
   </b:section>
 <!-- ============================ [نظام رشق الأمواج - Wave Injection System] ============================ -->
 <!-- CDN: waves.js (مستخرج بالكامل - يحقن SVG + CSS ديناميكياً في .seoturpo-topbar)                     -->
-<script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/waves.js'></script>
+<!-- CDN: waves.js ⤑ منقول لسجل CDN آخر القالب -->
 <!-- ================================================================================================== -->
     
 <!-- بداية الهيدر الموحد -->
@@ -19569,30 +19569,24 @@ window._defer(function() {
 </script>
    
 <!-- ===== MODULE 63: رمز الإستجابة السريعة (QR Code) → CDN ===== -->
-<script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='63'></script>
+<!-- CDN: موديول 63 ⤑ منقول لسجل CDN آخر القالب -->
 
 <!-- ===== MODULE 64: تحديث سكيما الهوية (Schema Identity) → CDN ===== -->
-<b:if cond='data:view.isHomepage'>
-<script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='64'></script>
-</b:if>
+<!-- CDN: موديول 64 ⤑ منقول لسجل CDN آخر القالب -->
 
 <!-- ===== MODULE 65: وصف رئيسي طويل (Homepage Description) → CDN ===== -->
-<b:if cond='data:view.isHomepage'>
-<script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='65'></script>
-</b:if>
+<!-- CDN: موديول 65 ⤑ منقول لسجل CDN آخر القالب -->
 <!-- ========== MODULE 67: Trust-Box (مصداقية المحتوى) → CDN ========== -->
-<b:if cond='data:view.isPost'>
-<script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/trust-box67.js'></script>
-</b:if>
+<!-- CDN: trust-box67.js ⤑ منقول لسجل CDN آخر القالب -->
   
 <!-- ===== MODULE 68: الوضع المظلم (Dark Mode Tables) → CDN ===== -->
-<script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='68'></script>
+<!-- CDN: موديول 68 ⤑ منقول لسجل CDN آخر القالب -->
 
 <!-- ===== MODULE 69: أداة مشاركة جوجل (Google Share Widget) → CDN ===== -->
-<script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='69'></script>
+<!-- CDN: موديول 69 ⤑ منقول لسجل CDN آخر القالب -->
  
 <!-- ===== MODULE 70: فحص حجب الإعلانات (Ad-Block Detection) → CDN ===== -->
-<script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='70'></script>
+<!-- CDN: موديول 70 ⤑ منقول لسجل CDN آخر القالب -->
 
 <!-- 71-متنوع-زر-نسخ-الكود-البرمجي.js -->
 <script type='text/javascript'>
@@ -22001,16 +21995,34 @@ window.addEventListener('load',addSignature);
 <b:if cond='not data:view.isLayoutMode'>&lt;!--</b:if>
 <script>!function(){function f(){document.querySelectorAll(&#39;a.snippet-fade:not([aria-label])&#39;).forEach(function(a){a.setAttribute(&#39;aria-label&#39;,&#39;اقرأ المزيد&#39;)})}f();var g=new MutationObserver(f);g.observe(document.documentElement,{childList:!0,subtree:!0})}();</script>
 
-<!-- ================================================================================== -->
-<!-- ====== سجل روابط CDN المستخرجة من القالب (للتأكيد والمراجعة) ====== -->
-<!-- ================================================================================== -->
-<!-- 1. waves.js       ← نظام رشق الأمواج (10 ثيمات)                                   -->
-<!--    https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/waves.js   -->
-<!--                                                                                    -->
-<!-- 2. trust-box67.js
-<!-- 3. batch-63-69.js  ← Modules 63,64,65,68,69 (QR, Schema, Desc, Dark, Share) --> ← مصداقية المحتوى (E-E-A-T Trust Box)                           -->
-<!--    https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/trust-box67.js -->
-<!-- ================================================================================== -->
+
+<!-- ════════════════════════════════════════════════════════════════ -->
+        سجل روابط CDN - جميع السكربتات المستخرجة
+        CDN Registry - All External Scripts
+════════════════════════════════════════════════════════════════════ -->
+  <!-- موديول 66 - Wave System (نظام الأمواج) -->
+  <script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/waves.js'></script>
+  <!-- موديول 63 - QR Code -->
+  <script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='63'></script>
+  <!-- موديول 64 - Schema Identity -->
+  <b:if cond='data:view.isHomepage'>
+<script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='64'></script>
+</b:if>
+  <!-- موديول 65 - Homepage Desc -->
+  <b:if cond='data:view.isHomepage'>
+<script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='65'></script>
+</b:if>
+  <!-- موديول 67 - Trust-Box (مصداقية المحتوى) -->
+  <b:if cond='data:view.isPost'>
+<script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/trust-box67.js'></script>
+</b:if>
+  <!-- موديول 68 - Dark Mode -->
+  <script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='68'></script>
+  <!-- موديول 69 - Google Share -->
+  <script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='69'></script>
+  <!-- موديول 70 - Ad-Block -->
+  <script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='70'></script>
+════════════════════════════════════════════════════════════════════ -->
 </body>
 <b:if cond='not data:view.isLayoutMode'>--&gt;&lt;/body&gt;</b:if>
 </html>
