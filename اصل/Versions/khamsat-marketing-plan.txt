@@ -1,0 +1,246 @@
+================================================================================
+RANKTURBOSEO — KHAMSAT MARKETING PLAN
+خطة تسويق وبيع قوالب بلوجر على منصة خمسات
+================================================================================
+تاريخ: 2026-05-30 | إعداد: قدر يحيى & Dr. Mohamed Elgendy
+
+================================================================================
+1. PRICING STRATEGY
+================================================================================
+
+Base Price per Template:  $XX.XX USD (قابل للتعديل حسب السوق)
+
+Recommended Pricing:
+  - Standard Edition:   $15  (English Master, News, Blog/Tech)
+  - Premium Edition:    $20  (Kitchen, Medical, AltMed, Beauty)
+  - Enterprise Edition: $25  (Medical English — global market)
+  
+Multi-Purchase Discount:
+  - Buy 2:    10% off
+  - Buy 3:    15% off
+  - Buy 4+:   20% off
+  - Complete Bundle (all 8):  $99 (save 35%)
+
+================================================================================
+2. PRODUCT LISTINGS (Arabic — خمسات)
+================================================================================
+
+----------------------
+PRODUCT 1: ENGLISH MASTER
+----------------------
+العنوان:    قالب بلوجر إنجليزي احترافي — RankTurboSeo English Master
+السعر:      $15
+القسم:      برمجة > قوالب بلوجر
+الوسوم:     قالب بلوجر إنجليزي, Blogger template English, SEO template
+
+الوصف المختصر:
+"قالب بلوجر إنجليزي احترافي فائق السرعة. 347+ ميزة، 45+ سكيما، متوافق مع Core Web Vitals وأدسنس. تصميم LTR أصلي."
+
+الوصف الطويل:
+(نفس محتوى ملف RankTurboSeo-English-Master.v1.0.txt)
+أبرز النقاط:
+✓ SEO متكامل تلقائي — 45+ نوع سكيما
+✓ سرعة فائقة — CLS=0, LCP<1.5s
+✓ 70+ مفتاح تحكم — لوحة تحكم بصرية
+✓ متوافق مع Google AdSense, Ezoic, Media.net
+✓ تصميم متجاوب — 12 نقطة قطع
+✓ دعم فني 24/7 + تحديثات مدى الحياة
+✓ شهادة اعتماد رقمية موثقة
+
+----------------------
+PRODUCT 2: NEWS PORTAL
+----------------------
+العنوان:    قالب بلوجر إخباري — RankTurboSeo News Portal Edition
+السعر:      $15
+القسم:      برمجة > قوالب بلوجر
+الوسوم:     قالب اخباري, News Blogger template, بوابة إخبارية
+
+الوصف المختصر:
+"قالب بلوجر إخباري متكامل مع NewsArticle schema، شريط أخبار عاجلة، وسلايدر أخبار. متوافق مع Google News."
+
+أبرز النقاط:
+✓ NewsArticle schema (يظهر في Google News)
+✓ SpeakableSpecification (أوامر صوتية)
+✓ شريط أخبار عاجلة + سلايدر متطور
+✓ سكيما NewsMediaOrganization
+✓ 347+ ميزة من محرك RankTurboSeo Apex
+
+----------------------
+PRODUCT 3: KITCHEN & FOOD
+----------------------
+العنوان:    قالب بلوجر مطبخ ووصفات — RankTurboSeo Kitchen Edition
+السعر:      $20
+القسم:      برمجة > قوالب بلوجر
+الوسوم:     قالب طبخ, Recipe Blogger template, قالب وصفات
+
+الوصف المختصر:
+"قالب بلوجر طبخ ووصفات احترافي مع Recipe schema تلقائي، معلومات غذائية، ومكونات تفاعلية. كنز لمدوني الطعام."
+
+أبرز النقاط:
+✓ Recipe schema تلقائي (يظهر في Google Rich Results)
+✓ NutritionInformation schema
+✓ قائمة مكونات تفاعلية مع checkboxes
+✓ خطوات طبخ مع progress tracker
+✓ ألوان دافئة تناسب مدونات الطعام
+✓ نسخة توأم إنجليزية مجاناً
+
+----------------------
+PRODUCT 4: BLOG & TECH
+----------------------
+العنوان:    قالب بلوجر تدوين وتقنية — RankTurboSeo Blog & Tech Edition
+السعر:      $15
+القسم:      برمجة > قوالب بلوجر
+الوسوم:     قالب تدوين, Tech Blogger template, قالب تقني
+
+الوصف المختصر:
+"قالب تدوين وتقنية احترافي. TechArticle schema، تنسيق أكواد برمجية، وجدول محتويات ذكي."
+
+أبرز النقاط:
+✓ TechArticle schema
+✓ تنسيق أكواد برمجية (Code blocks)
+✓ جدول محتويات تلقائي (TOC)
+✓ وقت القراءة التلقائي
+✓ سكيما SoftwareApplication
+
+----------------------
+PRODUCT 5: MEDICAL
+----------------------
+العنوان:    قالب بلوجر طبي — RankTurboSeo Medical Edition
+السعر:      $20
+القسم:      برمجة > قوالب بلوجر
+الوسوم:     قالب طبي, Medical Blogger, قالب صحي
+
+الوصف المختصر:
+"قالب طبي احترافي مع MedicalWebPage schema، إخلاء مسؤولية صحي، وصندوق ثقة EEAT. مثالي للمواقع الطبية."
+
+أبرز النقاط:
+✓ MedicalWebPage schema (Google Health certified)
+✓ MedicalCondition + Drug schema
+✓ إخلاء مسؤولية طبي تلقائي
+✓ EEAT Trust Box (شهادات + مؤهلات)
+✓ ألوان teal محايدة احترافية
+
+----------------------
+PRODUCT 6: ALTERNATIVE MEDICINE
+----------------------
+العنوان:    قالب بلوجر طب بديل وصحة طبيعية — RankTurboSeo AltMed Edition
+السعر:      $20
+القسم:      برمجة > قوالب بلوجر
+الوسوم:     قالب طب بديل, Natural health, قالب أعشاب
+
+الوصف المختصر:
+"قالب طب بديل وصحة طبيعية. MedicalWebPage schema، علاجات طبيعية، ووصفات أعشاب. الأخضر لون الثقة."
+
+أبرز النقاط:
+✓ MedicalWebPage schema (صحة طبيعية)
+✓ HowTo schema (خطوات علاجية)
+✓ إخلاء مسؤولية طب بديل
+✓ EEAT Trust Box
+✓ ألوان خضراء طبيعية
+
+----------------------
+PRODUCT 7: BEAUTY & MIRROR
+----------------------
+العنوان:    قالب بلوجر تجميل وموضة — RankTurboSeo Beauty Edition
+السعر:      $20
+القسم:      برمجة > قوالب بلوجر
+الوسوم:     قالب تجميل, Beauty Blogger, قالب موضة
+
+الوصف المختصر:
+"قالب تجميل وموضة أنيق مع Product schema للمراجعات، معرض صور، وتصميم قبل/بعد. مثالي لمدونات التجميل."
+
+أبرز النقاط:
+✓ Product schema + Review schema
+✓ ImageGallery schema
+✓ تصميم Before/After
+✓ ألوان وردية جذابة
+✓ تخطيط بطاقات منتجات أنيق
+
+----------------------
+PRODUCT 8: MEDICAL ENGLISH
+----------------------
+العنوان:    Medical Blogger Template — RankTurboSeo Medical English Edition
+السعر:      $25
+القسم:      برمجة > قوالب بلوجر
+الوسوم:     Medical template, Health blog, Blogger medical English
+
+الوصف المختصر:
+"Premium medical blog template in English. MedicalWebPage schema, clinical disclaimers, EEAT trust system. Global healthcare standard."
+
+أبرز النقاط:
+✓ MedicalWebPage schema (English)
+✓ MedicalCondition + Drug schema
+✓ Clinical disclaimer (English)
+✓ EEAT Trust Box with credentials
+✓ LTR design for global audience
+✓ International SEO optimization
+
+================================================================================
+3. PRODUCT IMAGES SUGGESTIONS
+================================================================================
+
+Each listing needs 4-5 images:
+1. Main mockup (template on desktop + mobile)
+2. Schema Google Rich Results screenshot (showing the stars/recipe/etc.)
+3. Control Panel screenshot (showing 70+ toggles)
+4. PageSpeed/Core Web Vitals score
+5. Features infographic
+
+For the thumbnail: Use the RankTurboSeo logo (bull) + version name
+Logo prompt available in: pages/logo-prompt.txt
+
+================================================================================
+4. SEO TAGS FOR KHAMSAT
+================================================================================
+
+Common Tags (all products):
+  قالب بلوجر, Blogger template, SEO template, سيو, قالب احترافي,
+  قالب سريع, قالب متجاوب, Core Web Vitals, Google AdSense,
+  قالب خمسات, قالب مدونات
+
+Unique Tags per product:
+  - English: Blogger template English, blog template, premium blogger
+  - News: قالب اخباري, News template, أخبار
+  - Kitchen: قالب طبخ, recipe template, وصفات
+  - Tech: قالب تقني, tech blog, coding
+  - Medical: قالب طبي, medical template, صحة
+  - AltMed: طب بديل, natural health, أعشاب
+  - Beauty: تجميل, beauty blog, موضة
+  - MedEng: medical English, health blog template
+
+================================================================================
+5. GIG EXTRAS (زيادة الأرباح)
+================================================================================
+
+Extra Service 1:  Installation Service       $5
+  - Install the template on buyer's blog
+  - Configure basic settings
+  - Test Google Rich Results
+
+Extra Service 2:  Custom Color Scheme        $10
+  - Match template colors to buyer's brand
+  - Custom logo integration
+
+Extra Service 3:  Advanced Customization      $25
+  - Custom schema types
+  - Custom ad placements
+  - Advanced CSS modifications
+
+Extra Service 4:  Multi-Language Setup        $15
+  - Install Arabic + English twins
+  - Configure RTL/LTR switching
+
+================================================================================
+6. COMPLETE BUNDLE
+================================================================================
+
+Product:  RankTurboSeo Complete Bundle (All 8 Editions)
+Price:    $99 (save 35% vs buying individually)
+Includes: All 8 templates × Arabic + English twin = 16 files total
+          + All certificates
+          + Priority support
+
+================================================================================
+END OF KHAMSAT PLAN
+قدر يحيى & Dr. Mohamed Elgendy — RankTurboSeo Digital Empire
+================================================================================

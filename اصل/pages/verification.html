@@ -1,0 +1,624 @@
+<title>مساحة نيوز | وثيقة التحقق الرسمية - قالب SEOTurbo Apex v.12</title>
+<meta content="صفحة التحقق الرسمية من صحة ترخيص موقع مساحة نيوز (Masaha News) باستخدام قالب SEOTurbo Apex v.12 Enterprise Edition - وثيقة موثقة رقمياً" name="description"/>
+<meta content="قدر يحيى - رئيسة مجلس الإدارة والمطورة" name="author"/>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: var(--bg-color, linear-gradient(145deg, #f5f7fc 0%, #eef2f8 100%));
+    min-height: 100vh;
+    padding: 50px 24px;
+    color: var(--text-color, #1a1a2e);
+    font-family: inherit;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  .seoturbo-verify-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    direction: rtl;
+  }
+  .seoturbo-verify-card {
+    background: var(--widget-bg, #ffffff);
+    color: var(--text-color, #1a1a2e);
+    border-radius: 48px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.1);
+    border: 1px solid var(--border-color, rgba(0,108,53,0.2));
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+  }
+  .seoturbo-verify-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 35px 60px -15px rgba(0,0,0,0.15);
+  }
+
+  .seoturbo-hero-logo {
+    background: linear-gradient(135deg, var(--widget-bg, #ffffff) 0%, var(--bg-color, #faf9f5) 100%);
+    padding: 40px;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color, rgba(0,108,53,0.1));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .seoturbo-hero-logo img {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+    transition: transform 0.3s ease;
+    display: block;
+    margin: 0 auto;
+  }
+  .seoturbo-hero-logo img:hover {
+    transform: scale(1.02);
+  }
+  .seoturbo-logo-divider {
+    width: 2px;
+    height: 60px;
+    background: linear-gradient(180deg, transparent, #006C35, transparent);
+    flex-shrink: 0;
+  }
+
+  .seoturbo-verify-header {
+    background: linear-gradient(135deg, var(--widget-bg, #ffffff) 0%, var(--bg-color, #faf9f5) 100%);
+    padding: 30px 40px 35px;
+    text-align: center;
+    position: relative;
+    border-bottom: 1px solid var(--border-color, rgba(0,108,53,0.1));
+  }
+  .seoturbo-royal-seal {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(145deg, #006C35, #004d26);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    box-shadow: 0 8px 20px rgba(0,108,53,0.3);
+  }
+  .seoturbo-royal-seal svg {
+    width: 44px;
+    height: 44px;
+    fill: #ffffff;
+  }
+  .seoturbo-verify-header h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--text-color, #1a1a2e);
+    margin-bottom: 8px;
+  }
+  .seoturbo-verify-header .seoturbo-subtitle {
+    font-size: 14.5px;
+    color: #006C35;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+  .seoturbo-license-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(0,108,53,0.1);
+    padding: 8px 22px;
+    border-radius: 50px;
+    margin-top: 20px;
+    border: 1px solid rgba(0,108,53,0.25);
+  }
+  .seoturbo-license-badge span {
+    font-size: 13px;
+    font-weight: 800;
+    color: #006C35;
+  }
+  .seoturbo-license-badge svg {
+    fill: #006C35;
+  }
+
+  .seoturbo-verify-body {
+    padding: 45px;
+  }
+  
+  .seoturbo-trust-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 45px;
+  }
+  .seoturbo-trust-card {
+    background: var(--bg-color, #f8f9fc);
+    border-radius: 28px;
+    padding: 28px 20px;
+    text-align: center;
+    border: 1px solid var(--border-color, #e8ecef);
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+  }
+  .seoturbo-trust-card:hover {
+    border-color: #006C35;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.03);
+  }
+  .seoturbo-trust-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(0,108,53,0.1);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 18px;
+  }
+  .seoturbo-trust-icon svg {
+    width: 30px;
+    height: 30px;
+    fill: #006C35;
+  }
+  .seoturbo-trust-card h3 {
+    font-size: 17px;
+    font-weight: 800;
+    color: var(--text-color, #1a1a2e);
+    margin-bottom: 10px;
+  }
+  .seoturbo-trust-card p {
+    font-size: 13px;
+    color: var(--text-meta, #5a5a72);
+    line-height: 1.6;
+  }
+
+  .seoturbo-info-table {
+    background: var(--bg-color, #f8f9fc);
+    border-radius: 28px;
+    padding: 30px;
+    margin-bottom: 40px;
+    border: 1px solid var(--border-color, #e8ecef);
+  }
+  .seoturbo-info-table h3 {
+    font-size: 19px;
+    font-weight: 800;
+    color: var(--text-color, #1a1a2e);
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-right: 4px solid #006C35;
+    padding-right: 15px;
+  }
+  .seoturbo-info-table h3 svg {
+    width: 22px;
+    height: 22px;
+    fill: #006C35;
+  }
+  .seoturbo-info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border-color, #e8ecef);
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .seoturbo-info-row:last-child {
+    border-bottom: none;
+  }
+  .seoturbo-info-label {
+    font-weight: 800;
+    color: var(--text-meta, #5a5a72);
+    font-size: 14px;
+  }
+  .seoturbo-info-value {
+    font-weight: 700;
+    color: var(--text-color, #1a1a2e);
+    font-size: 14px;
+    background: var(--widget-bg, #ffffff);
+    padding: 6px 16px;
+    border-radius: 30px;
+    word-break: break-all;
+    border: 1px solid var(--border-color, #e8ecef);
+  }
+  .seoturbo-status-active {
+    color: #006C35 !important;
+    background: #e8f5e9 !important;
+    border-color: #a5d6a7 !important;
+  }
+
+  .seoturbo-digital-signature {
+    background: var(--bg-color, #f8f9fc);
+    border-radius: 28px;
+    padding: 30px;
+    text-align: center;
+    border: 1px dashed #006C35;
+    margin-bottom: 40px;
+  }
+  .seoturbo-digital-signature p {
+    font-size: 13px;
+    color: var(--text-meta, #5a5a72);
+    margin-bottom: 15px;
+    font-weight: 700;
+  }       
+  .seoturbo-signature-code {
+    background: var(--widget-bg, #ffffff);
+    padding: 18px 20px;
+    border-radius: 20px;
+    display: block;
+    border: 1px solid var(--border-color, #e8ecef);
+    margin: 0 auto;
+    text-align: left;
+    font-size: 11px;
+    color: #006C35;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    direction: ltr;
+    word-break: break-all;
+    font-family: monospace, sans-serif;
+  }          
+
+  .seoturbo-qr-showcase {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+    margin: 35px 0;
+  }
+  .seoturbo-qr-item {
+    background: var(--bg-color, #f8f9fc);
+    border-radius: 24px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid var(--border-color, #e8ecef);
+    min-width: 150px;
+    transition: all 0.3s ease;
+    flex-grow: 1;
+    max-width: 220px;
+  }
+  .seoturbo-qr-item:hover {
+    border-color: #006C35;
+    transform: translateY(-3px);
+  }
+  .seoturbo-qr-item img {
+    width: 110px;
+    height: 110px;
+    border-radius: 16px;
+    margin-bottom: 12px;
+    background: #ffffff;
+    padding: 6px;
+    display: inline-block;
+  }
+  .seoturbo-qr-item span {
+    display: block;
+    font-size: 11px;
+    color: var(--text-meta, #5a5a72);
+    font-weight: 700;
+  }
+
+  .seoturbo-action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .seoturbo-btn {
+    padding: 14px 32px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+  }
+  .seoturbo-btn-gold {
+    background: linear-gradient(135deg, #006C35, #004d26);
+    color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0,108,53,0.3);
+  }
+  .seoturbo-btn-gold:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,108,53,0.4);
+  }
+  .seoturbo-btn-outline {
+    background: transparent;
+    color: #006C35;
+    border: 1px solid #006C35;
+  }
+  .seoturbo-btn-outline:hover {
+    background: rgba(0,108,53,0.1);
+    transform: translateY(-3px);
+  }
+
+  .seoturbo-verify-footer {
+    background: var(--bg-color, #faf9f5);
+    padding: 35px 45px;
+    text-align: center;
+    border-top: 1px solid var(--border-color, rgba(0,108,53,0.15));
+  }
+  .seoturbo-copyright {
+    font-size: 13.5px;
+    font-weight: 800;
+    color: #006C35;
+    margin-bottom: 18px;
+  }
+  .seoturbo-copyright span {
+    color: var(--text-color, #1a1a2e);
+  }
+  .seoturbo-citation {
+    font-size: 12px;
+    color: var(--text-meta, #5a5a72);
+    line-height: 1.9;
+  }
+  .seoturbo-citation a {
+    color: #006C35;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  .seoturbo-citation a:hover {
+    text-decoration: underline;
+  }
+
+  body.dark-mode, body.darkmode {
+    background: var(--darkmode-widget-bg, #111111);
+    color: var(--darkmode-text-color, #ffffff);
+  }
+  body.dark-mode .seoturbo-verify-card, body.darkmode .seoturbo-verify-card {
+    background: var(--darkmode-widget-bg, #111111);
+    border-color: var(--darkmode-border-color, #333333);
+  }
+  body.dark-mode .seoturbo-hero-logo, body.darkmode .seoturbo-hero-logo,
+  body.dark-mode .seoturbo-verify-header, body.darkmode .seoturbo-verify-header {
+    background: linear-gradient(135deg, #181818 0%, #111111 100%);
+    border-color: var(--darkmode-border-color, #333333);
+  }
+  body.dark-mode .seoturbo-verify-header h1, body.darkmode .seoturbo-verify-header h1 {
+    color: var(--darkmode-text-color, #ffffff);
+  }
+  body.dark-mode .seoturbo-trust-card, body.darkmode .seoturbo-trust-card,
+  body.dark-mode .seoturbo-info-table, body.darkmode .seoturbo-info-table,
+  body.dark-mode .seoturbo-digital-signature, body.darkmode .seoturbo-digital-signature,
+  body.dark-mode .seoturbo-qr-item, body.darkmode .seoturbo-qr-item {
+    background: #181818;
+    border-color: var(--darkmode-border-color, #333333);
+  }
+  body.dark-mode .seoturbo-trust-card h3, body.darkmode .seoturbo-trust-card h3,
+  body.dark-mode .seoturbo-info-table h3, body.darkmode .seoturbo-info-table h3,
+  body.dark-mode .seoturbo-info-row, body.darkmode .seoturbo-info-row {
+    color: var(--darkmode-text-color, #ffffff);
+  }
+  body.dark-mode .seoturbo-trust-card p, body.darkmode .seoturbo-trust-card p,
+  body.dark-mode .seoturbo-info-label, body.darkmode .seoturbo-info-label,
+  body.dark-mode .seoturbo-digital-signature p, body.darkmode .seoturbo-digital-signature p,
+  body.dark-mode .seoturbo-qr-item span, body.darkmode .seoturbo-qr-item span,
+  body.dark-mode .seoturbo-citation, body.darkmode .seoturbo-citation {
+    color: var(--darkmode-text-meta, #eeeeee);
+  }
+  body.dark-mode .seoturbo-info-value, body.darkmode .seoturbo-info-value,
+  body.dark-mode .seoturbo-signature-code, body.darkmode .seoturbo-signature-code {
+    background: #252525;
+    color: var(--darkmode-text-color, #ffffff);
+    border-color: var(--darkmode-border-color, #333333);
+  }
+  body.dark-mode .seoturbo-copyright span, body.darkmode .seoturbo-copyright span {
+    color: var(--darkmode-text-color, #ffffff);
+  }
+  body.dark-mode .seoturbo-verify-footer, body.darkmode .seoturbo-verify-footer {
+    background: #141414;
+    border-top-color: var(--darkmode-border-color, #333333);
+  }
+
+  @media (max-width: 900px) {
+    .seoturbo-trust-grid {
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+    .seoturbo-verify-header h1 {
+      font-size: 28px;
+    }
+    .seoturbo-verify-body {
+      padding: 30px;
+    }
+    .seoturbo-verify-footer {
+      padding: 25px;
+    }
+    .seoturbo-hero-logo img {
+      max-width: 200px;
+    }
+  }
+  @media (max-width: 768px) {
+    .seoturbo-logo-divider {
+      width: 80px;
+      height: 2px;
+      margin: 10px auto;
+      background: linear-gradient(90deg, transparent, #006C35, transparent);
+    }
+  }
+  @media (max-width: 600px) {
+    body {
+      padding: 20px 16px;
+    }
+    .seoturbo-verify-body {
+      padding: 20px;
+    }
+    .seoturbo-info-row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .seoturbo-info-value {
+      text-align: right;
+      width: 100%;
+    }
+    .seoturbo-hero-logo {
+      padding: 25px 20px 15px 20px;
+    }
+    .seoturbo-hero-logo img {
+      max-width: 160px;
+    }
+  }
+  @media print {
+    .seoturbo-action-buttons {
+      display: none;
+    }
+    .seoturbo-verify-card {
+      box-shadow: none;
+      border: 1px solid #dddddd;
+    }
+    body {
+      background: #ffffff;
+      padding: 0;
+    }
+  }
+</style>
+
+<main class="seoturbo-verify-wrapper">
+  <article class="seoturbo-verify-card">
+    
+    <header class="seoturbo-hero-logo">
+      <a href="https://masaha-news.blogspot.com/" rel="noopener" target="_blank">
+        <img alt="مساحة نيوز - الشعار الرسمي" src="https://blogger.googleusercontent.com/img/a/AVvXsEiajcxFOuufSWZNXkPH6_FMDROhvFLxcmzxcOoUkcoBkO4OvonIJvYY49IWwwgDIdSADwM4aWdB-J-szstJLdjcsn-Ds4oGN8-6VTQ4qmHtIbxxmEtoEUPcpIR3anxbsTKKA6aq76aWxwccA6t-VwQG4T9uf0h_Z0LuZ0RJtyCQtFKNEphFbfqgx-ySpfs=s400-rw" title="شعار مساحة نيوز - Masaha News" />
+      </a>
+      <div class="seoturbo-logo-divider"></div>
+      <a href="https://seoturbo-imperial.blogspot.com/" rel="noopener" target="_blank">
+        <img alt="SEOTurbo Logo - الشعار الرسمي للقالب" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6yx3temagx_60BIieYkOs_OUsPgom7cgH9QmV5I0jfg2J26DwjEUx4jFX_fFBaL_FuClFWc03R6msnmhwXtE7tiNotUka2zc527z3tuMZYACYsvHS4QCaqxVFH1-DlzCEiXHGA_119tsDQzSx58XRJhLsscb6Q7O1eUdsuPkfHouKzZAJqJQdixtGZs8C/s300-rw/seoturbo300-100.webp" title="شعار قالب SEOTurbo Apex v.12" />
+      </a>
+    </header>
+    
+    <header class="seoturbo-verify-header">
+      <div class="seoturbo-royal-seal">
+        <svg viewbox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"></path></svg>
+      </div>
+      <h1>وثيقة التحقق الرسمية</h1>
+      <p class="seoturbo-subtitle">مساحة نيوز | Masaha News — تعمل بنظام SEOTurbo Apex v.12 Enterprise Edition</p>
+      <aside class="seoturbo-license-badge">
+        <svg height="14" viewbox="0 0 24 24" width="14"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path></svg>
+        <span>ترخيص ساري · نسخة تجارية معتمدة</span>
+      </aside>
+    </header>
+    
+    <section class="seoturbo-verify-body">
+      
+      <section class="seoturbo-trust-grid">
+        <article class="seoturbo-trust-card">
+          <figure class="seoturbo-trust-icon">
+            <svg viewbox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"></path></svg>
+          </figure>
+          <h3>موقع مرخص رسمياً</h3>
+          <p>موقع مساحة نيوز مرخص بموجب ترخيص SEOTurbo Apex v.12 Enterprise Edition، إصدار تجاري معتمد مع دعم فني متكامل وتحديثات أمنية دورية.</p>
+        </article>
+        <article class="seoturbo-trust-card">
+          <figure class="seoturbo-trust-icon">
+            <svg viewbox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM8 12H6v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z"></path></svg></figure>
+          <h3>ملكية فكرية محفوظة</h3>
+          <p>جميع حقوق القالب البرمجية محفوظة لشركة SEOTurbo للبرمجيات. جميع الحقوق التحريرية محفوظة لموقع مساحة نيوز.</p>
+        </article>
+        <article class="seoturbo-trust-card">
+          <figure class="seoturbo-trust-icon">
+            <svg viewbox="0 0 24 24"><path d="M21 6h-7.59l3.29-3.29L16 2l-4 4-4-4-.71.71L10.59 6H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z"></path></svg></figure>
+          <h3>دعم وتحديث مستمر</h3>
+          <p>أولوية متقدمة في الحصول على التحديثات الأمنية وتطويرات الواجهة لضمان جودة الأداء وتحسين سرعة استجابة الموقع بشكل متواصل.</p>
+        </article>
+      </section>
+      
+      <section class="seoturbo-info-table">
+        <h3><svg viewbox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM8 12H6v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z"></path></svg> بيانات الترخيص والتوثيق</h3>
+        
+        <div class="seoturbo-info-row"><span class="seoturbo-info-label">الموقع المرخص:</span><span class="seoturbo-info-value">مساحة نيوز - Masaha News</span></div>
+        <div class="seoturbo-info-row"><span class="seoturbo-info-label">رابط الموقع:</span><span class="seoturbo-info-value">https://masaha-news.blogspot.com/</span></div>
+        <div class="seoturbo-info-row"><span class="seoturbo-info-label">رئيسة مجلس الإدارة:</span><span class="seoturbo-info-value">قدر يحيى</span></div>
+        <div class="seoturbo-info-row"><span class="seoturbo-info-label">نوع الموقع:</span><span class="seoturbo-info-value">بوابة رقمية إعلامية (News Media Organization)</span></div>
+        
+        <div class="seoturbo-info-row" style="border-top: 2px dashed rgb(0, 108, 53); margin-top: 15px; padding-top: 15px;"><span class="seoturbo-info-label">اسم القالب:</span><span class="seoturbo-info-value">SEOTurbo Apex v.12 Enterprise Edition</span></div>
+        <div class="seoturbo-info-row"><span class="seoturbo-info-label">الإصدار:</span><span class="seoturbo-info-value">v12.0 (Control Panel Edition)</span></div>
+        <div class="seoturbo-info-row"><span class="seoturbo-info-label">شركة التطوير:</span><span class="seoturbo-info-value">شركة SEOTurbo للبرمجيات الذكية</span></div>
+        <div class="seoturbo-info-row"><span class="seoturbo-info-label">المطورة:</span><span class="seoturbo-info-value">قدر يحيى (Qdar Yahya)</span></div>
+        <div class="seoturbo-info-row"><span class="seoturbo-info-label">الترخيص:</span><span class="seoturbo-info-value">SEOTurbo Apex v.12 Enterprise (Commercial License)</span></div>
+        <div class="seoturbo-info-row"><span class="seoturbo-info-label">رقم الترخيص المرجعي:</span><span class="seoturbo-info-value">MH-NEWS-XC7K9L-QY2026</span></div>
+        <div class="seoturbo-info-row"><span class="seoturbo-info-label">التوقيع الرقمي:</span><span class="seoturbo-info-value">MH-QY-9F3A8E2D1C7B4F6A9E8D7C6B5A4F3E</span></div>
+        <div class="seoturbo-info-row"><span class="seoturbo-info-label">تاريخ الإصدار:</span><span class="seoturbo-info-value">2026-05-30</span></div>
+        <div class="seoturbo-info-row"><span class="seoturbo-info-label">الحالة:</span><span class="seoturbo-info-value seoturbo-status-active">✓ ساري / مفعل</span></div>
+      </section>
+      
+      <section class="seoturbo-digital-signature">
+        <p> التوقيع الرقمي المعتمد لموقع مساحة نيوز - قالب SEOTurbo Apex v.12</p>
+        <pre class="seoturbo-signature-code">-----BEGIN SEOTURBO SIGNATURE-----
+الموقع: مساحة نيوز (Masaha News)
+القالب: SEOTurbo Apex v.12 Enterprise Edition v12.0
+شركة التطوير: شركة SEOTurbo للبرمجيات الذكية
+المطورة: قدر يحيى
+رئيسة مجلس الإدارة: قدر يحيى
+رقم الترخيص: MH-NEWS-XC7K9L-QY2026
+التوقيع الرقمي: MH-QY-9F3A8E2D1C7B4F6A9E8D7C6B5A4F3E
+TIMESTAMP: 2026-05-30T00:00:00+03:00
+SIGNED BY: Qdar Yahya
+-----END SEOTURBO SIGNATURE-----</pre>
+      </section>
+      
+      <section class="seoturbo-qr-showcase">
+        <figure class="seoturbo-qr-item">
+          <img alt="QR Code" src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&amp;margin=10&amp;data=https://masaha-news.blogspot.com/p/verification.html" />
+          <span>رمز التحقق من الموقع</span>
+        </figure>
+        <figure class="seoturbo-qr-item">
+          <img alt="QR Code" src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&amp;margin=10&amp;data=MH-NEWS-XC7K9L-QY2026" />
+          <span>رمز الترخيص</span>
+        </figure>
+        <figure class="seoturbo-qr-item">
+          <img alt="QR Code" src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&amp;margin=10&amp;data=https://masaha-news.blogspot.com/" />
+          <span>تواصل مع الموقع</span>
+        </figure>
+      </section>
+      
+      <nav class="seoturbo-action-buttons">
+        <button class="seoturbo-btn seoturbo-btn-gold" onclick="window.print();">
+          <svg fill="currentColor" height="16" viewbox="0 0 24 24" width="16"><path d="M19 8H5v11h14V8zm0-4H5v3h14V4z"></path></svg> 
+          طباعة الوثيقة
+        </button>
+        <a class="seoturbo-btn seoturbo-btn-outline" href="https://masaha-news.blogspot.com/">
+          <svg fill="currentColor" height="16" viewbox="0 0 24 24" width="16"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg> 
+          العودة للرئيسية
+        </a>
+      </nav>
+      
+    </section>
+    
+    <footer class="seoturbo-verify-footer">
+      <p class="seoturbo-copyright">
+        جميع الحقوق محفوظة © <span id="seoturbo-currentYear"></span>
+        - <span>موقع مساحة نيوز | قالب SEOTurbo Apex v.12 Enterprise v12.0</span>
+      </p>
+      <p class="seoturbo-citation">
+        — الموقع: <strong>مساحة نيوز (Masaha News)</strong> — بوابة رقمية إعلامية<br />
+        — القالب: <strong>SEOTurbo Apex v.12 Enterprise Edition v12.0</strong> — من تطوير قدر يحيى<br />
+        — رابط التحقق: <a href="https://masaha-news.blogspot.com/p/verification.html" target="_blank">https://masaha-news.blogspot.com/p/verification.html</a>
+      </p>
+    </footer>
+    
+  </article>
+</main>
+
+<script>
+  (function() {
+    'use strict';
+    const yearSpan = document.getElementById('seoturbo-currentYear');
+    if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear() + ' ';
+    }
+  })();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "صفحة التحقق الرسمية - مساحة نيوز | SEOTurbo Apex v.12",
+  "url": "https://masaha-news.blogspot.com/p/verification.html",
+  "description": "هذه الصفحة هي وثيقة التحقق الرسمية من صحة ترخيص موقع مساحة نيوز باستخدام قالب SEOTurbo Apex v.12 Enterprise Edition.",
+  "license": "https://masaha-news.blogspot.com/p/verification.html"
+}
+</script>

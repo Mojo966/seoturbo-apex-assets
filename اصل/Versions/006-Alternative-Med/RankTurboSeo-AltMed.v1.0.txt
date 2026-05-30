@@ -1,0 +1,34 @@
+================================================================================
+RankTurboSeo Alternative Medicine Edition v1.0
+قالب طب بديل وصحة طبيعية — Natural Health Template
+================================================================================
+Version: 1.0 | Version Code: RTS-ALTMED-1.0
+Framework: RankTurboSeo Apex v16.0
+Platform: Blogger | Language: Arabic (RTL) + English twin (LTR)
+Developers: قدر يحيى & Dr. Mohamed Elgendy
+
+================================================================================
+CERTIFICATION
+================================================================================
+Certificate ID: RTS-ALTMED-CERT-001
+Signature: RTS-9F3A8E2D1C7B4F6A9E8D7C6B5A4F3E2D1C
+Verification: https://rankturboseo-imperial.blogspot.com/p/verify.html
+
+================================================================================
+VERSION-SPECIFIC FEATURES
+================================================================================
+- MedicalWebPage schema (natural health)
+- Article schema
+- HowTo schema (herbal remedies steps)
+- Natural health disclaimer
+- EEAT trust box
+- Herbal remedy content labels
+- 347+ features from RankTurboSeo Apex Engine
+- 45+ schema types
+
+================================================================================
+TARGET: Natural health, herbal medicine, holistic wellness blogs
+================================================================================
+
+CORE TECH: Same as RankTurboSeo Apex v16.0 (ST_MASTER_PROMISE, Identity Vault, 71 JS modules)
+================================================================================

@@ -2363,18 +2363,9 @@ body.dark-mode {
     
 /* 1.3 إعدادات أساسية عامة (مدمجة) - MODERN REDESIGN */
 body { margin:0; padding:0; font-family:&#39;Inter&#39;,-apple-system,BlinkMacSystemFont,&#39;Segoe UI&#39;,Roboto,Helvetica,Arial,sans-serif,&#39;Apple Color Emoji&#39;,&#39;Segoe UI Emoji&#39;; background:var(--blogcolor) url(https://2.bp.blogspot.com/-lP5CduqWjk8/WoMklMZ8cyI/AAAAAAAAALs/X7XDpS470EQceXtnfL8A1wmv9j2XQ72xQCPcBGAYYCw/s1600/purple.jpg) repeat fixed top right; color:var(--text-color); line-height:1.7; direction:rtl; transition:background .3s,color .3s; -webkit-overflow-scrolling:touch; overflow-scrolling:touch; }
-body:before,body:after{content:'';display:block;height:4px;background:linear-gradient(90deg,var(--blogcolor),var(--softcolor),var(--blogcolor))}
+body:before,body:after{content:&#39;&#39;;display:block;height:4px;background:linear-gradient(90deg,var(--blogcolor),var(--softcolor),var(--blogcolor))}
 body.dark-mode { background:var(--darkmode-bg-color) url(https://2.bp.blogspot.com/-lP5CduqWjk8/WoMklMZ8cyI/AAAAAAAAALs/X7XDpS470EQceXtnfL8A1wmv9j2XQ72xQCPcBGAYYCw/s1600/purple.jpg) repeat fixed top right; color:var(--darkmode-text-color); }
 body.dark-mode:before,body.dark-mode:after{background:linear-gradient(90deg,var(--darkmode-bg-color),var(--header-bg-dark),var(--darkmode-bg-color))}
-#curtain-overlay{position:fixed;inset:0;background:#fff;z-index:-1;pointer-events:none;transition:clip-path 0.7s ease;clip-path:inset(0 50% 0 50%)}
-body[data-curtain="closed"] #curtain-overlay{clip-path:inset(0 0 0 0)}
-#curtain-btn{position:fixed;bottom:360px;left:10px;width:46px;height:48px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--blogcolor) 0%,var(--seoturbo-blogdark) 100%);border-radius:12px;border:none;outline:none;cursor:pointer;color:var(--softcolor);z-index:9999998;box-shadow:0 4px 15px rgba(0,0,0,0.2);transition:all 0.3s ease}
-#curtain-btn svg{width:24px;height:24px;fill:currentColor;filter:drop-shadow(0 2px 3px rgba(0,0,0,0.3))}
-body[data-curtain="open"] #curtain-btn .curtain-close{display:inline}
-body[data-curtain="open"] #curtain-btn .curtain-open{display:none}
-body[data-curtain="closed"] #curtain-btn .curtain-close{display:none}
-body[data-curtain="closed"] #curtain-btn .curtain-open{display:inline}
-@media (max-width:992px){#curtain-btn{bottom:150px;width:40px;height:40px;border-radius:8px}#curtain-btn svg{width:22px;height:22px}}
 * { box-sizing:border-box; }
 a { text-decoration:none; transition:all .3s cubic-bezier(0.4,0,0.2,1); color:inherit; }
 ul { list-style:none; padding:0; margin:0; }
@@ -2392,13 +2383,22 @@ html body .sidebar { flex:0 0 var(--sidebar-width); width:var(--sidebar-width); 
     
 /* 1.5 أزرار الانتقال السريع */
 html,body{overflow-x:hidden;width:100%;position:relative}
-html body div.seoturbo-scroll-buttons{position:fixed;bottom:52px;left:10px;right:auto;width:46px;display:flex;flex-direction:column;align-items:center;background:linear-gradient(135deg,var(--blogcolor) 0%,var(--seoturbo-blogdark) 100%);border-radius:12px;padding:5px 0;gap:3px;z-index:9999999;direction:ltr;transition:all 0.3s ease;overflow:hidden;box-shadow:0 4px 15px rgba(0,0,0,0.2)}
+html body div.seoturbo-scroll-buttons{position:fixed;bottom:52px;left:10px;right:auto;width:46px;display:flex;flex-direction:column;align-items:center;background:linear-gradient(135deg,var(--blogcolor) 0%,var(--seoturbo-blogdark) 100%);border-radius:12px;padding:5px 0;gap:0;z-index:9999999;direction:ltr;transition:all 0.3s ease;overflow:hidden;box-shadow:0 4px 15px rgba(0,0,0,0.2)}
 html body .seoturbo-scroll-buttons .scroll-btn{width:100%;height:48px;display:flex;align-items:center;justify-content:center;background:transparent;border:none;outline:none;cursor:pointer;color:var(--softcolor);position:relative}
 html body .seoturbo-scroll-buttons .scroll-btn svg{width:24px;height:24px;fill:currentColor;filter:drop-shadow(0 2px 3px rgba(0,0,0,0.3))}
 html body .seoturbo-scroll-buttons .seoturbo-notif-move-btn{width:100%;height:56px;display:flex;align-items:center;justify-content:center;background:transparent;border-top:1px solid rgba(255,255,255,0.1);border-bottom:1px solid rgba(0,0,0,0.2);border-left:none;border-right:none;outline:none;cursor:pointer;color:var(--softcolor);position:relative}
 #seoturbo-bell-icon{width:38px;height:38px;min-width:38px;min-height:38px;fill:currentColor;filter:drop-shadow(0 2px 4px rgba(0,0,0,0.4))}
 html body .seoturbo-scroll-buttons .notif-move-badge{position:absolute;top:6px;right:5px;background:var(--google-red);color:#fff;font-size:10px;font-weight:900;min-width:17px;height:17px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:1.5px solid var(--softcolor);box-shadow:0 2px 5px rgba(0,0,0,0.5);line-height:1;z-index:10}
-@media (max-width:992px){html body div.seoturbo-scroll-buttons{left:0;bottom:0;width:100%;border-radius:0;flex-direction:row;padding:0;height:40px;gap:3px;box-shadow:0 0.5px 4px 3px rgba(0,0,0,0.48),0 0.5px 3px rgba(0,0,0,0.12)}html body .seoturbo-scroll-buttons .scroll-btn,html body .seoturbo-scroll-buttons .seoturbo-notif-move-btn{height:40px}html body .seoturbo-scroll-buttons .seoturbo-notif-move-btn{border-top:none;border-bottom:none;border-left:1px solid rgba(255,255,255,0.1);border-right:1px solid rgba(255,255,255,0.1)}html body .seoturbo-scroll-buttons .scroll-btn svg{width:22px;height:22px}#seoturbo-bell-icon{width:22px;height:22px;min-width:22px}html body .seoturbo-scroll-buttons .notif-move-badge{top:3px;right:auto;left:50%;margin-left:10px;min-width:14px;height:14px;font-size:8px}}
+@media (max-width:992px){html body div.seoturbo-scroll-buttons{left:0;bottom:0;width:100%;border-radius:0;flex-direction:row;padding:0;height:40px;gap:0;box-shadow:0 0.5px 4px 3px rgba(0,0,0,0.48),0 0.5px 3px rgba(0,0,0,0.12)}html body .seoturbo-scroll-buttons .scroll-btn,html body .seoturbo-scroll-buttons .seoturbo-notif-move-btn{height:40px}html body .seoturbo-scroll-buttons .seoturbo-notif-move-btn{border-top:none;border-bottom:none;border-left:1px solid rgba(255,255,255,0.1);border-right:1px solid rgba(255,255,255,0.1)}html body .seoturbo-scroll-buttons .scroll-btn svg{width:22px;height:22px}#seoturbo-bell-icon{width:22px;height:22px;min-width:22px}html body .seoturbo-scroll-buttons .notif-move-badge{top:3px;right:auto;left:50%;margin-left:10px;min-width:14px;height:14px;font-size:8px}}
+#curtain-overlay{position:fixed;inset:0;background:#fff;z-index:-1;pointer-events:none;transition:clip-path 0.7s ease;clip-path:inset(0 50% 0 50%)}
+body[data-curtain=&quot;closed&quot;] #curtain-overlay{clip-path:inset(0 0 0 0)}
+#curtain-btn{position:fixed;bottom:360px;left:10px;width:46px;height:48px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--blogcolor) 0%,var(--seoturbo-blogdark) 100%);border-radius:12px;border:none;outline:none;cursor:pointer;color:var(--softcolor);z-index:9999998;box-shadow:0 4px 15px rgba(0,0,0,0.2);transition:all 0.3s ease}
+#curtain-btn svg{width:24px;height:24px;fill:currentColor;filter:drop-shadow(0 2px 3px rgba(0,0,0,0.3))}
+body[data-curtain=&quot;open&quot;] #curtain-btn .curtain-close{display:inline}
+body[data-curtain=&quot;open&quot;] #curtain-btn .curtain-open{display:none}
+body[data-curtain=&quot;closed&quot;] #curtain-btn .curtain-close{display:none}
+body[data-curtain=&quot;closed&quot;] #curtain-btn .curtain-open{display:inline}
+@media (max-width:992px){#curtain-btn{bottom:150px;width:40px;height:40px;border-radius:8px}#curtain-btn svg{width:22px;height:22px}}
 
 /* 1.6 صندوق عنوان ومعلومات المقال - MODERN REDESIGN */    
 .seoterbo-title-posttitle-box { background:linear-gradient(135deg,var(--widget-bg) 0%,var(--seoturbo-smooth) 100%); padding:16px 24px; border-radius:var(--modern-radius-lg); margin:25px 0 35px; border:1px solid var(--border-color); border-right:6px solid var(--blogcolor); direction:rtl; text-align:right; display:flex; flex-direction:column; gap:12px; position:relative; overflow:hidden; z-index:1; box-shadow:var(--modern-shadow-lg); contain:layout paint; }
@@ -2884,11 +2884,11 @@ body.dark-mode #tocList li.section-divider { border-bottom-color:var(--darkmode-
 
 /* 2.7 شريط الموضوعات المتحرك */
 .single-seoterbobar-wrapper { width:100%; position:relative; z-index:10; margin:25px 0; } 
-#singleSeoterboBarContainer { background-color:var(--ticker-bg); color:var(--ticker-text); border-top:3px solid var(--ticker-border); border-bottom:3px solid var(--ticker-border); overflow:hidden; padding:0 150px 0 0; height:40px; position:relative; border-radius:4px; }  
+#singleSeoterboBarContainer { background-color:var(--ticker-bg); color:var(--ticker-text); border-top:3px solid var(--ticker-border); border-bottom:3px solid var(--ticker-border); overflow:hidden; padding:0 150px 0 0; height:40px; position:relative; border-radius:4px; box-shadow: var(--modern-shadow); }  
 .single-seoterbobar-scrolling-area { display:flex; white-space:nowrap; animation:single_seoterbobar_scroller_animation 100s linear infinite; height:100%; align-items:center; }
 .single-seoterbobar-wrapper:hover .single-seoterbobar-scrolling-area { animation-play-state:paused; }
 .single-seoterbobar-item { display:inline-flex; align-items:center; padding:0 20px; font-size:14px; text-decoration:none; color:var(--ticker-text); white-space:nowrap; font-weight:800; text-shadow:0 1px 1px rgba(0,0,0,0.3); transition:all 0.3s ease; position:relative; }
-.single-seoterbobar-item:hover { color:var(--ticker-hover-text); transform:translateY(-2px); }   
+.single-seoterbobar-item:hover { color:var(--ticker-hover-text); transform:translateY(-2px); filter:drop-shadow(0 4px 6px rgba(0,0,0,0.3)); }   
 .single-seoterbobar-item .single-seoterbobar-source { color:var(--ticker-source-text); margin-left:15px; font-size:11px; font-weight:800; background:var(--ticker-source-bg); padding:3px 12px; border-radius:20px; border:1px solid var(--ticker-source-border); }      
 .single-seoterbobar-item:hover .single-seoterbobar-source { background:var(--ticker-hover-source-bg); color:var(--ticker-hover-source-text); border-color:var(--ticker-hover-source-text); transform:translateY(-1px); }
 @keyframes single_seoterbobar_scroller_animation { 0%{transform:translateX(100%)} 100%{transform:translateX(-100%)} }
@@ -6010,11 +6010,11 @@ html body .sidebar .cloud-label-widget-content a:hover {
 <Variable name="TemplateTargetAudience" description="For beginners (no code) and professionals (advanced settings)." type="string" default="All Skill Levels" value="All Skill Levels"/>
 
 <Group description="الألوان الرئيسية">
-<Variable name="blogcolor" description="اللون الرئيسي للقالب (ثيم الموقع)" type="color" default="#4A2C0A" value="#4A2C0A"/>
+<Variable name="blogcolor" description="اللون الرئيسي للقالب (ثيم الموقع)" type="color" default="#4A2C0A" value="#7B1FA2"/>
 <Variable name="blogcolor2" description="اللون الثاني للتدرج (اختياري)" type="color" default="#2C1810" value="#2C1810"/>
 <Variable name="linkhover" description="لون الروابط عند مرور الماوس" type="color" default="#6B3410" value="#6B3410"/>
 <Variable name="softcolor" description="لون النص الفاتح (على الخلفيات الداكنة)" type="color" default="#ffffff" value="#ffffff"/>
-<Variable name="solidcolor" description="اللون الصلب (للنصوص الأساسية)" type="color" default="#0f172a" value="#0f172a"/>
+<Variable name="solidcolor" description="اللون الصلب (للنصوص الأساسية)" type="color" default="#0f172a" value="#1e293b"/>
 <Variable name="bgcolor" description="لون خلفية الموقع العامة" type="color" default="#f1f5f9" value="#f1f5f9"/>
 <Variable name="widgetbg" description="لون خلفية صناديق الأدوات والمحتوى" type="color" default="#ffffff" value="#ffffff"/>
 <Variable name="textcolor" description="لون نصوص المقالات" type="color" default="#1e293b" value="#1e293b"/>
@@ -6043,26 +6043,26 @@ html body .sidebar .cloud-label-widget-content a:hover {
 <Group description="الهيدر والأمواج">
 <Variable name="showlogo" description="إظهار شعار الموقع في الهيدر" type="length" default="2px" value="2px"/>
 <Variable name="seoheadermode" description="وضع السيو: إخفاء اللوجو وإظهار عنوان الموقع لجوجل" type="length" default="1px" value="1px"/>
-<Variable name="showmanagement" description="إظهار إدارة الموقع (بطاقة الهيدر)" type="length" default="2px" value="2px"/>
+<Variable name="showmanagement" description="إظهار إدارة الموقع (بطاقة الهيدر)" type="length" default="2px" value="58px"/>
 <Variable name="showheaderad" description="إظهار إعلان الهيدر" type="length" default="2px" value="2px"/>
-<Variable name="headerwave1color" description="🌊 لون موجة الهيدر 1" type="color" default="#4A2C0A" value="#4A2C0A"/>
+<Variable name="headerwave1color" description="🌊 لون موجة الهيدر 1" type="color" default="#4A2C0A" value="#fbbf24"/>
 <Variable name="headerwave1opacity" description="🔆 شفافية موجة الهيدر 1" type="string" default="0.04" value="0.04"/>
-<Variable name="headerwave2color" description="🌊 لون موجة الهيدر 2" type="color" default="#5D3A1A" value="#5D3A1A"/>
+<Variable name="headerwave2color" description="🌊 لون موجة الهيدر 2" type="color" default="#5D3A1A" value="#1e293b"/>
 <Variable name="headerwave2opacity" description="🔆 شفافية موجة الهيدر 2" type="string" default="0.08" value="0.08"/>
-<Variable name="headerwave3color" description="🌊 لون موجة الهيدر 3" type="color" default="#3E1F00" value="#3E1F00"/>
+<Variable name="headerwave3color" description="🌊 لون موجة الهيدر 3" type="color" default="#3E1F00" value="#2c1810"/>
 <Variable name="headerwave3opacity" description="🔆 شفافية موجة الهيدر 3" type="string" default="0.14" value="0.14"/>
-<Variable name="headerwave4color" description="🌊 لون موجة الهيدر 4" type="color" default="#2C1810" value="#2C1810"/>
+<Variable name="headerwave4color" description="🌊 لون موجة الهيدر 4" type="color" default="#2C1810" value="#000000"/>
 <Variable name="headerwave4opacity" description="🔆 شفافية موجة الهيدر 4" type="string" default="0.22" value="0.22"/>
-<Variable name="headerwave5color" description="🌊 لون موجة الهيدر 5" type="color" default="#1a0f08" value="#1a0f08"/>
+<Variable name="headerwave5color" description="🌊 لون موجة الهيدر 5" type="color" default="#1a0f08" value="#000000"/>
 <Variable name="headerwave5opacity" description="🔆 شفافية موجة الهيدر 5" type="string" default="0.35" value="0.35"/>
-<Variable name="headerwavebg" description="لون خلفية أسفل أمواج الهيدر" type="color" default="#f1f5f9" value="#0f172a"/>
-<Variable name="headerwavebg2" description="لون نهاية تدرج خلفية أمواج الهيدر" type="color" default="#e2e8f0" value="#0f172a"/>
+<Variable name="headerwavebg" description="لون خلفية أسفل أمواج الهيدر" type="color" default="#f1f5f9" value="#7b1fa2"/>
+<Variable name="headerwavebg2" description="لون نهاية تدرج خلفية أمواج الهيدر" type="color" default="#e2e8f0" value="#000000"/>
 <Variable name="headerwavegap" description="ارتفاع المسافة بين الموجات والهيدر" type="string" default="160px" value="160px"/>
-<Variable name="headerwavegapcolor" description="لون المسافة بين الموجات والهيدر" type="color" default="#4A2C0A" value="#4A2C0A"/>
-<Variable name="headerbg" description="خلفية الهيدر" type="color" default="#ffffff" value="#0f172a"/>
+<Variable name="headerwavegapcolor" description="لون المسافة بين الموجات والهيدر" type="color" default="#4A2C0A" value="#1e293b"/>
+<Variable name="headerbg" description="خلفية الهيدر" type="color" default="#ffffff" value="#1e293b"/>
 <Variable name="headerbgdark" description="خلفية الهيدر (ليلي)" type="color" default="#0f172a" value="#0f172a"/>
 <Variable name="headertext" description="لون نص الهيدر" type="color" default="#0f172a" value="#0f172a"/>
-<Variable name="headertextdark" description="لون نص الهيدر (ليلي)" type="color" default="#e2e8f0" value="#e2e8f0"/>
+<Variable name="headertextdark" description="لون نص الهيدر (ليلي)" type="color" default="#e2e8f0" value="#2c1810"/>
 <Variable name="headericoncolor" description="لون أيقونات الهيدر" type="color" default="#0f172a" value="#0f172a"/>
 <Variable name="headericoncolordark" description="لون أيقونات الهيدر (ليلي)" type="color" default="#94a3b8" value="#94a3b8"/>
 </Group>
@@ -6070,7 +6070,7 @@ html body .sidebar .cloud-label-widget-content a:hover {
 <Group description="القائمة الرئيسية (Menu)">
 <Variable name="showmenumega" description="تفعيل القوائم المنسدلة الذكية (Mega)" type="length" default="2px" value="2px"/>
 <Variable name="showmenusearch" description="إظهار زر البحث في القائمة" type="length" default="2px" value="2px"/>
-<Variable name="menustripcolor" description="🎨 لون شريط القائمة (افتراضي: لون القالب)" type="color" default="#ffffff" value="#6B3410"/>
+<Variable name="menustripcolor" description="🎨 لون شريط القائمة (افتراضي: لون القالب)" type="color" default="#ffffff" value="#000000"/>
 <Variable name="menustripcolordark" description="🎨 لون شريط القائمة (ليلي)" type="color" default="#1e293b" value="#1e293b"/>
 </Group>
 
@@ -6115,16 +6115,16 @@ html body .sidebar .cloud-label-widget-content a:hover {
 
 <Group description="📰 شريط الأخبار">
 <Variable name="ticker" description="تشغيل/إيقاف شريط الأخبار المتحرك" type="length" default="2px" value="2px"/>
-<Variable name="tickerbg" description="خلفية الشريط (نهاري)" type="color" default="#1a0a2e" value="#1a0a2e"/>
+<Variable name="tickerbg" description="خلفية الشريط (نهاري)" type="color" default="#1a0a2e" value="#000000"/>
 <Variable name="tickertext" description="لون النص في الشريط (نهاري)" type="color" default="#ffffff" value="#ffffff"/>
-<Variable name="tickerbordercol" description="لون الحدود العلوي والسفلي (نهاري)" type="color" default="#7c3aed" value="#7c3aed"/>
-<Variable name="tickerpromobg" description="خلفية شعار الشريط (نهاري)" type="color" default="#0f0520" value="#0f0520"/>
+<Variable name="tickerbordercol" description="لون الحدود العلوي والسفلي (نهاري)" type="color" default="#7c3aed" value="#7b1fa2"/>
+<Variable name="tickerpromobg" description="خلفية شعار الشريط (نهاري)" type="color" default="#0f0520" value="#7b1fa2"/>
 <Variable name="tickerpromotext" description="لون نص الشعار (نهاري)" type="color" default="#ffffff" value="#ffffff"/>
-<Variable name="tickersourcebg" description="خلفية وسام المصدر (نهاري)" type="color" default="#2d1b69" value="#2d1b69"/>
+<Variable name="tickersourcebg" description="خلفية وسام المصدر (نهاري)" type="color" default="#2d1b69" value="#7b1fa2"/>
 <Variable name="tickersourcetext" description="لون نص وسام المصدر (نهاري)" type="color" default="#ffffff" value="#ffffff"/>
-<Variable name="tickersourceborder" description="لون حدود وسام المصدر (نهاري)" type="color" default="#7c3aed" value="#7c3aed"/>
+<Variable name="tickersourceborder" description="لون حدود وسام المصدر (نهاري)" type="color" default="#7c3aed" value="#fbbf24"/>
 <Variable name="tickerhovertext" description="لون النص عند التمرير (نهاري)" type="color" default="#fbbf24" value="#fbbf24"/>
-<Variable name="tickerhoversourcebg" description="خلفية الوسام عند التمرير (نهاري)" type="color" default="#7c3aed" value="#7c3aed"/>
+<Variable name="tickerhoversourcebg" description="خلفية الوسام عند التمرير (نهاري)" type="color" default="#7c3aed" value="#7b1fa2"/>
 <Variable name="tickerhoversourcetext" description="لون نص الوسام عند التمرير (نهاري)" type="color" default="#ffffff" value="#ffffff"/>
 <Variable name="tickerbgdark" description="خلفية الشريط (ليلي)" type="color" default="#080312" value="#080312"/>
 <Variable name="tickertextdark" description="لون النص في الشريط (ليلي)" type="color" default="#e2e8f0" value="#e2e8f0"/>
@@ -6166,10 +6166,10 @@ html body .sidebar .cloud-label-widget-content a:hover {
 </Group>
 
 <Group description="🔘 الأزرار (Buttons)">
-<Variable name="btnbg" description="خلفية الأزرار" type="color" default="#0f1db9" value="#0f1db9"/>
+<Variable name="btnbg" description="خلفية الأزرار" type="color" default="#0f1db9" value="#ffffff"/>
 <Variable name="btnbgdark" description="خلفية الأزرار (ليلي)" type="color" default="#1e1e3a" value="#1e1e3a"/>
-<Variable name="btntext" description="لون نص الأزرار" type="color" default="#ffffff" value="#ffffff"/>
-<Variable name="btntextdark" description="لون نص الأزرار (ليلي)" type="color" default="#e2e8f0" value="#e2e8f0"/>
+<Variable name="btntext" description="لون نص الأزرار" type="color" default="#ffffff" value="#7B1FA2"/>
+<Variable name="btntextdark" description="لون نص الأزرار (ليلي)" type="color" default="#e2e8f0" value="#ffffff"/>
 <Variable name="btnhoverbg" description="خلفية الأزرار عند المرور" type="color" default="#6366f1" value="#6366f1"/>
 <Variable name="btnhoverbgdark" description="خلفية الأزرار عند المرور (ليلي)" type="color" default="#2a2a5a" value="#2a2a5a"/>
 <Variable name="btnhovertext" description="لون نص الأزرار عند المرور" type="color" default="#ffffff" value="#ffffff"/>
@@ -6177,11 +6177,11 @@ html body .sidebar .cloud-label-widget-content a:hover {
 </Group>
 
 <Group description="📋 القائمة الرئيسية (Menu)">
-<Variable name="menubg" description="خلفية القائمة" type="color" default="#0f1db9" value="#2ecc71"/>
+<Variable name="menubg" description="خلفية القائمة" type="color" default="#0f1db9" value="#ffffff"/>
 <Variable name="menubgdark" description="خلفية القائمة (ليلي)" type="color" default="#0f172a" value="#0f172a"/>
 <Variable name="menutext" description="لون نص القائمة" type="color" default="#ffffff" value="#334155"/>
 <Variable name="menutextdark" description="لون نص القائمة (ليلي)" type="color" default="#e2e8f0" value="#e2e8f0"/>
-<Variable name="menuhoverbg" description="خلفية القائمة عند المرور" type="color" default="#6366f1" value="#2ecc71"/>
+<Variable name="menuhoverbg" description="خلفية القائمة عند المرور" type="color" default="#6366f1" value="#ffffff"/>
 <Variable name="menuhoverbgdark" description="خلفية القائمة عند المرور (ليلي)" type="color" default="#1e293b" value="#1e293b"/>
 <Variable name="menuborder" description="لون حدود القائمة" type="color" default="#e2e8f0" value="#e2e8f0"/>
 <Variable name="menuborderdark" description="لون حدود القائمة (ليلي)" type="color" default="#334155" value="#334155"/>
@@ -6219,10 +6219,10 @@ html body .sidebar .cloud-label-widget-content a:hover {
 </Group>
 
 <Group description="📊 الشريط العلوي (Topbar)">
-<Variable name="topbarbg" description="خلفية الشريط العلوي" type="color" default="#1e293b" value="#1e293b"/>
-<Variable name="topbarbgdark" description="خلفية الشريط العلوي (ليلي)" type="color" default="#020617" value="#020617"/>
-<Variable name="topbartext" description="لون النص والأيقونات في الشريط العلوي" type="color" default="#ffffff" value="#ffffff"/>
-<Variable name="topbartextdark" description="لون النص والأيقونات (ليلي)" type="color" default="#cbd5e1" value="#cbd5e1"/>
+<Variable name="topbarbg" description="خلفية الشريط العلوي" type="color" default="#1e293b" value="#000000"/>
+<Variable name="topbarbgdark" description="خلفية الشريط العلوي (ليلي)" type="color" default="#020617" value="#1e293b"/>
+<Variable name="topbartext" description="لون النص والأيقونات في الشريط العلوي" type="color" default="#ffffff" value="#6366f1"/>
+<Variable name="topbartextdark" description="لون النص والأيقونات (ليلي)" type="color" default="#cbd5e1" value="#6366f1"/>
 <Variable name="topbarhoverbg" description="خلفية الأيقونات عند المرور" type="string" default="rgba(255,255,255,0.2)" value="rgba(255,255,255,0.2)"/>
 <Variable name="topbarhoverbgdark" description="خلفية الأيقونات عند المرور (ليلي)" type="string" default="rgba(255,255,255,0.1)" value="rgba(255,255,255,0.1)"/>
 <Variable name="topbarborder" description="لون حدود الشريط العلوي" type="color" default="#334155" value="#334155"/>
@@ -6312,29 +6312,6 @@ html body .sidebar .cloud-label-widget-content a:hover {
   --preloader-main-color: $(preloadermaincolor);
   --preloader-main-color-dark: $(preloadermaincolordark);
 
-  --ticker-bg: $(tickerbg);
-  --ticker-text: $(tickertext);
-  --ticker-border: $(tickerbordercol);
-  --ticker-promo-bg: $(tickerpromobg);
-  --ticker-promo-text: $(tickerpromotext);
-  --ticker-source-bg: $(tickersourcebg);
-  --ticker-source-text: $(tickersourcetext);
-  --ticker-source-border: $(tickersourceborder);
-  --ticker-hover-text: $(tickerhovertext);
-  --ticker-hover-source-bg: $(tickerhoversourcebg);
-  --ticker-hover-source-text: $(tickerhoversourcetext);
-  --ticker-bg-dark: $(tickerbgdark);
-  --ticker-text-dark: $(tickertextdark);
-  --ticker-border-dark: $(tickerbordercoldark);
-  --ticker-promo-bg-dark: $(tickerpromobgdark);
-  --ticker-promo-text-dark: $(tickerpromotextdark);
-  --ticker-source-bg-dark: $(tickersourcebgdark);
-  --ticker-source-text-dark: $(tickersourcetextdark);
-  --ticker-source-border-dark: $(tickersourceborderdark);
-  --ticker-hover-text-dark: $(tickerhovertextdark);
-  --ticker-hover-source-bg-dark: $(tickerhoversourcebgdark);
-  --ticker-hover-source-text-dark: $(tickerhoversourcetextdark);
-
   --btn-bg: $(btnbg);
   --btn-text: $(btntext);
   --btn-hover-bg: $(btnhoverbg);
@@ -6387,6 +6364,28 @@ html body .sidebar .cloud-label-widget-content a:hover {
   --topbar-text-dark: $(topbartextdark);
   --topbar-hover-bg-dark: $(topbarhoverbgdark);
   --topbar-border-dark: $(topbarborderdark);
+  --ticker-bg: $(tickerbg);
+  --ticker-text: $(tickertext);
+  --ticker-border: $(tickerbordercol);
+  --ticker-promo-bg: $(tickerpromobg);
+  --ticker-promo-text: $(tickerpromotext);
+  --ticker-source-bg: $(tickersourcebg);
+  --ticker-source-text: $(tickersourcetext);
+  --ticker-source-border: $(tickersourceborder);
+  --ticker-hover-text: $(tickerhovertext);
+  --ticker-hover-source-bg: $(tickerhoversourcebg);
+  --ticker-hover-source-text: $(tickerhoversourcetext);
+  --ticker-bg-dark: $(tickerbgdark);
+  --ticker-text-dark: $(tickertextdark);
+  --ticker-border-dark: $(tickerbordercoldark);
+  --ticker-promo-bg-dark: $(tickerpromobgdark);
+  --ticker-promo-text-dark: $(tickerpromotextdark);
+  --ticker-source-bg-dark: $(tickersourcebgdark);
+  --ticker-source-text-dark: $(tickersourcetextdark);
+  --ticker-source-border-dark: $(tickersourceborderdark);
+  --ticker-hover-text-dark: $(tickerhovertextdark);
+  --ticker-hover-source-bg-dark: $(tickerhoversourcebgdark);
+  --ticker-hover-source-text-dark: $(tickerhoversourcetextdark);
 }
 .main-wrapper { display: flex; flex-wrap: wrap; margin-top: 10px; gap: 15px; flex-direction: row; }
 .main-content { flex: 1; min-width: 300px; width: calc(100% - var(--sidebar-width) - 15px); }
@@ -7277,7 +7276,7 @@ c.textContent="["+number+"]";c.classList.add("masaha-cite-number");}
 
 </head>  
 <body data-curtain='open' expr:class='data:view.isPost ? &quot;post-page&quot; : &quot;home-page&quot;'>
-<div id='curtain-overlay'></div>
+<div id='curtain-overlay'/>
 <b:attr cond='data:view.isLayoutMode' name='id' value='layout'/>
 <script>
 //<![CDATA[
@@ -7346,6 +7345,19 @@ window._critical=1;window._defer=function(fn){function exec(){var dcl=document.r
    </ul>
  </div>
 </b:includable>
+              </b:widget>
+              <b:widget id='BlogSearch97' locked='false' title='💎 مفتاح تشغيل كبسولة المقترحات [SEOTurbo]' type='BlogSearch' version='2' visible='false'>
+                <b:includable id='main'>
+      <b:if cond='data:view.isLayoutMode'>
+        <div class='title'><data:title/></div>
+      </b:if>
+      <b:if cond='!data:view.isLayoutMode'>
+        <script type='text/javascript'>window.ST_SEEMORE_CAPSULE_ACTIVE = true;</script>
+      </b:if>
+    </b:includable>
+                <b:includable id='content'><div class='widget-content' style='display:none;'/></b:includable>
+                <b:includable id='searchForm'/>
+                <b:includable id='searchSubmit'/>
               </b:widget>
             </b:section>
         </div>
@@ -7738,7 +7750,7 @@ window._critical=1;window._defer=function(fn){function exec(){var dcl=document.r
   
 <!-- مكتبة أنماط الشريط العلوي SEOTurbo - إعادة هيكلة محس&#1617;نة --> 
 <b:section id='topbar-styles-library' name='🎨مظهر الشريط العلوي - اختر ثيماً واحداً فقط' showaddelement='no'>
-   <b:widget id='HTML951' locked='true' title='1. 👑 نفرتيتي | Nefertiti (Peaks)' type='HTML' version='2' visible='true'>
+   <b:widget id='HTML951' locked='true' title='1. 👑 نفرتيتي | Nefertiti (Peaks)' type='HTML' version='2' visible='false'>
      <b:widget-settings>
        <b:widget-setting name='content'/>
      </b:widget-settings>
@@ -7748,7 +7760,7 @@ window._critical=1;window._defer=function(fn){function exec(){var dcl=document.r
        </div>
      </b:includable>
    </b:widget>
-   <b:widget id='HTML952' locked='true' title='2. 👑 حتشبسوت | Hatshepsut (Simple)' type='HTML' version='2' visible='true'>
+   <b:widget id='HTML952' locked='true' title='2. 👑 حتشبسوت | Hatshepsut (Simple)' type='HTML' version='2' visible='false'>
      <b:widget-settings>
        <b:widget-setting name='content'/>
      </b:widget-settings>
@@ -7798,7 +7810,7 @@ window._critical=1;window._defer=function(fn){function exec(){var dcl=document.r
        </div>
      </b:includable>
    </b:widget>
-   <b:widget id='HTML957' locked='true' title='7. 👑 أنخسن آمون | Ankhesenamun (Diamond)' type='HTML' version='2' visible='false'>
+   <b:widget id='HTML957' locked='true' title='7. 👑 أنخسن آمون | Ankhesenamun (Diamond)' type='HTML' version='2' visible='true'>
      <b:widget-settings>
        <b:widget-setting name='content'/>
      </b:widget-settings>
@@ -10365,7 +10377,22 @@ body.dark-mode .seoturbo-proof-item { color: #fff; }
         </b:section>
  
 <!-- محتوى السايدبار -->        
-<b:section id='sidebar-free' name='◀️ السايدبار ( منطقة حرة - أضف أداة )' showaddelement='yes'/>       
+<b:section id='sidebar-free' name='◀️ السايدبار ( منطقة حرة - أضف أداة )' showaddelement='yes'>
+          <b:widget id='PopularPosts2' locked='false' title='' type='PopularPosts' visible='false'>
+            <b:widget-settings>
+              <b:widget-setting name='numItemsToShow'>2</b:widget-setting>
+              <b:widget-setting name='showThumbnails'>true</b:widget-setting>
+              <b:widget-setting name='showSnippets'>true</b:widget-setting>
+              <b:widget-setting name='timeRange'>LAST_YEAR</b:widget-setting>
+            </b:widget-settings>
+            <b:includable id='main' var='this'>
+  <b:include name='widget-title'/>
+  <div class='widget-content'>
+    <b:include name='snippetedPosts'/>
+  </div>
+</b:includable>
+          </b:widget>
+        </b:section>       
 <!-- إعلان السايدبار الأول -->
 <div class='ad-wrapper-sidebar-1' title='مساحة إعلانية'>
     <b:section id='sidebar-ad-1' name='📣 إعلان السايدبار 1' showaddelement='yes'>
@@ -11407,10 +11434,10 @@ document.addEventListener("DOMContentLoaded", function() {
 </div>
 
 <button id='curtain-btn' title='الستار'>
-    <svg height='18' viewBox='0 0 448 512' width='18' class='curtain-close'><use href='#icon-boxing-expand'/></svg>
-    <svg height='18' viewBox='0 0 448 512' width='18' class='curtain-open'><use href='#icon-boxing-compress'/></svg>
+    <svg class='curtain-close' height='18' viewBox='0 0 448 512' width='18'><use href='#icon-boxing-expand'/></svg>
+    <svg class='curtain-open' height='18' viewBox='0 0 448 512' width='18'><use href='#icon-boxing-compress'/></svg>
 </button>
-
+ 
 <!-- درع الحماية والأمان الفائق -->
 <b:section id='Pro_Security_System' name='🛡️ درع سيو تربو للحماية والأمان السيبرانى' showaddelement='yes'>
   <b:widget id='BlogSearch99' locked='true' title='🛡️ درع الحماية والأمان السيبرانى [SEOTurbo]' type='BlogSearch' version='2' visible='false'>
@@ -22474,7 +22501,7 @@ window.addEventListener('load',addSignature);
 
 
 <b:if cond='not data:view.isLayoutMode'>&lt;!--</b:if>
-<script>!function(){function f(){document.querySelectorAll('a.snippet-fade:not([aria-label])').forEach(function(a){a.setAttribute('aria-label','اقرأ المزيد')})}f();var g=new MutationObserver(f);g.observe(document.documentElement,{childList:!0,subtree:!0})}();</script>
+<script>!function(){function f(){document.querySelectorAll(&#39;a.snippet-fade:not([aria-label])&#39;).forEach(function(a){a.setAttribute(&#39;aria-label&#39;,&#39;اقرأ المزيد&#39;)})}f();var g=new MutationObserver(f);g.observe(document.documentElement,{childList:!0,subtree:!0})}();</script>
 </body>
 <b:if cond='not data:view.isLayoutMode'>--&gt;&lt;/body&gt;</b:if>
 </html>

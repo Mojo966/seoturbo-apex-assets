@@ -1,0 +1,76 @@
+{
+  "task": "generate_brand_logo",
+  "style": "3D_photorealistic_mascot",
+  "usage": "brand_logo_SEO_tool",
+  "language": "arabic_primary",
+  "brand": "RankTurboSeo",
+  "output": {
+    "format": "PNG_with_transparency",
+    "resolution": "4096x4096",
+    "dpi": "300",
+    "color_space": "sRGB"
+  },
+  "logo": {
+    "subject": "bull_prominent_muscular",
+    "description_arabic": "ثور هائج بارز العضلات، قوي جبار، ينفث ناراً من فمه، جسمه أسود لامع كالفحم، واقف على رجليه الخلفيتين في وضع استعداد للهجوم، عضلات مفتولة بارزة، قرون حادة مرفوعة للأعلى، النار المتدفقة من فمه بلونين ذهبي وأخضر زاهي",
+    "description_english": "A massive raging bull standing on its hind legs in an aggressive attack stance, bulging visible muscles, pitch-black glossy body, breathing out a stream of fire from its mouth in gold and bright green flames, sharp horns pointing upward, powerful and dominant presence",
+    "pose": "rampant_attack_stance_standing_on_hind_legs",
+    "muscles": "highly_defined_bulging_veiny",
+    "body_color": "glossy_obsidian_black",
+    "horns": "sharp_curved_upward_gold_tipped",
+    "fire_breath": {
+      "colors": ["#D4AF37_gold", "#00FF66_neon_green"],
+      "style": "swirling_vortex_flame",
+      "intensity": "high"
+    },
+    "eyes": "glowing_fierce_golden_orange",
+    "hooves": "massive_sturdy_dark_grey",
+    "tail": "whipping_dynamic_action"
+  },
+  "background": {
+    "style": "dark_premium_gradient",
+    "colors": ["#0D0D0D", "#1A1A2E", "#0A0A0A"],
+    "effect": "radial_vignette_spotlight_on_bull",
+    "particles": "floating_gold_green_sparks"
+  },
+  "branding": {
+    "text": "RankTurboSeo",
+    "font_style": "bold_gold_3D_metallic",
+    "position": "below_logo",
+    "color": "#D4AF37",
+    "shadow": "deep_drop_shadow"
+  },
+  "lighting": {
+    "source": "dramatic_spotlight_from_above",
+    "fire_glow": "casts_warm_gold_green_light_on_body",
+    "reflection": "metallic_sheen_on_black_surface",
+    "shadows": "deep_dark_contrast"
+  },
+  "3D_rendering": {
+    "style": "cinematic_3D_render",
+    "software_style": "blender_cycles_or_octane_render",
+    "materials": {
+      "body": "glossy_black_carbon_fiber_texture",
+      "horns": "polished_gold_metal",
+      "fire": "volumetric_fire_simulation",
+      "muscles": "subsurface_scattering_for_realistic_skin"
+    },
+    "depth_of_field": "subtle_background_blur",
+    "motion_blur": "slight_on_tail_and_fire"
+  },
+  "design_principles": [
+    "minimalist_composition",
+    "bold_impact",
+    "premium_luxury_feel",
+    "power_and_speed_visual_cues",
+    "modern_tech_aesthetic",
+    "easily_recognizable_at_small_sizes"
+  ],
+  "avoid": [
+    "cartoon_style",
+    "flat_design",
+    "excessive_details",
+    "cluttered_background",
+    "realistic_animal_farm_look"
+  ]
+}

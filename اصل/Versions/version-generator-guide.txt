@@ -1,0 +1,160 @@
+================================================================================
+RANKTURBOSEO — VERSION GENERATOR GUIDE
+================================================================================
+How to create all 8 edition templates from the master file.
+
+================================================================================
+STEP 1: UNDERSTAND THE MASTER
+================================================================================
+
+Master file:   اصل/RankTurboSeo.Apex.v16.original.1.xml
+Size:          ~21,500 lines | 1.55 MB
+Engine:        RankTurboSeo Apex v16.0 (71 JS modules, 12 sections)
+
+The master already supports ALL content types via adaptive schemas:
+- Recipe schema (Kitchen)
+- NewsArticle schema (News)
+- TechArticle schema (Tech)
+- MedicalWebPage schema (Medical)
+- Article/BlogPosting schema (All)
+- HowTo, FAQPage, Product, Review, VideoObject, ImageGallery, etc.
+
+================================================================================
+STEP 2: CREATING A VERSION
+================================================================================
+
+Each version = Master template + changes to these areas:
+
+[A] HEADER COMMENT (lines 20-40)
+    - Update name to edition name
+    - Keep قدر يحيى & Dr. Mohamed Elgendy credits
+
+[B] META TAGS (lines 220-250)
+    - Update template-developer meta
+    - Keep قدر يحيى & Dr. Mohamed Elgendy
+
+[C] JSON-LD @GRAPH (lines ~515-1440)
+    - Update SoftwareApplication.name to edition name
+    - Set version to "1.0"
+    - Schema types already adaptive — no changes needed
+
+[D] CSS VARIABLES (Skin section, lines ~5500-6200)
+    - Update --primary, --primary-dark, --accent colors
+    - Each edition has its own color palette
+
+[E] BRANDING STRINGS
+    - Update default slogans, titles where applicable
+
+================================================================================
+STEP 3: COLOR PALETTES FOR EACH EDITION
+================================================================================
+
+001-English-Master:
+  --primary:        #1E3A5F (navy blue)
+  --primary-dark:   #0F2440
+  --accent:         #4A90D9 (sky blue)
+
+002-News-Portal:
+  --primary:        #1A237E (dark blue)
+  --primary-dark:   #0D1444
+  --accent:         #E53935 (breaking news red)
+
+003-Kitchen-Food:
+  --primary:        #D4732F (warm orange)
+  --primary-dark:   #B85C1D
+  --accent:         #E8B86D (golden)
+
+004-Blog-Tech:
+  --primary:        #0D47A1 (tech blue)
+  --primary-dark:   #002171
+  --accent:         #00BCD4 (cyan)
+
+005-Medical:
+  --primary:        #00695C (teal green)
+  --primary-dark:   #004D40
+  --accent:         #4DB6AC (light teal)
+
+006-Alternative-Med:
+  --primary:        #2E7D32 (natural green)
+  --primary-dark:   #1B5E20
+  --accent:         #81C784 (sage)
+
+007-Beauty-Mirror:
+  --primary:        #AD1457 (magenta pink)
+  --primary-dark:   #78002E
+  --accent:         #F48FB1 (rose)
+
+008-Medical-English:
+  --primary:        #1565C0 (medical blue)
+  --primary-dark:   #003C8F
+  --accent:         #64B5F6
+
+================================================================================
+STEP 4: AUTOMATED GENERATION (PowerShell)
+================================================================================
+
+Save this as generate-versions.ps1 and run from the repo root:
+
+----[BEGIN SCRIPT]----
+param(
+  [string]$MasterPath = "اصل/RankTurboSeo.Apex.v16.original.1.xml",
+  [string]$OutputDir = "اصل/Versions"
+)
+
+$editions = @(
+  @{Name="English-Master"; Dir="001-English-Master"; Primary="#1E3A5F"; Dark="#0F2440"; Accent="#4A90D9"},
+  @{Name="News-Portal"; Dir="002-News-Portal"; Primary="#1A237E"; Dark="#0D1444"; Accent="#E53935"},
+  @{Name="Kitchen-Food"; Dir="003-Kitchen-Food"; Primary="#D4732F"; Dark="#B85C1D"; Accent="#E8B86D"},
+  @{Name="Blog-Tech"; Dir="004-Blog-Tech"; Primary="#0D47A1"; Dark="#002171"; Accent="#00BCD4"},
+  @{Name="Medical"; Dir="005-Medical"; Primary="#00695C"; Dark="#004D40"; Accent="#4DB6AC"},
+  @{Name="AltMed"; Dir="006-Alternative-Med"; Primary="#2E7D32"; Dark="#1B5E20"; Accent="#81C784"},
+  @{Name="Beauty"; Dir="007-Beauty-Mirror"; Primary="#AD1457"; Dark="#78002E"; Accent="#F48FB1"},
+  @{Name="MedEng"; Dir="008-Medical-English"; Primary="#1565C0"; Dark="#003C8F"; Accent="#64B5F6"}
+)
+
+$master = Get-Content $MasterPath -Raw
+
+foreach ($ed in $editions) {
+  $xml = $master
+  $xml = $xml -replace "RankTurboSeo Apex v16\.0", "RankTurboSeo $($ed.Name) v1.0"
+  $xml = $xml -replace "--primary:.*#", "--primary: $($ed.Primary) /* "
+  $xml = $xml -replace "--primary-dark:.*#", "--primary-dark: $($ed.Dark) /* "
+  $xml = $xml -replace "--accent:.*#", "--accent: $($ed.Accent) /* "
+  
+  $outPath = "$OutputDir/$($ed.Dir)/RankTurboSeo-$($ed.Name).v1.0.xml"
+  $xml | Set-Content $outPath
+  Write-Host "Created: $outPath"
+}
+----[END SCRIPT]----
+
+================================================================================
+STEP 5: MANUAL VERIFICATION (Required After Generation)
+================================================================================
+
+For each generated XML:
+1. Verify the header comment shows correct edition name
+2. Verify colors are applied correctly in CSS skin section
+3. Test with Google Rich Results Testing Tool:
+   - https://search.google.com/test/rich-results
+4. Test with Google PageSpeed Insights:
+   - https://pagespeed.web.dev/
+5. Upload to a test Blogger blog (private) to verify rendering
+6. Check RTL/LTR direction for Arabic/English twins
+
+================================================================================
+STEP 6: FILE NAMING CONVENTION
+================================================================================
+
+Arabic versions (RTL):
+  RankTurboSeo-[Edition].v1.0.xml
+
+English twin versions (LTR):
+  RankTurboSeo-[Edition]-English.v1.0.xml
+
+Example:
+  RankTurboSeo-Kitchen.v1.0.xml
+  RankTurboSeo-Kitchen-English.v1.0.xml
+
+================================================================================
+END OF GUIDE
+================================================================================

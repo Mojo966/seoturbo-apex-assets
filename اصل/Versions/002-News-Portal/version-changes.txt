@@ -1,0 +1,32 @@
+================================================================================
+RankTurboSeo News Portal Edition v1.0 — Version Modifications
+================================================================================
+Base Template: RankTurboSeo.Apex.v16.original.1.xml
+
+1. HEADER IDENTITY
+   - Name: "RankTurboSeo News Portal Edition v1.0"
+   - "قالب أخباري متكامل"
+
+2. PRIMARY SCHEMA
+   - NewsArticle (primary)
+   - NewsMediaOrganization
+   - Article
+   - BreadcrumbList
+   - SpeakableSpecification
+
+3. COLOR SCHEME
+   --primary:        #1A237E (dark blue)
+   --primary-dark:   #0D1444
+   --accent:         #E53935 (red — breaking news)
+
+4. FEATURE TOGGLES
+   - Breaking news ticker: ON
+   - News slider: ON
+   - Category sections: ON
+   - Speakable schema: ON
+
+5. TARGET
+   - News portals, magazine blogs
+   - Arabic (RTL) + English twin (LTR)
+
+================================================================================

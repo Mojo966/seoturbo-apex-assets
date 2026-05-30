@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
 <html b:css='false' b:defaultwidgetversion='2' b:js='true' b:layoutsVersion='3' expr:dir='data:blog.languageDirection' expr:lang='data:blog.locale' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
 
@@ -1241,11 +1241,11 @@ Documented by: Dr. Mohamed Elgendy | Date: 2026-04-12
         &quot;   &#10003; Long Development Cycle (3+ Years of Continuous Development)&quot;,
         &quot;&quot;,
         &quot; SEOTurbo Apex v12.0 is recognized as:&quot;,
-        &quot;   &#8594; AN ADVANCED BLOGGER TEMPLATE&quot;,
-        &quot;   &#8594; AN INTEGRATED SEO FRAMEWORK FOR BLOGGER&quot;,
-        &quot;   &#8594; A HIGH-PERFORMANCE BLOGGER TEMPLATE&quot;,
-        &quot;   &#8594; A FEATURE-RICH BLOGGER TEMPLATE&quot;,
-        &quot;   &#8594; A TEMPLATE WITH COMPLETE CONNECTED KNOWLEDGE GRAPH&quot;
+        &quot;   - AN ADVANCED BLOGGER TEMPLATE&quot;,
+        &quot;   - AN INTEGRATED SEO FRAMEWORK FOR BLOGGER&quot;,
+        &quot;   - A HIGH-PERFORMANCE BLOGGER TEMPLATE&quot;,
+        &quot;   - A FEATURE-RICH BLOGGER TEMPLATE&quot;,
+        &quot;   - A TEMPLATE WITH COMPLETE CONNECTED KNOWLEDGE GRAPH&quot;
       ],
       &quot;additionalProperty&quot;: [
         {
@@ -2317,8 +2317,11 @@ LCP: engineered for optimal speed
     --text-color: #1e293b;        
     --text-meta: #475569;         
     --border-color: #e2e8f0;     
-    --seoturbo-topbar-bg: #0f172a; 
-    --ad-label: #475569;  
+    --seoturbo-topbar-bg: #0f172a;
+    --topbartext: #ffffff;
+    --topbarhoverbg: rgba(255,255,255,0.2);
+    --topbarborder: #334155;
+    --ad-label: #475569;
     --seoturbo-gray: #94a3b8;        
     --blogcolor2: var(--blogcolor);  
     --seoturbo-gold: var(--blogcolor2);  
@@ -2347,10 +2350,10 @@ body.dark-mode {
     --darkmode-bg-color: #0f172a;          
     --darkmode-darkcolor: #020617;         
     --darkmode-lightcolor: #f8fafc;           
-    --darkmode-widget-bg: #1e293b;            
-    --darkmode-text-color: #f1f5f9;        
-    --darkmode-text-meta: #94a3b8;         
-    --darkmode-border-color: #334155;      
+    --darkmode-widget-bg: #1e293b;
+    --darkmode-text-color: #f1f5f9;
+    --darkmode-text-meta: #94a3b8;
+    --darkmode-border-color: #334155;
     --darkmode-ad-label: #cbd5e1;          
 }
   
@@ -2359,8 +2362,10 @@ body.dark-mode {
 .seoterbo-frame-root-container { contain: layout style; min-height: 200px; }
     
 /* 1.3 إعدادات أساسية عامة (مدمجة) - MODERN REDESIGN */
-body { margin:0; padding:0; font-family:&#39;Inter&#39;,-apple-system,BlinkMacSystemFont,&#39;Segoe UI&#39;,Roboto,Helvetica,Arial,sans-serif,&#39;Apple Color Emoji&#39;,&#39;Segoe UI Emoji&#39;; background:var(--bg-color); color:var(--text-color); line-height:1.7; direction:rtl; transition:background .3s,color .3s; -webkit-overflow-scrolling:touch; overflow-scrolling:touch; }
-body.dark-mode { background:var(--darkmode-bg-color); color:var(--darkmode-text-color); }
+body { margin:0; padding:0; font-family:&#39;Inter&#39;,-apple-system,BlinkMacSystemFont,&#39;Segoe UI&#39;,Roboto,Helvetica,Arial,sans-serif,&#39;Apple Color Emoji&#39;,&#39;Segoe UI Emoji&#39;; background:var(--blogcolor) url(https://2.bp.blogspot.com/-lP5CduqWjk8/WoMklMZ8cyI/AAAAAAAAALs/X7XDpS470EQceXtnfL8A1wmv9j2XQ72xQCPcBGAYYCw/s1600/purple.jpg) repeat fixed top right; color:var(--text-color); line-height:1.7; direction:rtl; transition:background .3s,color .3s; -webkit-overflow-scrolling:touch; overflow-scrolling:touch; }
+body:before,body:after{content:&#39;&#39;;display:block;height:4px;background:linear-gradient(90deg,var(--blogcolor),var(--softcolor),var(--blogcolor))}
+body.dark-mode { background:var(--darkmode-bg-color) url(https://2.bp.blogspot.com/-lP5CduqWjk8/WoMklMZ8cyI/AAAAAAAAALs/X7XDpS470EQceXtnfL8A1wmv9j2XQ72xQCPcBGAYYCw/s1600/purple.jpg) repeat fixed top right; color:var(--darkmode-text-color); }
+body.dark-mode:before,body.dark-mode:after{background:linear-gradient(90deg,var(--darkmode-bg-color),var(--header-bg-dark),var(--darkmode-bg-color))}
 * { box-sizing:border-box; }
 a { text-decoration:none; transition:all .3s cubic-bezier(0.4,0,0.2,1); color:inherit; }
 ul { list-style:none; padding:0; margin:0; }
@@ -2385,6 +2390,15 @@ html body .seoturbo-scroll-buttons .seoturbo-notif-move-btn{width:100%;height:56
 #seoturbo-bell-icon{width:38px;height:38px;min-width:38px;min-height:38px;fill:currentColor;filter:drop-shadow(0 2px 4px rgba(0,0,0,0.4))}
 html body .seoturbo-scroll-buttons .notif-move-badge{position:absolute;top:6px;right:5px;background:var(--google-red);color:#fff;font-size:10px;font-weight:900;min-width:17px;height:17px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:1.5px solid var(--softcolor);box-shadow:0 2px 5px rgba(0,0,0,0.5);line-height:1;z-index:10}
 @media (max-width:992px){html body div.seoturbo-scroll-buttons{left:0;bottom:0;width:100%;border-radius:0;flex-direction:row;padding:0;height:40px;gap:0;box-shadow:0 0.5px 4px 3px rgba(0,0,0,0.48),0 0.5px 3px rgba(0,0,0,0.12)}html body .seoturbo-scroll-buttons .scroll-btn,html body .seoturbo-scroll-buttons .seoturbo-notif-move-btn{height:40px}html body .seoturbo-scroll-buttons .seoturbo-notif-move-btn{border-top:none;border-bottom:none;border-left:1px solid rgba(255,255,255,0.1);border-right:1px solid rgba(255,255,255,0.1)}html body .seoturbo-scroll-buttons .scroll-btn svg{width:22px;height:22px}#seoturbo-bell-icon{width:22px;height:22px;min-width:22px}html body .seoturbo-scroll-buttons .notif-move-badge{top:3px;right:auto;left:50%;margin-left:10px;min-width:14px;height:14px;font-size:8px}}
+#curtain-overlay{position:fixed;inset:0;background:#fff;z-index:-1;pointer-events:none;transition:clip-path 0.7s ease;clip-path:inset(0 50% 0 50%)}
+body[data-curtain=&quot;closed&quot;] #curtain-overlay{clip-path:inset(0 0 0 0)}
+#curtain-btn{position:fixed;bottom:360px;left:10px;width:46px;height:48px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--blogcolor) 0%,var(--seoturbo-blogdark) 100%);border-radius:12px;border:none;outline:none;cursor:pointer;color:var(--softcolor);z-index:9999998;box-shadow:0 4px 15px rgba(0,0,0,0.2);transition:all 0.3s ease}
+#curtain-btn svg{width:24px;height:24px;fill:currentColor;filter:drop-shadow(0 2px 3px rgba(0,0,0,0.3))}
+body[data-curtain=&quot;open&quot;] #curtain-btn .curtain-close{display:inline}
+body[data-curtain=&quot;open&quot;] #curtain-btn .curtain-open{display:none}
+body[data-curtain=&quot;closed&quot;] #curtain-btn .curtain-close{display:none}
+body[data-curtain=&quot;closed&quot;] #curtain-btn .curtain-open{display:inline}
+@media (max-width:992px){#curtain-btn{bottom:150px;width:40px;height:40px;border-radius:8px}#curtain-btn svg{width:22px;height:22px}}
 
 /* 1.6 صندوق عنوان ومعلومات المقال - MODERN REDESIGN */    
 .seoterbo-title-posttitle-box { background:linear-gradient(135deg,var(--widget-bg) 0%,var(--seoturbo-smooth) 100%); padding:16px 24px; border-radius:var(--modern-radius-lg); margin:25px 0 35px; border:1px solid var(--border-color); border-right:6px solid var(--blogcolor); direction:rtl; text-align:right; display:flex; flex-direction:column; gap:12px; position:relative; overflow:hidden; z-index:1; box-shadow:var(--modern-shadow-lg); contain:layout paint; }
@@ -2870,16 +2884,16 @@ body.dark-mode #tocList li.section-divider { border-bottom-color:var(--darkmode-
 
 /* 2.7 شريط الموضوعات المتحرك */
 .single-seoterbobar-wrapper { width:100%; position:relative; z-index:10; margin:25px 0; } 
-#singleSeoterboBarContainer { background-color:var(--seoturbo-blogdark); color:var(--softcolor); border-top:3px solid var(--blogcolor); border-bottom:3px solid var(--blogcolor); overflow:hidden; padding:0 150px 0 0; height:40px; position:relative; border-radius:4px; box-shadow: var(--modern-shadow); }  
+#singleSeoterboBarContainer { background-color:var(--ticker-bg); color:var(--ticker-text); border-top:3px solid var(--ticker-border); border-bottom:3px solid var(--ticker-border); overflow:hidden; padding:0 150px 0 0; height:40px; position:relative; border-radius:4px; box-shadow: var(--modern-shadow); }  
 .single-seoterbobar-scrolling-area { display:flex; white-space:nowrap; animation:single_seoterbobar_scroller_animation 100s linear infinite; height:100%; align-items:center; }
 .single-seoterbobar-wrapper:hover .single-seoterbobar-scrolling-area { animation-play-state:paused; }
-.single-seoterbobar-item { display:inline-flex; align-items:center; padding:0 20px; font-size:14px; text-decoration:none; color:var(--softcolor); white-space:nowrap; font-weight:800; text-shadow:0 1px 1px rgba(0,0,0,0.3); transition:all 0.3s ease; position:relative; }
-.single-seoterbobar-item:hover { color:var(--seoturbo-gold); transform:translateY(-2px); filter:drop-shadow(0 4px 6px rgba(0,0,0,0.3)); }   
-.single-seoterbobar-item .single-seoterbobar-source { color:var(--softcolor); margin-left:15px; font-size:11px; font-weight:800; background: linear-gradient(145deg, color-mix(in srgb, var(--blogcolor) 70%, #000 30%), color-mix(in srgb, var(--blogcolor) 60%, #000 40%)); padding:3px 12px; border-radius:20px; border:1px solid var(--blogcolor); }      
-.single-seoterbobar-item:hover .single-seoterbobar-source { background: linear-gradient(145deg, var(--seoturbo-gold), color-mix(in srgb, var(--seoturbo-gold) 80%, #000 20%)); color:var(--solidcolor); border-color:var(--softcolor); transform:translateY(-1px); }
+.single-seoterbobar-item { display:inline-flex; align-items:center; padding:0 20px; font-size:14px; text-decoration:none; color:var(--ticker-text); white-space:nowrap; font-weight:800; text-shadow:0 1px 1px rgba(0,0,0,0.3); transition:all 0.3s ease; position:relative; }
+.single-seoterbobar-item:hover { color:var(--ticker-hover-text); transform:translateY(-2px); filter:drop-shadow(0 4px 6px rgba(0,0,0,0.3)); }   
+.single-seoterbobar-item .single-seoterbobar-source { color:var(--ticker-source-text); margin-left:15px; font-size:11px; font-weight:800; background:var(--ticker-source-bg); padding:3px 12px; border-radius:20px; border:1px solid var(--ticker-source-border); }      
+.single-seoterbobar-item:hover .single-seoterbobar-source { background:var(--ticker-hover-source-bg); color:var(--ticker-hover-source-text); border-color:var(--ticker-hover-source-text); transform:translateY(-1px); }
 @keyframes single_seoterbobar_scroller_animation { 0%{transform:translateX(100%)} 100%{transform:translateX(-100%)} }
-.single-seoterbobar-promo-area { position:absolute; top:0; right:0; bottom:0; background:color-mix(in srgb, var(--blogcolor) 75%, #000 25%); padding:0 15px; font-weight:900; color:var(--softcolor); z-index:100; display:flex; align-items:center; gap:8px; min-width:130px; justify-content:center; border-left:2px solid var(--blogcolor); }
-.single-seoterbobar-promo-area::before { content:&#39;&#39;; width:10px; height:10px; background:var(--softcolor); border-radius:50%; animation:single_seoterbobar_signal_blink 1s infinite; box-shadow:0 0 8px var(--softcolor); }
+.single-seoterbobar-promo-area { position:absolute; top:0; right:0; bottom:0; background:var(--ticker-promo-bg); padding:0 15px; font-weight:900; color:var(--ticker-promo-text); z-index:100; display:flex; align-items:center; gap:8px; min-width:130px; justify-content:center; border-left:2px solid var(--ticker-border); }
+.single-seoterbobar-promo-area::before { content:&#39;&#39;; width:10px; height:10px; background:var(--ticker-promo-text); border-radius:50%; animation:single_seoterbobar_signal_blink 1s infinite; box-shadow:0 0 8px var(--ticker-promo-text); }
 @keyframes single_seoterbobar_signal_blink { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.3;transform:scale(.8)} }
 #single_seoterbobar_changing_text { transition:all .5s ease; display:inline-block; font-size:15px; text-shadow:0 1px 1px rgba(0,0,0,0.3); }
 @media (max-width:768px) {
@@ -2898,6 +2912,13 @@ body.dark-mode #tocList li.section-divider { border-bottom-color:var(--darkmode-
 .seoturbo-topbar-row-1 .inner { padding: 5px 0; display: flex; align-items: center; justify-content: flex-end; }
 .seoturbo-topbar-row-1 { background: var(--seoturbo-topbar-bg); color: var(--softcolor); min-height: 44px; border-bottom: 1px solid rgba(255,255,255,0.08); position: relative; z-index: 5000; box-shadow: none; }
 .seoturbo-topbar-row-2 { background: var(--seoturbo-topbar-bg); color: var(--softcolor); min-height: 44px; position: relative; z-index: 5000; box-shadow: none; }
+body.dark-mode #singleSeoterboBarContainer { background-color:var(--ticker-bg-dark); color:var(--ticker-text-dark); border-top-color:var(--ticker-border-dark); border-bottom-color:var(--ticker-border-dark); }
+body.dark-mode .single-seoterbobar-item { color:var(--ticker-text-dark); }
+body.dark-mode .single-seoterbobar-item:hover { color:var(--ticker-hover-text-dark); }
+body.dark-mode .single-seoterbobar-item .single-seoterbobar-source { color:var(--ticker-source-text-dark); background:var(--ticker-source-bg-dark); border-color:var(--ticker-source-border-dark); }
+body.dark-mode .single-seoterbobar-item:hover .single-seoterbobar-source { background:var(--ticker-hover-source-bg-dark); color:var(--ticker-hover-source-text-dark); border-color:var(--ticker-hover-source-text-dark); }
+body.dark-mode .single-seoterbobar-promo-area { background:var(--ticker-promo-bg-dark); color:var(--ticker-promo-text-dark); border-left-color:var(--ticker-border-dark); }
+body.dark-mode .single-seoterbobar-promo-area::before { background:var(--ticker-promo-text-dark); box-shadow:0 0 8px var(--ticker-promo-text-dark); }
 body.dark-mode .seoturbo-topbar, body.dark-mode .seoturbo-topbar-row-1 { background: #020617; border-bottom-color: rgba(255,255,255,0.05); box-shadow: none; }
 body.dark-mode .seoturbo-topbar-row-2 { background: #020617; box-shadow: none; }
 html body .header-main { padding-top: var(--header-gap, 160px); transition: padding 0.3s ease, background 0.3s ease; }
@@ -3020,8 +3041,8 @@ body.dark-mode .compact-dropdown-menu a:hover { background: rgba(255,255,255,0.0
 .compact-dropdown-menu a svg { width: 14px; height: 14px; fill: var(--blogcolor); }
   
 /* 3.7 الهيدر الرئيسي */
-html body .header-main { padding-top: var(--header-gap, 160px); background: linear-gradient(180deg, var(--header-wave-bg-start, var(--headergap-color, var(--blogcolor))) 0%, var(--header-wave-bg-end, var(--header-main-bg, var(--widget-bg))) 100%); border-bottom: 1px solid var(--border-color); margin-bottom: 0; min-height: 130px; display: flex; align-items: center; transition: padding 0.3s ease, background 0.3s ease; overflow: hidden; }
-body.dark-mode .header-main { background: linear-gradient(180deg, var(--header-wave-bg-start, var(--headergap-color, var(--blogcolor))) 0%, var(--header-wave-bg-end, var(--header-main-bg-dark, var(--darkmode-widget-bg))) 100%); border-bottom-color: var(--darkmode-border-color); }
+html body .header-main { padding-top: var(--header-gap, 160px); background: linear-gradient(180deg, var(--header-wave-bg-start, var(--headergap-color, var(--blogcolor))) 0%, var(--header-wave-bg-end, var(--header-bg, var(--header-main-bg, var(--widget-bg)))) 100%); border-bottom: 1px solid var(--border-color); margin-bottom: 0; min-height: 130px; display: flex; align-items: center; transition: padding 0.3s ease, background 0.3s ease; overflow: hidden; }
+body.dark-mode .header-main { background: linear-gradient(180deg, var(--header-wave-bg-start, var(--headergap-color, var(--blogcolor))) 0%, var(--header-wave-bg-end, var(--header-bg-dark, var(--header-main-bg-dark, var(--darkmode-widget-bg)))) 100%); border-bottom-color: var(--darkmode-border-color); }
 .header-main .outer-wrapper.inner { display: flex !important; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 4px; direction: rtl; padding: 2px 0; }
 .seoturbo-site-logo { flex: 0 1 auto; display: flex; flex-direction: column; align-items: center; text-align: center; text-decoration: none; min-width: 180px; position: relative; }
 .visible-title { text-align: center; margin: 0; width: 100%; display: block !important; line-height: 1; }
@@ -3090,14 +3111,14 @@ body.dark-mode .v-full-divider { background: var(--seoturbo-blogsoft); }
 body.dark-mode .nav-menu .outer-wrapper { background: transparent; }
 body.dark-mode .nav-menu { background: linear-gradient(135deg, var(--darkmode-widget-bg) 0%, var(--solidcolor) 100%); box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
 .nav-menu-nav-wave { width:100%; height:12px; background:var(--menustripcolor); }
-body.dark-mode .nav-menu-nav-wave { background:var(--darkmode-widget-bg); }
+body.dark-mode .nav-menu-nav-wave { background:var(--darkmode-widget-bg, #1e293b); }
 /* --- Home Icon in Main Menu (ar-style2) --- */
 .main-menu { display: flex; align-items: center; justify-content: center; flex-wrap: nowrap; margin: 0; padding: 0; height: 44px; gap: 2px; }  
 .main-menu.dropdowns-initialized { background: transparent; flex-wrap: wrap; overflow: visible; height: auto; min-height: 44px; }
 body.dark-mode .main-menu.dropdowns-initialized { background: transparent; }
 .main-menu &gt; li { position: relative; flex-shrink: 0; }
 .main-menu &gt; li::after { display: none !important; }
-.main-menu &gt; li &gt; a { display: flex; align-items: center; gap: 5px; padding: 0 12px; color: var(--solidcolor); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif; font-weight: 800; font-size: 16px; min-height: 44px; text-transform: uppercase; letter-spacing: 0.2px; position: relative; text-shadow: 0 1px 4px rgba(0,0,0,0.35); transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.3s ease; font-display: swap; }
+.main-menu &gt; li &gt; a { display: flex; align-items: center; gap: 5px; padding: 0 12px; color: var(--solidcolor); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif; font-weight: 800; font-size: 20px; min-height: 44px; text-transform: uppercase; letter-spacing: 0.2px; position: relative; text-shadow: 0 1px 4px rgba(0,0,0,0.35); transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.3s ease; font-display: swap; }
 .main-menu &gt; li &gt; a::before { content: &#39;&#39;; position: absolute; inset: 3px 6px; border-radius: 6px; background: var(--blogcolor); opacity: 0; filter: blur(8px); transition: opacity 0.3s ease; z-index: -1; pointer-events: none; }
 .main-menu &gt; li &gt; a::after { content: &#39;&#39;; position: absolute; bottom: 8px; left: 50%; width: 0; height: 4px; border-radius: 4px; background: linear-gradient(90deg, var(--blogcolor), var(--seoturbo-gold,#ffd700)); filter: blur(2px); opacity: 0; transition: all 0.4s cubic-bezier(0.22,1,0.36,1); transform: translateX(-50%); }
 .main-menu &gt; li &gt; a:hover { transform: translateY(-2px); color: var(--blogcolor); }
@@ -3143,6 +3164,7 @@ body.dark-mode .sub-mega-menu-box { background: var(--solidcolor); }
 .mega-post { flex: 1; min-width: 0; display: flex; flex-direction: column; }
 .nav-menu .mega-thumb { width: 100%; aspect-ratio: 16/9; background: var(--bg-color); border-radius: 5px; overflow: hidden; position: relative; display: block; margin-bottom: 8px; }
 body.dark-mode .nav-menu .mega-thumb { background: var(--darkmode-bg-color); }
+.nav-menu .mega-thumb a { display: block; width: 100%; height: 100%; position: relative; }
 .nav-menu .mega-thumb img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .3s ease; }
 .mega-post:hover .mega-thumb img { transform: scale(1.1); }
 .mega-title { font-weight: 700; line-height: 1.4; margin: 5px 0 0; }
@@ -5126,9 +5148,12 @@ img.error { opacity:.5; }
 /* ================================================================ */
 
 /* --- Top Bar Modern --- */
-html body .seoturbo-topbar { background: var(--seoturbo-topbar-bg) !important; position: relative; z-index: 5000; }
-html body .seoturbo-topbar-row-1 { background: var(--seoturbo-topbar-bg) !important; min-height: 44px; border-bottom: 1px solid rgba(255,255,255,0.08); box-shadow: none !important; }
-html body .seoturbo-topbar-row-2 { background: var(--seoturbo-topbar-bg) !important; min-height: 44px; box-shadow: none !important; }
+html body .seoturbo-topbar { background: var(--seoturbo-topbar-bg) !important; color: var(--topbartext) !important; position: relative; z-index: 5000; }
+html body .seoturbo-topbar-row-1 { background: var(--seoturbo-topbar-bg) !important; color: var(--topbartext) !important; min-height: 44px; border-bottom: 1px solid var(--topbarborder) !important; box-shadow: none !important; }
+html body .seoturbo-topbar-row-2 { background: var(--seoturbo-topbar-bg) !important; color: var(--topbartext) !important; min-height: 44px; box-shadow: none !important; }
+html body .seoturbo-topbar a { color: var(--topbartext) !important; }
+html body .seoturbo-topbar a:hover { opacity: 0.8; }
+html body .seoturbo-topbar svg { fill: var(--topbartext) !important; }
 body.dark-mode .seoturbo-topbar, body.dark-mode .seoturbo-topbar-row-1 { background: #020617 !important; border-bottom-color: rgba(255,255,255,0.05); box-shadow: none !important; }
 body.dark-mode .seoturbo-topbar-row-2 { background: #020617 !important; box-shadow: none !important; }
 
@@ -5166,8 +5191,9 @@ html body .seoturbo-topbar-social-icons a {
   width: 32px; height: 32px;
   border-radius: var(--modern-radius) !important;
   box-shadow: none !important;
-  background: rgba(255,255,255,0.1) !important;
+  background: var(--topbarhoverbg) !important;
 }
+html body .seoturbo-topbar-social-icons a svg { fill: var(--topbartext) !important; }
 html body .seoturbo-topbar-social-icons a:hover {
   transform: translateY(-2px) scale(1.05);
   box-shadow: var(--modern-shadow) !important;
@@ -5437,65 +5463,6 @@ html body .sidebar .cloud-label-widget-content a:hover {
   border-color: var(--blogcolor);
   transform: translateY(-2px);
 }
-
-/* --- Popular Posts / Featured Post Modern --- */
-html body .sidebar .PopularPosts .item-title a {
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--text-color);
-  line-height: 1.4;
-}
-body.dark-mode .sidebar .PopularPosts .item-title a { color: var(--darkmode-text-color); }
-html body .sidebar .PopularPosts .item-snippet { font-size: 12px; color: var(--text-meta); margin-top: 4px; }
-html body .sidebar .FeaturedPost h3 a { font-size: 16px; font-weight: 900; color: var(--text-color); }
-body.dark-mode .sidebar .FeaturedPost h3 a { color: var(--darkmode-text-color); }
-
-/* --- Standard Blogger Widget Cards --- */
-html body .sidebar .PopularPosts .item-thumbnail { float: none; margin: 0 0 8px 0; width: 100%; }
-html body .sidebar .PopularPosts .item-thumbnail img { width: 100%; height: auto; border-radius: 8px; object-fit: cover; aspect-ratio: 16/9; }
-html body .sidebar .PopularPosts .item-thumbnail-only { display: flex; flex-direction: column; gap: 8px; margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid var(--border-color); }
-body.dark-mode .sidebar .PopularPosts .item-thumbnail-only { border-color: var(--darkmode-border-color); }
-html body .sidebar .HTML .widget-content { font-size: 14px; line-height: 1.7; color: var(--text-color); }
-body.dark-mode .sidebar .HTML .widget-content { color: var(--darkmode-text-color); }
-html body .sidebar .HTML .widget-content img { max-width: 100%; height: auto; border-radius: 8px; }
-html body .sidebar .BlogArchive ul { list-style: none; padding: 0; margin: 0; }
-html body .sidebar .BlogArchive ul li { padding: 8px 12px; margin: 4px 0; background: var(--seoturbo-smooth); border-radius: 5px; font-size: 13px; transition: all 0.3s; }
-body.dark-mode .sidebar .BlogArchive ul li { background: rgba(255,255,255,0.05); }
-html body .sidebar .BlogArchive ul li:hover { background: var(--blogcolor); color: var(--softcolor); transform: translateX(-3px); }
-html body .sidebar .BlogArchive ul li a { color: inherit; text-decoration: none; }
-html body .sidebar .ContactForm form { display: flex; flex-direction: column; gap: 10px; }
-html body .sidebar .ContactForm input, html body .sidebar .ContactForm textarea { width: 100%; padding: 10px; border: 1px solid var(--border-color); border-radius: 5px; font-size: 14px; background: var(--widget-bg); color: var(--text-color); box-sizing: border-box; }
-body.dark-mode .sidebar .ContactForm input, body.dark-mode .sidebar .ContactForm textarea { background: var(--darkmode-widget-bg); border-color: var(--darkmode-border-color); color: var(--darkmode-text-color); }
-html body .sidebar .ContactForm input[type=&quot;submit&quot;] { background: var(--blogcolor); color: var(--softcolor); border: none; cursor: pointer; font-weight: 700; padding: 12px; }
-html body .sidebar .PageList ul { list-style: none; padding: 0; margin: 0; }
-html body .sidebar .PageList ul li { padding: 10px 15px; margin: 4px 0; background: var(--seoturbo-smooth); border-radius: 5px; font-size: 14px; font-weight: 600; transition: all 0.3s; }
-body.dark-mode .sidebar .PageList ul li { background: rgba(255,255,255,0.05); }
-html body .sidebar .PageList ul li:hover { background: var(--blogcolor); color: var(--softcolor); transform: translateX(-3px); }
-html body .sidebar .PageList ul li a { color: inherit; text-decoration: none; }
-html body .sidebar .LinkList ul { list-style: none; padding: 0; margin: 0; }
-html body .sidebar .LinkList ul li { padding: 8px 12px; margin: 3px 0; background: var(--seoturbo-smooth); border-radius: 5px; font-size: 13px; transition: all 0.3s; }
-body.dark-mode .sidebar .LinkList ul li { background: rgba(255,255,255,0.05); }
-html body .sidebar .LinkList ul li:hover { background: var(--blogcolor); color: var(--softcolor); }
-html body .sidebar .LinkList ul li a { color: inherit; text-decoration: none; }
-html body .sidebar .Profile .profile-img { border-radius: 50%; width: 80px; height: 80px; object-fit: cover; margin-bottom: 10px; }
-html body .sidebar .Profile .profile-name { font-size: 16px; font-weight: 700; color: var(--text-color); }
-body.dark-mode .sidebar .Profile .profile-name { color: var(--darkmode-text-color); }
-html body .sidebar .Profile .profile-textblock { font-size: 13px; color: var(--text-meta); line-height: 1.5; }
-
-/* --- Mobile Override --- */
-@media (max-width: 768px) {
-  html body .sidebar .PopularPosts .item-thumbnail img { aspect-ratio: 4/3; }
-}
-
-/* --- Gradient Color System --- */
-.seoturbo-grad-bg { background: var(--grad-main) !important; }
-.seoturbo-grad-text { background: var(--grad-tri); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-.seoturbo-grad-border { border-color: transparent; border-image: var(--grad-main) 1; }
-.seoturbo-grad-btn { background: var(--grad-main) !important; color: var(--grad-tx) !important; border: none !important; }
-.seoturbo-grad-btn:hover { background: var(--grad-dark) !important; }
-.seoturbo-grad-header { background: var(--grad-main) !important; }
-.seoturbo-grad-accent { background: linear-gradient(var(--grad-dir), var(--grad-c1), var(--grad-c3)) !important; }
-.seoturbo-grad-shadow { box-shadow: 0 4px 20px rgba(0,0,0,0.3), 0 0 40px var(--grad-c1) !important; }
 
 /* --- Mobile Responsive Overrides --- */
 @media (max-width: 992px) {
@@ -5802,7 +5769,8 @@ html body .sidebar .Profile .profile-textblock { font-size: 13px; color: var(--t
 <!-- أيقونة السهم لأعلى -->
 <symbol id='icon-chevron-up' viewBox='0 0 448 512'>
     <path d='M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z'/>
-</symbol>      
+</symbol>
+<symbol id='icon-boxing-expand' viewBox='0 0 448 512'><path d='M0 180V56c0-13.3 10.7-24 24-24h124c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H48v100c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12zM288 44v24c0 6.6 5.4 12 12 12h100v100c0 6.6 5.4 12 12 12h24c6.6 0 12-5.4 12-12V56c0-13.3-10.7-24-24-24H300c-6.6 0-12 5.4-12 12zm148 276h-24c-6.6 0-12 5.4-12 12v100H300c-6.6 0-12 5.4-12 12v24c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24V332c0-6.6-5.4-12-12-12zM160 468H36c-13.3 0-24-10.7-24-24V320c0-6.6 5.4-12 12-12h24c6.6 0 12 5.4 12 12v100h100c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12z'/></symbol><symbol id='icon-boxing-compress' viewBox='0 0 448 512'><path d='M0 96C0 60.7 28.7 32 64 32h320c35.3 0 64 28.7 64 64v320c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zm64 0v320h320V96H64z'/></symbol>      
 <!-- سهم لأسفل (Chevron Down) -->
   <symbol id='icon-chevron-down' viewBox='0 0 448 512'><path d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z'/></symbol>
 <!-- سهم يسار (Arrow Left) -->
@@ -6041,15 +6009,12 @@ html body .sidebar .Profile .profile-textblock { font-size: 13px; color: var(--t
 <Variable name="TemplatePhilosophy" description="User writes content. Template handles SEO, performance, security." type="string" default="Focus on Content" value="Focus on Content"/>
 <Variable name="TemplateTargetAudience" description="For beginners (no code) and professionals (advanced settings)." type="string" default="All Skill Levels" value="All Skill Levels"/>
 
-<Group description="الألوان الأساسية">
-<Variable name="blogcolor" description="اللون الرئيسي للقالب (ثيم الموقع)" type="color" default="#6366f1" value="#0f1db9"/>
-<Variable name="blogcolor2" description="اللون الثاني للتدرج (اختياري - اتركه فارغًا للون واحد فقط)" type="color" default="#6366f1" value="#6366f1"/>
-<Variable name="headermainbg" description="لون خلفية الهيدر الرئيسي" type="color" default="#ffffff" value="#0f1db9"/>
-<Variable name="darkmodeheadermainbg" description="لون خلفية الهيدر الرئيسي في الوضع المظلم" type="color" default="#0f172a" value="#0f172a"/>
-<Variable name="topbarbg" description="لون خلفية الشريط العلوي المزدوج" type="color" default="#1e293b" value="#1e293b"/>
-<Variable name="linkhover" description="لون الروابط عند مرور الماوس" type="color" default="#4338ca" value="#4338ca"/>
+<Group description="الألوان الرئيسية">
+<Variable name="blogcolor" description="اللون الرئيسي للقالب (ثيم الموقع)" type="color" default="#4A2C0A" value="#7B1FA2"/>
+<Variable name="blogcolor2" description="اللون الثاني للتدرج (اختياري)" type="color" default="#2C1810" value="#2C1810"/>
+<Variable name="linkhover" description="لون الروابط عند مرور الماوس" type="color" default="#6B3410" value="#6B3410"/>
 <Variable name="softcolor" description="لون النص الفاتح (على الخلفيات الداكنة)" type="color" default="#ffffff" value="#ffffff"/>
-<Variable name="solidcolor" description="اللون الصلب (للنصوص الأساسية)" type="color" default="#0f172a" value="#0f172a"/>
+<Variable name="solidcolor" description="اللون الصلب (للنصوص الأساسية)" type="color" default="#0f172a" value="#1e293b"/>
 <Variable name="bgcolor" description="لون خلفية الموقع العامة" type="color" default="#f1f5f9" value="#f1f5f9"/>
 <Variable name="widgetbg" description="لون خلفية صناديق الأدوات والمحتوى" type="color" default="#ffffff" value="#ffffff"/>
 <Variable name="textcolor" description="لون نصوص المقالات" type="color" default="#1e293b" value="#1e293b"/>
@@ -6059,6 +6024,8 @@ html body .sidebar .Profile .profile-textblock { font-size: 13px; color: var(--t
 <Variable name="darkmodewidgetbg" description="لون خلفية الصناديق (وضع ليلي)" type="color" default="#1e293b" value="#1e293b"/>
 <Variable name="darkmodetext" description="لون النص (وضع ليلي)" type="color" default="#f1f5f9" value="#f1f5f9"/>
 <Variable name="darkmodebordercolor" description="لون الحدود (وضع ليلي)" type="color" default="#334155" value="#334155"/>
+<Variable name="headermainbg" description="لون خلفية الهيدر الرئيسي" type="color" default="#4A2C0A" value="#4A2C0A"/>
+<Variable name="darkmodeheadermainbg" description="لون خلفية الهيدر الرئيسي في الوضع المظلم" type="color" default="#1a0f08" value="#1a0f08"/>
 </Group>
 
 <Group description="التخطيط والأبعاد">
@@ -6076,28 +6043,35 @@ html body .sidebar .Profile .profile-textblock { font-size: 13px; color: var(--t
 <Group description="الهيدر والأمواج">
 <Variable name="showlogo" description="إظهار شعار الموقع في الهيدر" type="length" default="2px" value="2px"/>
 <Variable name="seoheadermode" description="وضع السيو: إخفاء اللوجو وإظهار عنوان الموقع لجوجل" type="length" default="1px" value="1px"/>
-<Variable name="showmanagement" description="إظهار إدارة الموقع (بطاقة الهيدر)" type="length" default="2px" value="2px"/>
+<Variable name="showmanagement" description="إظهار إدارة الموقع (بطاقة الهيدر)" type="length" default="2px" value="58px"/>
 <Variable name="showheaderad" description="إظهار إعلان الهيدر" type="length" default="2px" value="2px"/>
-<Variable name="headerwave1color" description="🌊 لون موجة الهيدر 1" type="color" default="#6366f1" value="#64748b"/>
-<Variable name="headerwave1opacity" description="🔆 شفافية موجة الهيدر 1" type="string" default="0.05" value="0.05"/>
-<Variable name="headerwave2color" description="🌊 لون موجة الهيدر 2" type="color" default="#4338ca" value="#64748b"/>
-<Variable name="headerwave2opacity" description="🔆 شفافية موجة الهيدر 2" type="string" default="0.11" value="0.11"/>
-<Variable name="headerwave3color" description="🌊 لون موجة الهيدر 3" type="color" default="#4338ca" value="#1c21f1"/>
-<Variable name="headerwave3opacity" description="🔆 شفافية موجة الهيدر 3" type="string" default="0.20" value="0.20"/>
-<Variable name="headerwave4color" description="🌊 لون موجة الهيدر 4" type="color" default="#1c21f1" value="#1c21f1"/>
-<Variable name="headerwave4opacity" description="🔆 شفافية موجة الهيدر 4" type="string" default="0.33" value="0.33"/>
-<Variable name="headerwave5color" description="🌊 لون موجة الهيدر 5" type="color" default="#6366f1" value="#0f172a"/>
-<Variable name="headerwave5opacity" description="🔆 شفافية موجة الهيدر 5" type="string" default="0.52" value="0.52"/>
-<Variable name="headerwavebg" description="لون خلفية أسفل أمواج الهيدر" type="color" default="#ffffff" value="#0f172a"/>
-<Variable name="headerwavebg2" description="لون نهاية تدرج خلفية أمواج الهيدر" type="color" default="#f1f5f9" value="#0f1db9"/>
-<Variable name="headerwavegap" description="ارتفاع المسافة بين الموجات والهيدر" type="length" default="160px" value="160px"/>
-<Variable name="headerwavegapcolor" description="لون المسافة بين الموجات والهيدر" type="color" default="#6366f1" value="#0f172a"/>
+<Variable name="headerwave1color" description="🌊 لون موجة الهيدر 1" type="color" default="#4A2C0A" value="#fbbf24"/>
+<Variable name="headerwave1opacity" description="🔆 شفافية موجة الهيدر 1" type="string" default="0.04" value="0.04"/>
+<Variable name="headerwave2color" description="🌊 لون موجة الهيدر 2" type="color" default="#5D3A1A" value="#1e293b"/>
+<Variable name="headerwave2opacity" description="🔆 شفافية موجة الهيدر 2" type="string" default="0.08" value="0.08"/>
+<Variable name="headerwave3color" description="🌊 لون موجة الهيدر 3" type="color" default="#3E1F00" value="#2c1810"/>
+<Variable name="headerwave3opacity" description="🔆 شفافية موجة الهيدر 3" type="string" default="0.14" value="0.14"/>
+<Variable name="headerwave4color" description="🌊 لون موجة الهيدر 4" type="color" default="#2C1810" value="#000000"/>
+<Variable name="headerwave4opacity" description="🔆 شفافية موجة الهيدر 4" type="string" default="0.22" value="0.22"/>
+<Variable name="headerwave5color" description="🌊 لون موجة الهيدر 5" type="color" default="#1a0f08" value="#000000"/>
+<Variable name="headerwave5opacity" description="🔆 شفافية موجة الهيدر 5" type="string" default="0.35" value="0.35"/>
+<Variable name="headerwavebg" description="لون خلفية أسفل أمواج الهيدر" type="color" default="#f1f5f9" value="#7b1fa2"/>
+<Variable name="headerwavebg2" description="لون نهاية تدرج خلفية أمواج الهيدر" type="color" default="#e2e8f0" value="#000000"/>
+<Variable name="headerwavegap" description="ارتفاع المسافة بين الموجات والهيدر" type="string" default="160px" value="160px"/>
+<Variable name="headerwavegapcolor" description="لون المسافة بين الموجات والهيدر" type="color" default="#4A2C0A" value="#1e293b"/>
+<Variable name="headerbg" description="خلفية الهيدر" type="color" default="#ffffff" value="#1e293b"/>
+<Variable name="headerbgdark" description="خلفية الهيدر (ليلي)" type="color" default="#0f172a" value="#0f172a"/>
+<Variable name="headertext" description="لون نص الهيدر" type="color" default="#0f172a" value="#0f172a"/>
+<Variable name="headertextdark" description="لون نص الهيدر (ليلي)" type="color" default="#e2e8f0" value="#2c1810"/>
+<Variable name="headericoncolor" description="لون أيقونات الهيدر" type="color" default="#0f172a" value="#0f172a"/>
+<Variable name="headericoncolordark" description="لون أيقونات الهيدر (ليلي)" type="color" default="#94a3b8" value="#94a3b8"/>
 </Group>
 
 <Group description="القائمة الرئيسية (Menu)">
 <Variable name="showmenumega" description="تفعيل القوائم المنسدلة الذكية (Mega)" type="length" default="2px" value="2px"/>
 <Variable name="showmenusearch" description="إظهار زر البحث في القائمة" type="length" default="2px" value="2px"/>
-<Variable name="menustripcolor" description="🎨 لون شريط القائمة (افتراضي: لون القالب)" type="color" default="$(softcolor)" value="#0f1db9"/>
+<Variable name="menustripcolor" description="🎨 لون شريط القائمة (افتراضي: لون القالب)" type="color" default="#ffffff" value="#000000"/>
+<Variable name="menustripcolordark" description="🎨 لون شريط القائمة (ليلي)" type="color" default="#1e293b" value="#1e293b"/>
 </Group>
 
 <Group description="الشريط اللاصق والهامبورجر">
@@ -6139,8 +6113,30 @@ html body .sidebar .Profile .profile-textblock { font-size: 13px; color: var(--t
 <Variable name="showcookies" description="تفعيل شريط ملفات تعريف الارتباط" type="length" default="2px" value="2px"/>
 </Group>
 
-<Group description="شريط الموضوعات">
-<Variable name="ticker" description="شريط الموضوعات المتحرك (الرئيسية فقط)" type="length" default="2px" value="2px"/>
+<Group description="📰 شريط الأخبار">
+<Variable name="ticker" description="تشغيل/إيقاف شريط الأخبار المتحرك" type="length" default="2px" value="2px"/>
+<Variable name="tickerbg" description="خلفية الشريط (نهاري)" type="color" default="#1a0a2e" value="#000000"/>
+<Variable name="tickertext" description="لون النص في الشريط (نهاري)" type="color" default="#ffffff" value="#ffffff"/>
+<Variable name="tickerbordercol" description="لون الحدود العلوي والسفلي (نهاري)" type="color" default="#7c3aed" value="#7b1fa2"/>
+<Variable name="tickerpromobg" description="خلفية شعار الشريط (نهاري)" type="color" default="#0f0520" value="#7b1fa2"/>
+<Variable name="tickerpromotext" description="لون نص الشعار (نهاري)" type="color" default="#ffffff" value="#ffffff"/>
+<Variable name="tickersourcebg" description="خلفية وسام المصدر (نهاري)" type="color" default="#2d1b69" value="#7b1fa2"/>
+<Variable name="tickersourcetext" description="لون نص وسام المصدر (نهاري)" type="color" default="#ffffff" value="#ffffff"/>
+<Variable name="tickersourceborder" description="لون حدود وسام المصدر (نهاري)" type="color" default="#7c3aed" value="#fbbf24"/>
+<Variable name="tickerhovertext" description="لون النص عند التمرير (نهاري)" type="color" default="#fbbf24" value="#fbbf24"/>
+<Variable name="tickerhoversourcebg" description="خلفية الوسام عند التمرير (نهاري)" type="color" default="#7c3aed" value="#7b1fa2"/>
+<Variable name="tickerhoversourcetext" description="لون نص الوسام عند التمرير (نهاري)" type="color" default="#ffffff" value="#ffffff"/>
+<Variable name="tickerbgdark" description="خلفية الشريط (ليلي)" type="color" default="#080312" value="#080312"/>
+<Variable name="tickertextdark" description="لون النص في الشريط (ليلي)" type="color" default="#e2e8f0" value="#e2e8f0"/>
+<Variable name="tickerbordercoldark" description="لون الحدود العلوي والسفلي (ليلي)" type="color" default="#6d28d9" value="#6d28d9"/>
+<Variable name="tickerpromobgdark" description="خلفية شعار الشريط (ليلي)" type="color" default="#050110" value="#050110"/>
+<Variable name="tickerpromotextdark" description="لون نص الشعار (ليلي)" type="color" default="#e2e8f0" value="#e2e8f0"/>
+<Variable name="tickersourcebgdark" description="خلفية وسام المصدر (ليلي)" type="color" default="#15082e" value="#15082e"/>
+<Variable name="tickersourcetextdark" description="لون نص وسام المصدر (ليلي)" type="color" default="#e2e8f0" value="#e2e8f0"/>
+<Variable name="tickersourceborderdark" description="لون حدود وسام المصدر (ليلي)" type="color" default="#6d28d9" value="#6d28d9"/>
+<Variable name="tickerhovertextdark" description="لون النص عند التمرير (ليلي)" type="color" default="#f59e0b" value="#f59e0b"/>
+<Variable name="tickerhoversourcebgdark" description="خلفية الوسام عند التمرير (ليلي)" type="color" default="#6d28d9" value="#6d28d9"/>
+<Variable name="tickerhoversourcetextdark" description="لون نص الوسام عند التمرير (ليلي)" type="color" default="#ffffff" value="#ffffff"/>
 </Group>
 
 <Group description="شاشة التحميل (Preloader)">
@@ -6155,7 +6151,83 @@ html body .sidebar .Profile .profile-textblock { font-size: 13px; color: var(--t
 <Variable name="showsourcenumbering" description="تفعيل نظام ترقيم المصادر التلقائي في المقالات" type="length" default="2px" value="2px"/>
 </Group>
 
+<Group description="🎨 التدرجات اللونية (Gradient)">
+<Variable name="grad1" description="اللون الأساسي للتدرج" type="color" default="#0f1db9" value="#4338ca"/>
+<Variable name="grad1dark" description="اللون الأساسي للتدرج (ليلي)" type="color" default="#0a0e5c" value="#4338ca"/>
+<Variable name="grad2" description="اللون الثاني للتدرج (اختياري)" type="color" default="#6366f1" value="#2ecc71"/>
+<Variable name="grad2dark" description="اللون الثاني للتدرج (ليلي)" type="color" default="#1a1a3a" value="#2ecc71"/>
+<Variable name="grad3" description="اللون الثالث للتدرج (اختياري)" type="color" default="#2ecc71" value="#2ecc71"/>
+<Variable name="grad3dark" description="اللون الثالث للتدرج (ليلي)" type="color" default="#1a3a1a" value="#2ecc71"/>
+<Variable name="gradbg" description="خلفية التدرج" type="color" default="#0f1729" value="#0f1729"/>
+<Variable name="gradbgdark" description="خلفية التدرج (ليلي)" type="color" default="#070814" value="#070814"/>
+<Variable name="gradtx" description="لون النص على التدرج" type="color" default="#ffffff" value="#ffffff"/>
+<Variable name="gradtxdark" description="لون النص على التدرج (ليلي)" type="color" default="#e2e8f0" value="#e2e8f0"/>
+<Variable name="graddir" description="زاوية التدرج (0-360)" type="string" default="135" value="135"/>
+</Group>
 
+<Group description="🔘 الأزرار (Buttons)">
+<Variable name="btnbg" description="خلفية الأزرار" type="color" default="#0f1db9" value="#ffffff"/>
+<Variable name="btnbgdark" description="خلفية الأزرار (ليلي)" type="color" default="#1e1e3a" value="#1e1e3a"/>
+<Variable name="btntext" description="لون نص الأزرار" type="color" default="#ffffff" value="#7B1FA2"/>
+<Variable name="btntextdark" description="لون نص الأزرار (ليلي)" type="color" default="#e2e8f0" value="#ffffff"/>
+<Variable name="btnhoverbg" description="خلفية الأزرار عند المرور" type="color" default="#6366f1" value="#6366f1"/>
+<Variable name="btnhoverbgdark" description="خلفية الأزرار عند المرور (ليلي)" type="color" default="#2a2a5a" value="#2a2a5a"/>
+<Variable name="btnhovertext" description="لون نص الأزرار عند المرور" type="color" default="#ffffff" value="#ffffff"/>
+<Variable name="btnhovertextdark" description="لون نص الأزرار عند المرور (ليلي)" type="color" default="#ffffff" value="#ffffff"/>
+</Group>
+
+<Group description="📋 القائمة الرئيسية (Menu)">
+<Variable name="menubg" description="خلفية القائمة" type="color" default="#0f1db9" value="#ffffff"/>
+<Variable name="menubgdark" description="خلفية القائمة (ليلي)" type="color" default="#0f172a" value="#0f172a"/>
+<Variable name="menutext" description="لون نص القائمة" type="color" default="#ffffff" value="#334155"/>
+<Variable name="menutextdark" description="لون نص القائمة (ليلي)" type="color" default="#e2e8f0" value="#e2e8f0"/>
+<Variable name="menuhoverbg" description="خلفية القائمة عند المرور" type="color" default="#6366f1" value="#ffffff"/>
+<Variable name="menuhoverbgdark" description="خلفية القائمة عند المرور (ليلي)" type="color" default="#1e293b" value="#1e293b"/>
+<Variable name="menuborder" description="لون حدود القائمة" type="color" default="#e2e8f0" value="#e2e8f0"/>
+<Variable name="menuborderdark" description="لون حدود القائمة (ليلي)" type="color" default="#334155" value="#334155"/>
+</Group>
+
+<Group description="🍔 قائمة الهامبورجر (Mobile Menu)">
+<Variable name="hamburgerbg" description="خلفية قائمة الهامبورجر" type="color" default="#0f172a" value="#0f172a"/>
+<Variable name="hamburgerbgdark" description="خلفية قائمة الهامبورجر (ليلي)" type="color" default="#0f172a" value="#0f172a"/>
+<Variable name="hamburgertext" description="لون نص الهامبورجر" type="color" default="#ffffff" value="#ffffff"/>
+<Variable name="hamburgertextdark" description="لون نص الهامبورجر (ليلي)" type="color" default="#e2e8f0" value="#e2e8f0"/>
+<Variable name="hamburgerborder" description="لون حدود الهامبورجر" type="color" default="#334155" value="#334155"/>
+<Variable name="hamburgerborderdark" description="لون حدود الهامبورجر (ليلي)" type="color" default="#334155" value="#334155"/>
+</Group>
+
+<Group description="🔗 الفوتر (Footer)">
+<Variable name="footerbg" description="خلفية الفوتر" type="color" default="#0f172a" value="#0f172a"/>
+<Variable name="footerbgdark" description="خلفية الفوتر (ليلي)" type="color" default="#020617" value="#020617"/>
+<Variable name="footertext" description="لون نص الفوتر" type="color" default="#f8fafc" value="#f8fafc"/>
+<Variable name="footertextdark" description="لون نص الفوتر (ليلي)" type="color" default="#cbd5e1" value="#cbd5e1"/>
+<Variable name="footerlink" description="لون روابط الفوتر" type="color" default="#6366f1" value="#6366f1"/>
+<Variable name="footerlinkdark" description="لون روابط الفوتر (ليلي)" type="color" default="#818cf8" value="#818cf8"/>
+<Variable name="footerborder" description="لون حدود الفوتر" type="color" default="#334155" value="#334155"/>
+<Variable name="footerborderdark" description="لون حدود الفوتر (ليلي)" type="color" default="#1e293b" value="#1e293b"/>
+</Group>
+
+<Group description="✨ الحاوية الرئيسية (Content Wrapper)">
+<Variable name="wrapperbg" description="خلفية الحاوية" type="color" default="#ffffff" value="#ffffff"/>
+<Variable name="wrapperbgdark" description="خلفية الحاوية (ليلي)" type="color" default="#1e293b" value="#1e293b"/>
+<Variable name="wrapperborder" description="لون حدود الحاوية" type="color" default="#e2e8f0" value="#e2e8f0"/>
+<Variable name="wrapperborderdark" description="لون حدود الحاوية (ليلي)" type="color" default="#334155" value="#334155"/>
+</Group>
+
+<Group description="🔲 الإطارات والحدود (Borders)">
+<Variable name="borderradius" description="استدارة الزوايا (بيكسل)" type="length" default="12px" value="12px"/>
+</Group>
+
+<Group description="📊 الشريط العلوي (Topbar)">
+<Variable name="topbarbg" description="خلفية الشريط العلوي" type="color" default="#1e293b" value="#000000"/>
+<Variable name="topbarbgdark" description="خلفية الشريط العلوي (ليلي)" type="color" default="#020617" value="#1e293b"/>
+<Variable name="topbartext" description="لون النص والأيقونات في الشريط العلوي" type="color" default="#ffffff" value="#6366f1"/>
+<Variable name="topbartextdark" description="لون النص والأيقونات (ليلي)" type="color" default="#cbd5e1" value="#6366f1"/>
+<Variable name="topbarhoverbg" description="خلفية الأيقونات عند المرور" type="string" default="rgba(255,255,255,0.2)" value="rgba(255,255,255,0.2)"/>
+<Variable name="topbarhoverbgdark" description="خلفية الأيقونات عند المرور (ليلي)" type="string" default="rgba(255,255,255,0.1)" value="rgba(255,255,255,0.1)"/>
+<Variable name="topbarborder" description="لون حدود الشريط العلوي" type="color" default="#334155" value="#334155"/>
+<Variable name="topbarborderdark" description="لون حدود الشريط العلوي (ليلي)" type="color" default="#1e293b" value="#1e293b"/>
+</Group>
 
 */
 :root {
@@ -6166,6 +6238,10 @@ html body .sidebar .Profile .profile-textblock { font-size: 13px; color: var(--t
   --header-main-bg-dark: $(darkmodeheadermainbg);
   --linkhover: $(linkhover);
   --topbarbg: $(topbarbg);
+  --seoturbo-topbar-bg: $(topbarbg);
+  --topbartext: $(topbartext);
+  --topbarhoverbg: $(topbarhoverbg);
+  --topbarborder: $(topbarborder);
   --max-width: $(pagewidth);
   --sidebar-width: $(sidebarwidth);
   
@@ -6214,6 +6290,16 @@ html body .sidebar .Profile .profile-textblock { font-size: 13px; color: var(--t
   --wave-3-opacity: var(--header-wave-3-opacity);
   --wave-4-opacity: var(--header-wave-4-opacity);
   --wave-5-opacity: var(--header-wave-5-opacity);
+  
+  --grad-c1: $(grad1);
+  --grad-c2: $(grad2);
+  --grad-c3: $(grad3);
+  --grad-bg: $(gradbg);
+  --grad-tx: $(gradtx);
+  --grad-dir: $(graddir)deg;
+  --grad-main: linear-gradient($(graddir)deg, $(grad1), $(grad2));
+  --grad-tri: linear-gradient($(graddir)deg, $(grad1), $(grad2), $(grad3));
+  --grad-dark: linear-gradient($(graddir)deg, $(grad1), #000);
 
   --header-wave-bg-start: $(headerwavebg);
   --header-wave-bg-end: $(headerwavebg2);
@@ -6225,7 +6311,81 @@ html body .sidebar .Profile .profile-textblock { font-size: 13px; color: var(--t
   --preloader-bg-dark: $(preloaderbgdark);
   --preloader-main-color: $(preloadermaincolor);
   --preloader-main-color-dark: $(preloadermaincolordark);
+
+  --btn-bg: $(btnbg);
+  --btn-text: $(btntext);
+  --btn-hover-bg: $(btnhoverbg);
+  --btn-hover-text: $(btnhovertext);
+  --menu-bg: $(menubg);
+  --menu-text: $(menutext);
+  --menu-hover-bg: $(menuhoverbg);
+  --menu-border: $(menuborder);
+  --hamburger-bg: $(hamburgerbg);
+  --hamburger-text: $(hamburgertext);
+  --hamburger-border: $(hamburgerborder);
+  --header-bg: $(headerbg);
+  --header-text-color: $(headertext);
+  --header-icon-color: $(headericoncolor);
+  --footer-bg: $(footerbg);
+  --footer-text: $(footertext);
+  --footer-link: $(footerlink);
+  --footer-border: $(footerborder);
+  --wrapper-bg: $(wrapperbg);
+  --wrapper-border: $(wrapperborder);
+  --border-radius-global: $(borderradius);
   --menustripcolor: $(menustripcolor);
+  --menustripcolordark: $(menustripcolordark);
+  --grad1dark: $(grad1dark);
+  --grad2dark: $(grad2dark);
+  --grad3dark: $(grad3dark);
+  --gradbgdark: $(gradbgdark);
+  --gradtxdark: $(gradtxdark);
+  --btn-bg-dark: $(btnbgdark);
+  --btn-text-dark: $(btntextdark);
+  --btn-hover-bg-dark: $(btnhoverbgdark);
+  --btn-hover-text-dark: $(btnhovertextdark);
+  --menu-bg-dark: $(menubgdark);
+  --menu-text-dark: $(menutextdark);
+  --menu-hover-bg-dark: $(menuhoverbgdark);
+  --menu-border-dark: $(menuborderdark);
+  --hamburger-bg-dark: $(hamburgerbgdark);
+  --hamburger-text-dark: $(hamburgertextdark);
+  --hamburger-border-dark: $(hamburgerborderdark);
+  --header-bg-dark: $(headerbgdark);
+  --header-text-dark: $(headertextdark);
+  --header-icon-color-dark: $(headericoncolordark);
+  --footer-bg-dark: $(footerbgdark);
+  --footer-text-dark: $(footertextdark);
+  --footer-link-dark: $(footerlinkdark);
+  --footer-border-dark: $(footerborderdark);
+  --wrapper-bg-dark: $(wrapperbgdark);
+  --wrapper-border-dark: $(wrapperborderdark);
+  --topbar-bg-dark: $(topbarbgdark);
+  --topbar-text-dark: $(topbartextdark);
+  --topbar-hover-bg-dark: $(topbarhoverbgdark);
+  --topbar-border-dark: $(topbarborderdark);
+  --ticker-bg: $(tickerbg);
+  --ticker-text: $(tickertext);
+  --ticker-border: $(tickerbordercol);
+  --ticker-promo-bg: $(tickerpromobg);
+  --ticker-promo-text: $(tickerpromotext);
+  --ticker-source-bg: $(tickersourcebg);
+  --ticker-source-text: $(tickersourcetext);
+  --ticker-source-border: $(tickersourceborder);
+  --ticker-hover-text: $(tickerhovertext);
+  --ticker-hover-source-bg: $(tickerhoversourcebg);
+  --ticker-hover-source-text: $(tickerhoversourcetext);
+  --ticker-bg-dark: $(tickerbgdark);
+  --ticker-text-dark: $(tickertextdark);
+  --ticker-border-dark: $(tickerbordercoldark);
+  --ticker-promo-bg-dark: $(tickerpromobgdark);
+  --ticker-promo-text-dark: $(tickerpromotextdark);
+  --ticker-source-bg-dark: $(tickersourcebgdark);
+  --ticker-source-text-dark: $(tickersourcetextdark);
+  --ticker-source-border-dark: $(tickersourceborderdark);
+  --ticker-hover-text-dark: $(tickerhovertextdark);
+  --ticker-hover-source-bg-dark: $(tickerhoversourcebgdark);
+  --ticker-hover-source-text-dark: $(tickerhoversourcetextdark);
 }
 .main-wrapper { display: flex; flex-wrap: wrap; margin-top: 10px; gap: 15px; flex-direction: row; }
 .main-content { flex: 1; min-width: 300px; width: calc(100% - var(--sidebar-width) - 15px); }
@@ -6452,8 +6612,237 @@ html body .sidebar .Profile .profile-textblock { font-size: 13px; color: var(--t
 .seoturbo-grad-accent { background: linear-gradient(var(--grad-dir), var(--grad-c1), var(--grad-c3)) !important; }
 .seoturbo-grad-shadow { box-shadow: 0 4px 20px rgba(0,0,0,0.3), 0 0 40px var(--grad-c1) !important; }
 
+/* --- Content Wrapper --- */
+.seoturbo-content-wrapper {
+  background: var(--wrapper-bg, #fff);
+  border-radius: var(--border-radius-global, 16px);
+  border: 1px solid var(--wrapper-border, transparent);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08), 0 1px 4px rgba(0,0,0,0.04);
+  margin: 20px auto;
+  padding: 24px;
+  max-width: 1200px;
+  overflow: hidden;
+}
+body.dark-mode .seoturbo-content-wrapper {
+  background: var(--seoturbo-blogdark, #1a1a2e);
+  border-color: var(--wrapper-border, #334155);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+}
+
+/* --- Sidebar Inner Wrapper --- */
+.seoturbo-sidebar-inner {
+  background: var(--widget-bg, #fff);
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  padding: 20px 16px;
+}
+body.dark-mode .seoturbo-sidebar-inner {
+  background: var(--darkmode-widget-bg, #1a1a2e);
+  box-shadow: 0 2px 16px rgba(0,0,0,0.2);
+}
+
+/* --- Button Variables (ربط الأزرار) --- */
+.seoturbo_chatbot_action_btn, .seoturbo-cp-btn-reset, .seoturbo-cp-btn-save, .seoturbo-fav-btn, .seoturbo-lock-btn, .seoturbo-slider-share-btn, .toc-toggle-btn, .share-button, .seoturbo-sticky-btn, .seoturbo-acc-trigger, .post-labels a, input[type="submit"] {
+  background: var(--btn-bg) !important;
+  color: var(--btn-text) !important;
+  border-color: var(--btn-bg) !important;
+}
+.seoturbo_chatbot_action_btn:hover, .seoturbo-cp-btn-reset:hover, .seoturbo-cp-btn-save:hover, .seoturbo-fav-btn:hover, .seoturbo-lock-btn:hover, .seoturbo-slider-share-btn:hover, .toc-toggle-btn:hover, .share-button:hover, .seoturbo-sticky-btn:hover, .seoturbo-acc-trigger:hover, .post-labels a:hover, input[type="submit"]:hover {
+  background: var(--btn-hover-bg) !important;
+  color: var(--btn-hover-text) !important;
+}
+
+/* --- Menu Variables --- */
+html body .nav-menu {
+  background: var(--menu-bg) !important;
+  border-color: var(--menu-border) !important;
+}
+html body .nav-menu a {
+  color: var(--menu-text) !important;
+}
+html body .nav-menu a:hover {
+  background: var(--menu-hover-bg) !important;
+}
+
+/* --- Header Variables --- */
+html body .header-main {
+  color: var(--header-text) !important;
+}
+html body .header-main a, html body .header-main .header-widget, html body .header-main h1, html body .header-main .title {
+  color: var(--header-text) !important;
+}
+html body .header-main svg, html body .header-main .header-image-wrapper svg {
+  fill: var(--header-icon-color) !important;
+  color: var(--header-icon-color) !important;
+}
+
+/* --- Hamburger Variables --- */
+html body .seoturbo-hamburger-container {
+  background: var(--hamburger-bg) !important;
+  border-color: var(--hamburger-border) !important;
+}
+html body .seoturbo-hamburger-container a {
+  color: var(--hamburger-text) !important;
+}
+
+/* --- Footer Variables --- */
+html body footer, html body .footer-grid, html body .footer-bottom-content-container, html body .footer-top-content-container {
+  background: var(--footer-bg) !important;
+  color: var(--footer-text) !important;
+  border-color: var(--footer-border) !important;
+}
+html body footer a {
+  color: var(--footer-link) !important;
+}
+html body footer a:hover {
+  color: var(--footer-text) !important;
+}
+
+/* --- Blogger Widget Card Styles --- */
+html body .sidebar .PopularPosts { background: var(--widget-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); box-sizing: border-box; }
+body.dark-mode html body .sidebar .PopularPosts { background: var(--darkmode-widget-bg); border-color: var(--darkmode-border-color); }
+html body .sidebar .PopularPosts .item-title a { font-weight: 700; font-size: 14px; color: var(--text-color); line-height: 1.4; }
+html body .sidebar .PopularPosts .item-snippet { font-size: 12px; color: var(--softcolor); margin-top: 4px; }
+html body .sidebar .PopularPosts .popular-posts-item { padding: 10px 0; border-bottom: 1px solid var(--border-color); }
+body.dark-mode html body .sidebar .PopularPosts .popular-posts-item { border-color: var(--darkmode-border-color); }
+html body .sidebar .PopularPosts .popular-posts-item:last-child { border-bottom: none; }
+html body .sidebar .Label { background: var(--widget-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); box-sizing: border-box; }
+body.dark-mode html body .sidebar .Label { background: var(--darkmode-widget-bg); border-color: var(--darkmode-border-color); }
+html body .sidebar .Label .label-name { font-weight: 600; font-size: 14px; color: var(--text-color); }
+html body .sidebar .Label .label-count { color: var(--blogcolor); font-size: 12px; font-weight: 700; }
+html body .sidebar .Label li { padding: 8px 12px; border-radius: 8px; }
+html body .sidebar .Label li:hover { background: var(--seoturbo-blogsoft); }
+html body .sidebar .FeaturedPost { background: var(--widget-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); box-sizing: border-box; }
+body.dark-mode html body .sidebar .FeaturedPost { background: var(--darkmode-widget-bg); border-color: var(--darkmode-border-color); }
+html body .sidebar .FeaturedPost h3 a { color: var(--blogcolor); font-weight: 800; font-size: 16px; }
+html body .sidebar .LinkList, html body .sidebar .PageList { background: var(--widget-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); box-sizing: border-box; }
+body.dark-mode html body .sidebar .LinkList, body.dark-mode html body .sidebar .PageList { background: var(--darkmode-widget-bg); border-color: var(--darkmode-border-color); }
+html body .sidebar .LinkList a, html body .sidebar .PageList a { font-weight: 600; font-size: 14px; color: var(--text-color); display: block; padding: 8px 12px; border-radius: 8px; }
+html body .sidebar .LinkList a:hover, html body .sidebar .PageList a:hover { background: var(--seoturbo-blogsoft); color: var(--blogcolor); }
+html body .sidebar .BlogArchive { background: var(--widget-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); box-sizing: border-box; }
+body.dark-mode html body .sidebar .BlogArchive { background: var(--darkmode-widget-bg); border-color: var(--darkmode-border-color); }
+html body .sidebar .ContactForm { background: var(--widget-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); box-sizing: border-box; }
+body.dark-mode html body .sidebar .ContactForm { background: var(--darkmode-widget-bg); border-color: var(--darkmode-border-color); }
+html body .sidebar .HTML { background: var(--widget-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); box-sizing: border-box; }
+body.dark-mode html body .sidebar .HTML { background: var(--darkmode-widget-bg); border-color: var(--darkmode-border-color); }
+html body .sidebar > .widget > h2 { font-size: 18px; font-weight: 900; color: var(--blogcolor); margin-bottom: 15px; padding-bottom: 10px; border-bottom: 2px solid var(--seoturbo-blogsoft); }
+/* --- End Widget Card Styles --- */
+
+/* --- Dark Mode Overrides for Customizer Variables --- */
+body.dark-mode .seoturbo-topbar {
+  background: var(--topbar-bg-dark) !important;
+}
+body.dark-mode .seoturbo-topbar,
+body.dark-mode .seoturbo-topbar-row-1 a,
+body.dark-mode .seoturbo-topbar-row-2 a,
+body.dark-mode .seoturbo-topbar .inner {
+  color: var(--topbar-text-dark) !important;
+}
+body.dark-mode .seoturbo-topbar a:hover {
+  background: var(--topbar-hover-bg-dark) !important;
+}
+body.dark-mode .seoturbo-topbar,
+body.dark-mode .seoturbo-topbar-row-1,
+body.dark-mode .seoturbo-topbar-row-2 {
+  border-color: var(--topbar-border-dark) !important;
+}
+body.dark-mode .seoturbo-grad-bg { background: var(--grad1dark) !important; }
+body.dark-mode .seoturbo-grad-text { background: var(--gradtxdark) !important; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+body.dark-mode .seoturbo-grad-btn { background: var(--gradbgdark) !important; color: var(--gradtxdark) !important; }
+body.dark-mode .seoturbo-grad-accent { background: linear-gradient(135deg, var(--grad1dark), var(--grad3dark)) !important; }
+body.dark-mode .seoturbo-grad-shadow { box-shadow: 0 4px 20px rgba(0,0,0,0.5), 0 0 40px var(--grad1dark) !important; }
+body.dark-mode .seoturbo-grad-border { border-color: transparent; border-image: linear-gradient(135deg, var(--grad1dark), var(--grad3dark)) 1; }
+body.dark-mode .seoturbo_chatbot_action_btn,
+body.dark-mode .seoturbo-cp-btn-reset,
+body.dark-mode .seoturbo-cp-btn-save,
+body.dark-mode .seoturbo-fav-btn,
+body.dark-mode .seoturbo-lock-btn,
+body.dark-mode .seoturbo-slider-share-btn,
+body.dark-mode .toc-toggle-btn,
+body.dark-mode .share-button,
+body.dark-mode .seoturbo-sticky-btn,
+body.dark-mode .seoturbo-acc-trigger,
+body.dark-mode .post-labels a,
+body.dark-mode input[type="submit"] {
+  background: var(--btn-bg-dark) !important;
+  color: var(--btn-text-dark) !important;
+  border-color: var(--btn-bg-dark) !important;
+}
+body.dark-mode .seoturbo_chatbot_action_btn:hover,
+body.dark-mode .seoturbo-cp-btn-reset:hover,
+body.dark-mode .seoturbo-cp-btn-save:hover,
+body.dark-mode .seoturbo-fav-btn:hover,
+body.dark-mode .seoturbo-lock-btn:hover,
+body.dark-mode .seoturbo-slider-share-btn:hover,
+body.dark-mode .toc-toggle-btn:hover,
+body.dark-mode .share-button:hover,
+body.dark-mode .seoturbo-sticky-btn:hover,
+body.dark-mode .seoturbo-acc-trigger:hover,
+body.dark-mode .post-labels a:hover,
+body.dark-mode input[type="submit"]:hover {
+  background: var(--btn-hover-bg-dark) !important;
+  color: var(--btn-hover-text-dark) !important;
+}
+body.dark-mode html body .nav-menu {
+  background: var(--menu-bg-dark) !important;
+  border-color: var(--menu-border-dark) !important;
+}
+body.dark-mode html body .nav-menu a {
+  color: var(--menu-text-dark) !important;
+}
+body.dark-mode html body .nav-menu a:hover {
+  background: var(--menu-hover-bg-dark) !important;
+}
+body.dark-mode html body .header-main {
+  color: var(--header-text-dark) !important;
+}
+body.dark-mode html body .header-main a,
+body.dark-mode html body .header-main .header-widget,
+body.dark-mode html body .header-main h1,
+body.dark-mode html body .header-main .title {
+  color: var(--header-text-dark) !important;
+}
+body.dark-mode html body .header-main svg,
+body.dark-mode html body .header-main .header-image-wrapper svg {
+  fill: var(--header-icon-color-dark) !important;
+  color: var(--header-icon-color-dark) !important;
+}
+body.dark-mode html body .seoturbo-hamburger-container {
+  background: var(--hamburger-bg-dark) !important;
+  border-color: var(--hamburger-border-dark) !important;
+}
+body.dark-mode html body .seoturbo-hamburger-container a {
+  color: var(--hamburger-text-dark) !important;
+}
+body.dark-mode html body footer,
+body.dark-mode html body .footer-grid,
+body.dark-mode html body .footer-bottom-content-container,
+body.dark-mode html body .footer-top-content-container {
+  background: var(--footer-bg-dark) !important;
+  color: var(--footer-text-dark) !important;
+  border-color: var(--footer-border-dark) !important;
+}
+body.dark-mode html body footer a {
+  color: var(--footer-link-dark) !important;
+}
+body.dark-mode html body footer a:hover {
+  color: var(--footer-text-dark) !important;
+}
+body.dark-mode .seoturbo-content-wrapper {
+  background: var(--wrapper-bg-dark) !important;
+  border-color: var(--wrapper-border-dark) !important;
+}
+body.dark-mode .seoturbo-main-menu-color-strip {
+  color: var(--menustripcolordark) !important;
+}
+body.dark-mode .seoturbo-topbar-wave-wrapper .swl-1 { opacity: calc(var(--wave-1-opacity, 0.05) * 1.5) !important; }
+body.dark-mode .seoturbo-topbar-wave-wrapper .swl-2 { opacity: calc(var(--wave-2-opacity, 0.11) * 1.5) !important; }
+body.dark-mode .seoturbo-topbar-wave-wrapper .swl-3 { opacity: calc(var(--wave-3-opacity, 0.20) * 1.5) !important; }
+body.dark-mode .seoturbo-topbar-wave-wrapper .swl-4 { opacity: calc(var(--wave-4-opacity, 0.33) * 1.5) !important; }
+body.dark-mode .seoturbo-topbar-wave-wrapper .swl-5 { opacity: calc(var(--wave-5-opacity, 0.52) * 1.5) !important; }
+
 ]]></b:skin>
- 
+  
 <b:template-skin>
   <![CDATA[
 /* ===== SEOTurbo APEX v13.0 — Layout Editor (body#layout) ===== */
@@ -6630,7 +7019,7 @@ body#layout #topbar-styles-library div.widget {
   box-sizing: border-box !important;
 }
 
-/* إخفاء مكتبة الثيمات من الموقع مع بقائها في DOM */
+/* ========== [CSS لـ Wave Injection System] بداية تعريفات الأمواج ========== */
 #topbar-styles-library { height:0; overflow:hidden; opacity:0; margin:0; padding:0; position:absolute; pointer-events:none; }
 body#layout #topbar-styles-library { height:auto; overflow:visible; opacity:1; position:static; pointer-events:auto; }
 
@@ -6728,8 +7117,7 @@ body#layout #topbar-styles-library { height:auto; overflow:visible; opacity:1; p
 .seoturbo-style-trigger[data-style='horizon'] {
   background: linear-gradient(90deg, #111827 0%, #1e3a8a 40%, #38bdf8 100%);
 }
-
-
+/* ========== [CSS لـ Wave Injection System] نهاية تعريفات الأمواج ========== */
 /* إزالة الفراغ بين الإعلان والفوتر */
 body#layout .ad-wrapper-home-footer {
   min-height: 0 !important;
@@ -6886,7 +7274,8 @@ c.textContent="["+number+"]";c.classList.add("masaha-cite-number");}
 </b:if>
 
 </head>  
-<body expr:class='data:view.isPost ? &quot;post-page&quot; : &quot;home-page&quot;'>
+<body data-curtain='open' expr:class='data:view.isPost ? &quot;post-page&quot; : &quot;home-page&quot;'>
+<div id='curtain-overlay'/>
 <b:attr cond='data:view.isLayoutMode' name='id' value='layout'/>
 <script>
 //<![CDATA[
@@ -7360,7 +7749,7 @@ window._critical=1;window._defer=function(fn){function exec(){var dcl=document.r
   
 <!-- مكتبة أنماط الشريط العلوي SEOTurbo - إعادة هيكلة محس&#1617;نة --> 
 <b:section id='topbar-styles-library' name='🎨مظهر الشريط العلوي - اختر ثيماً واحداً فقط' showaddelement='no'>
-   <b:widget id='HTML951' locked='true' title='1. 👑 نفرتيتي | Nefertiti (Peaks)' type='HTML' version='2' visible='true'>
+   <b:widget id='HTML951' locked='true' title='1. 👑 نفرتيتي | Nefertiti (Peaks)' type='HTML' version='2' visible='false'>
      <b:widget-settings>
        <b:widget-setting name='content'/>
      </b:widget-settings>
@@ -7370,7 +7759,7 @@ window._critical=1;window._defer=function(fn){function exec(){var dcl=document.r
        </div>
      </b:includable>
    </b:widget>
-   <b:widget id='HTML952' locked='true' title='2. 👑 حتشبسوت | Hatshepsut (Simple)' type='HTML' version='2' visible='true'>
+   <b:widget id='HTML952' locked='true' title='2. 👑 حتشبسوت | Hatshepsut (Simple)' type='HTML' version='2' visible='false'>
      <b:widget-settings>
        <b:widget-setting name='content'/>
      </b:widget-settings>
@@ -7420,7 +7809,7 @@ window._critical=1;window._defer=function(fn){function exec(){var dcl=document.r
        </div>
      </b:includable>
    </b:widget>
-   <b:widget id='HTML957' locked='true' title='7. 👑 أنخسن آمون | Ankhesenamun (Diamond)' type='HTML' version='2' visible='false'>
+   <b:widget id='HTML957' locked='true' title='7. 👑 أنخسن آمون | Ankhesenamun (Diamond)' type='HTML' version='2' visible='true'>
      <b:widget-settings>
        <b:widget-setting name='content'/>
      </b:widget-settings>
@@ -7460,8 +7849,12 @@ window._critical=1;window._defer=function(fn){function exec(){var dcl=document.r
         </div>
       </b:includable>
    </b:widget>
- </b:section>  
-   
+  </b:section>
+<!-- ============================ [نظام رشق الأمواج - Wave Injection System] ============================ -->
+<!-- CDN: waves.js (مستخرج بالكامل - يحقن SVG + CSS ديناميكياً في .seoturpo-topbar)                     -->
+<!-- CDN: waves.js - منقول لسجل CDN آخر القالب -->
+<!-- ================================================================================================== -->
+    
 <!-- بداية الهيدر الموحد -->
 <header class='site-header-master' id='master-header' role='banner'> 
 <!-- هيدر اللوجو والإدارة والإعلان -->
@@ -8252,7 +8645,9 @@ window._critical=1;window._defer=function(fn){function exec(){var dcl=document.r
 </div>
   </div>  
 </div>
-  
+   
+<!-- ====== بداية الغلاف المرئي للمحتوى ====== -->
+<div class='seoturbo-content-wrapper'>
 <!-- إعلان تحت القائمة -->
 <div class='menu-ad-wrapper' title='مساحة إعلانية'>
     <div class='outer-wrapper menu-ad'>
@@ -9868,6 +10263,7 @@ body.dark-mode .seoturbo-proof-item { color: #fff; }
     
 <!-- السايدبار -->    
 <aside class='sidebar' role='complementary'>
+<div class='seoturbo-sidebar-inner'>
 <!-- التواصل الاجتماعي بالسايدبار -->        
 <b:section id='sidebar-social-box' name='💬 التواصل الاجتماعي بالسايدبار' showaddelement='yes'>
           <b:widget id='LinkList101' locked='false' title='تابعنا على وسائل التواصل' type='LinkList' version='2' visible='true'>
@@ -10136,15 +10532,6 @@ body.dark-mode .seoturbo-proof-item { color: #fff; }
 <!-- إعلان السايدبار الثاني -->
 <div class='ad-wrapper-sidebar-2' title='مساحة إعلانية'>
     <b:section id='sidebar-ad-2' name='📣 إعلان السايدبار 2' showaddelement='yes'>
-      <b:widget id='HTML203' locked='false' title='📣 إعلان السايدبار 2' type='HTML' version='2' visible='false'>
-        <b:widget-settings>
-          <b:widget-setting name='content'><![CDATA[<div class="ad-unit sidebar-block sidebar-600"><div class="ad-label"> إعلان السايدبار 2 - إستبدل بإعلاناتك الفعلية<svg width="14" height="14" viewbox="0 0 488 512" style="fill: currentColor;"><use href="#icon-google"/></use></svg><span>Google AdSense</span><svg width="14" height="14" viewbox="0 0 576 512" style="fill: currentColor;"><use href="#icon-ad"/></use></svg></div><a href="/" class="ad-content-wing" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; box-sizing: border-box; gap: 15px; min-height: 600px; text-decoration: none;"><div style="display: flex; gap: 3px; direction: ltr; flex-wrap: wrap; justify-content: center;"><span style="font-family: 'Segoe UI', Arial, sans-serif; font-size: 48px; font-weight: 800; color: var(--google-blue);">G</span><span style="font-family: 'Segoe UI', Arial, sans-serif; font-size: 48px; font-weight: 800; color: var(--google-red);">o</span><span style="font-family: 'Segoe UI', Arial, sans-serif; font-size: 48px; font-weight: 800; color: var(--google-yellow);">o</span><span style="font-family: 'Segoe UI', Arial, sans-serif; font-size: 48px; font-weight: 800; color: var(--google-blue);">g</span><span style="font-family: 'Segoe UI', Arial, sans-serif; font-size: 48px; font-weight: 800; color: var(--google-green);">l</span><span style="font-family: 'Segoe UI', Arial, sans-serif; font-size: 48px; font-weight: 800; color: var(--google-red);">e</span></div><span style="font-family: 'Segoe UI', Arial, sans-serif; font-size: 28px; font-weight: 600; color: var(--google-gray); letter-spacing: 1px;">ADSENSE</span><div style="display: flex; gap: 8px; align-items: flex-end; justify-content: center;"><div style="width: 25px; height: 70px; background-color: var(--google-yellow); border-radius: 4px;"></div><div style="width: 25px; height: 100px; background-color: var(--google-green); border-radius: 4px;"></div><div style="width: 25px; height: 70px; background-color: var(--google-blue); border-radius: 4px;"></div></div><div style="background-color: var(--seoturbo-blogdark); color: var(--softcolor); padding: 12px 30px; border-radius: 40px; font-size: 20px; font-weight: 700; box-shadow: 0 4px 8px rgba(0,0,0,0.2); margin-top: 10px;">AD 300×600</div></a></div>]]></b:widget-setting>
-        </b:widget-settings>
-        <b:includable id='main'>
-                <b:if cond='data:title'><div class='title'><data:title/></div></b:if>
-                <div class='widget-content'><data:content/></div>
-            </b:includable>
-      </b:widget>
       <b:widget id='PopularPosts1' locked='false' title='' type='PopularPosts' visible='true'>
         <b:widget-settings>
           <b:widget-setting name='numItemsToShow'>3</b:widget-setting>
@@ -10159,11 +10546,68 @@ body.dark-mode .seoturbo-proof-item { color: #fff; }
   </div>
 </b:includable>
       </b:widget>
+      <b:widget id='Label1' locked='false' title='التسميات' type='Label' visible='true'>
+        <b:widget-settings>
+          <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
+          <b:widget-setting name='display'>LIST</b:widget-setting>
+          <b:widget-setting name='selectedLabelsList'/>
+          <b:widget-setting name='showType'>ALL</b:widget-setting>
+          <b:widget-setting name='showFreqNumbers'>true</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main' var='this'>
+  <b:include name='widget-title'/>
+  <b:include name='content'/>
+</b:includable>
+        <b:includable id='cloud'>
+  <b:loop values='data:labels' var='label'>
+    <span class='label-size'>
+      <b:class expr:name='&quot;label-size-&quot; + data:label.cssSize'/>
+      <a class='label-name' expr:href='data:label.url'>
+        <data:label.name/>
+        <b:if cond='data:this.showFreqNumbers'>
+          <span class='label-count'><data:label.count/></span>
+        </b:if>
+      </a>
+    </span>
+  </b:loop>
+</b:includable>
+        <b:includable id='content'>
+  <div class='widget-content'>
+    <b:class expr:name='data:this.display + &quot;-label-widget-content&quot;'/>
+    <b:include cond='data:this.display == &quot;list&quot;' name='list'/>
+    <b:include cond='data:this.display == &quot;cloud&quot;' name='cloud'/>
+  </div>
+</b:includable>
+        <b:includable id='list'>
+  <ul>
+    <b:loop values='data:labels' var='label'>
+      <li>
+        <a class='label-name' expr:href='data:label.url'>
+          <data:label.name/>
+          <b:if cond='data:this.showFreqNumbers'>
+            <span class='label-count'><data:label.count/></span>
+          </b:if>
+        </a>
+      </li>
+    </b:loop>
+  </ul>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML203' locked='false' title='📣 إعلان السايدبار 2' type='HTML' version='2' visible='false'>
+        <b:widget-settings>
+          <b:widget-setting name='content'><![CDATA[<div class="ad-unit sidebar-block sidebar-600"><div class="ad-label"> إعلان السايدبار 2 - إستبدل بإعلاناتك الفعلية<svg width="14" height="14" viewbox="0 0 488 512" style="fill: currentColor;"><use href="#icon-google"/></use></svg><span>Google AdSense</span><svg width="14" height="14" viewbox="0 0 576 512" style="fill: currentColor;"><use href="#icon-ad"/></use></svg></div><a href="/" class="ad-content-wing" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; box-sizing: border-box; gap: 15px; min-height: 600px; text-decoration: none;"><div style="display: flex; gap: 3px; direction: ltr; flex-wrap: wrap; justify-content: center;"><span style="font-family: 'Segoe UI', Arial, sans-serif; font-size: 48px; font-weight: 800; color: var(--google-blue);">G</span><span style="font-family: 'Segoe UI', Arial, sans-serif; font-size: 48px; font-weight: 800; color: var(--google-red);">o</span><span style="font-family: 'Segoe UI', Arial, sans-serif; font-size: 48px; font-weight: 800; color: var(--google-yellow);">o</span><span style="font-family: 'Segoe UI', Arial, sans-serif; font-size: 48px; font-weight: 800; color: var(--google-blue);">g</span><span style="font-family: 'Segoe UI', Arial, sans-serif; font-size: 48px; font-weight: 800; color: var(--google-green);">l</span><span style="font-family: 'Segoe UI', Arial, sans-serif; font-size: 48px; font-weight: 800; color: var(--google-red);">e</span></div><span style="font-family: 'Segoe UI', Arial, sans-serif; font-size: 28px; font-weight: 600; color: var(--google-gray); letter-spacing: 1px;">ADSENSE</span><div style="display: flex; gap: 8px; align-items: flex-end; justify-content: center;"><div style="width: 25px; height: 70px; background-color: var(--google-yellow); border-radius: 4px;"></div><div style="width: 25px; height: 100px; background-color: var(--google-green); border-radius: 4px;"></div><div style="width: 25px; height: 70px; background-color: var(--google-blue); border-radius: 4px;"></div></div><div style="background-color: var(--seoturbo-blogdark); color: var(--softcolor); padding: 12px 30px; border-radius: 40px; font-size: 20px; font-weight: 700; box-shadow: 0 4px 8px rgba(0,0,0,0.2); margin-top: 10px;">AD 300×600</div></a></div>]]></b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+                <b:if cond='data:title'><div class='title'><data:title/></div></b:if>
+                <div class='widget-content'><data:content/></div>
+            </b:includable>
+      </b:widget>
     </b:section>
       </div>  
-    </aside>       
+    </div></aside>       
 </div>
-  
+</div><!-- ====== نهاية الغلاف المرئي للمحتوى ====== -->
+   
 <!-- نظام التفضيلات والإقتراحات الذكية -->      
 <div class='seoturbo-fav-modal' id='seoturbo-user-dashboard'>
     <div class='seoturbo-fav-content dashboard-lite'>
@@ -10991,6 +11435,11 @@ document.addEventListener("DOMContentLoaded", function() {
         <svg height='20' viewBox='0 0 448 512' width='20'><use href='#icon-chevron-down'/></svg>
     </button>
 </div>
+
+<button id='curtain-btn' title='الستار'>
+    <svg class='curtain-close' height='18' viewBox='0 0 448 512' width='18'><use href='#icon-boxing-expand'/></svg>
+    <svg class='curtain-open' height='18' viewBox='0 0 448 512' width='18'><use href='#icon-boxing-compress'/></svg>
+</button>
  
 <!-- درع الحماية والأمان الفائق -->
 <b:section id='Pro_Security_System' name='🛡️ درع سيو تربو للحماية والأمان السيبرانى' showaddelement='yes'>
@@ -11566,6 +12015,16 @@ window.optimizeImage = function(url, type = 'default') {
             e.preventDefault();
             var scrollHeight = document.documentElement.scrollHeight;
             window.scrollTo({ top: scrollHeight, behavior: 'smooth' });
+        });
+    }
+    
+    var curtainBtn = document.getElementById('curtain-btn');
+    if (curtainBtn) {
+        curtainBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            var body = document.body;
+            var isOpen = body.getAttribute('data-curtain') === 'open';
+            body.setAttribute('data-curtain', isOpen ? 'closed' : 'open');
         });
     }
     
@@ -19109,537 +19568,26 @@ window._defer(function() {
 //]]>
 </script>
    
-<!-- 63-متنوع-رمز-الإستجابة-السريعة.js  -->
-<script type='text/javascript'>
-//<![CDATA[
-(function() {
-    'use strict';    
-    function initQRCode() {
-        var siteUrl = window.location.origin;
-        var megaQr = document.getElementById('mega-qr-code');
-        if (megaQr && (!megaQr.src || megaQr.src === '' || megaQr.src === window.location.href)) {
-            megaQr.src = 'https://api.qrserver.com/v1/create-qr-code/?size=100x100&margin=10&data=' + encodeURIComponent(siteUrl);
-        }
-        var stickyQr = document.getElementById('sticky-qr-code');
-        if (stickyQr && (!stickyQr.src || stickyQr.src === '' || stickyQr.src === window.location.href)) {
-            stickyQr.src = 'https://api.qrserver.com/v1/create-qr-code/?size=80x80&margin=8&data=' + encodeURIComponent(siteUrl);
-        }
-    }
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initQRCode);
-    } else {
-        initQRCode();
-    }
-})();
-//]]>
-</script>    
-     
-<!-- 64-متنوع-تحديث-سكيما-الهوية.js -->  
-<b:if cond='data:view.isHomepage'>
-<script type='text/javascript'>
-//<![CDATA[
-(function() {
-    'use strict';
-    window.addEventListener('load', function() {
-        try {
-            var metaDate = document.querySelector('meta[name="creationDate"]');
-            var metaType = document.querySelector('meta[name="site-type"]');
-            var metaTel = document.querySelector('meta[name="site-telephone"]');
-            var metaMail = document.querySelector('meta[name="site-email"]');
-            
-            var finalDateString = null;
-            if (metaDate && metaDate.content) {
-                var d = new Date(metaDate.content);
-                if (!isNaN(d.getTime())) {
-                    var yyyy = d.getFullYear();
-                    var mm = ("0" + (d.getMonth() + 1)).slice(-2);
-                    var dd = ("0" + d.getDate()).slice(-2);
-                    finalDateString = yyyy + "-" + mm + "-" + dd + "T10:30:45+02:00";
-                }
-            }
+<!-- ===== MODULE 63: رمز الإستجابة السريعة (QR Code) - CDN ===== -->
+<!-- CDN: موديول 63 - منقول لسجل CDN آخر القالب -->
 
-            var wsTag = document.getElementById('seoturbo-website-schema');
-            if (wsTag && finalDateString) {
-                var wsData = JSON.parse(wsTag.textContent);
-                wsData.foundingDate = finalDateString;
-                wsTag.textContent = JSON.stringify(wsData, null, 2);
-            }
+<!-- ===== MODULE 64: تحديث سكيما الهوية (Schema Identity) - CDN ===== -->
+<!-- CDN: موديول 64 - منقول لسجل CDN آخر القالب -->
 
-            var orgTag = document.getElementById('seoturbo-dynamic-org-schema');
-            if (orgTag) {
-                var orgData = JSON.parse(orgTag.textContent);
-
-                if (finalDateString) orgData.foundingDate = finalDateString;
-
-                if (metaType && metaType.content) orgData["@type"] = metaType.content.trim();
-
-                orgData.contactPoint = {
-                    "@type": "ContactPoint",
-                    "contactType": "newsroom",
-                    "areaServed": ["EG","SA","AE","KW","QA","BH","OM","IQ","SY","LB","JO","PS","DZ","MA","TN","LY","SD","SO","MR","DJ","KM","YE"],
-                    "availableLanguage": ["Arabic","English"]
-                };
-                if (metaTel && metaTel.content) orgData.contactPoint.telephone = metaTel.content.trim();
-                if (metaMail && metaMail.content) orgData.contactPoint.email = metaMail.content.trim();
-
-                var selectors = 'a[href*="facebook.com"], a[href*="twitter.com"], a[href*="x.com"], a[href*="instagram.com"], a[href*="youtube.com"], a[href*="tiktok.com"], a[href*="pinterest.com"], a[href*="linkedin.com"]';
-                var links = Array.from(document.querySelectorAll(selectors))
-                                 .map(link => link.href)
-                                 .filter((href, index, self) => href && self.indexOf(href) === index && href.indexOf('#') === -1);
-                if (links.length > 0) orgData.sameAs = links;
-
-                var aboutPage = document.querySelector('a[href*="/p/about-us"]');
-                if (aboutPage) orgData.mainEntityOfPage = aboutPage.href;
-
-                orgTag.textContent = JSON.stringify(orgData, null, 2);
-            }
-
-            console.log("✅ SEOTurbo v8: Date standardized to " + finalDateString);
-
-        } catch (e) { console.warn("Schema Patcher v8 Failed", e); }
-    });
-})();
-//]]>
-</script>
-</b:if>
-        
-<!-- 65-متنوع-وصف-رئيسي-طويل.js  -->
-<b:if cond='data:view.isHomepage'>
-<script>
-//<![CDATA[
-(function() {
-  var source = document.getElementById('header-desc-source');
-  var target = document.getElementById('dynamic-home-description');
-  if (source && target) {
-    var text = source.textContent.trim();
-    if (text.length > 0) {
-      target.setAttribute('content', text);
-    }
-  }
-})();
-//]]>
-</script>
-</b:if>    
-
-<!-- 66-متنوع-مظهر-الشريط-العلوي.js -->
-<script type='text/javascript'>
-//<![CDATA[
-(function() {
-    'use strict';
-
-    let lastAppliedStyle = null;
-    let pendingUpdate = false;
-    let isProcessingUncheck = false;
-
-    const uncheckAllExcept = function(exceptionWidgetId) {
-        const allWidgets = document.querySelectorAll('#topbar-styles-library .widget');
-        
-        allWidgets.forEach(widget => {
-            if (exceptionWidgetId && widget.id === exceptionWidgetId) return;
-            
-            const radioInput = widget.querySelector('input[type="radio"], input[type="checkbox"]');
-            if (radioInput && radioInput.checked) {
-                radioInput.checked = false;
-                
-                const changeEvent = new Event('change', { bubbles: true });
-                radioInput.dispatchEvent(changeEvent);
-                const clickEvent = new Event('click', { bubbles: true });
-                radioInput.dispatchEvent(clickEvent);
-            }
-        });
-    };
-
-    const runExclusiveStyle = function(triggeredById = null) {
-        if (pendingUpdate) return;
-        if (isProcessingUncheck) return;
-        
-        pendingUpdate = true;
-
-        try {
-            const allTriggers = document.querySelectorAll('#topbar-styles-library .seoturbo-style-trigger');
-            
-            const activeTriggers = Array.from(allTriggers).filter(el => {
-                const widget = el.closest('.widget');
-                if (!widget) return false;
-                return widget.offsetParent !== null;
-            });
-
-            if (activeTriggers.length === 0) {
-                if (lastAppliedStyle !== null) {
-                    const oldStyle = document.getElementById('seoturbo-dynamic-css');
-                    if (oldStyle) oldStyle.remove();
-                    document.querySelectorAll('.st-dynamic-shape-container').forEach(el => el.remove());
-                    lastAppliedStyle = null;
-                }
-                pendingUpdate = false;
-                return;
-            }
-
-            const currentTrigger = activeTriggers[activeTriggers.length - 1];
-            const STYLE_KEY = currentTrigger.getAttribute('data-style');
-            const currentWidget = currentTrigger.closest('.widget');
-            const currentWidgetId = currentWidget ? currentWidget.id : null;
-            
-            if (lastAppliedStyle === STYLE_KEY) {
-                pendingUpdate = false;
-                return;
-            }
-            
-            if (currentWidgetId) {
-                isProcessingUncheck = true;
-                uncheckAllExcept(currentWidgetId);
-                isProcessingUncheck = false;
-            }
-            
-            const topbar = document.querySelector('.seoturbo-topbar');
-            if (!topbar) {
-                pendingUpdate = false;
-                return;
-            }
-
-            const oldStyle = document.getElementById('seoturbo-dynamic-css');
-            if (oldStyle) oldStyle.remove();
-            document.querySelectorAll('.st-dynamic-shape-container').forEach(el => el.remove());
-
-            const _GS = {css:".seoturbo-topbar-wave-wrapper{position:absolute;bottom:-180px;left:0;width:100%;line-height:0;z-index:0;pointer-events:none;}.seoturbo-topbar-wave-wrapper svg{display:block;width:100%;height:189px;}.swl-1{fill:var(--wave-1-color,var(--blogcolor));opacity:0.05;}.swl-2{fill:var(--wave-2-color,var(--blogcolor));opacity:0.11;}.swl-3{fill:var(--wave-3-color,var(--blogcolor));opacity:0.20;}.swl-4{fill:var(--wave-4-color,var(--blogcolor));opacity:0.33;}.swl-5{fill:var(--wave-5-color,var(--blogcolor));opacity:0.52;}body.dark-mode .swl-1{fill:#0a0a1a;opacity:0.07;}body.dark-mode .swl-2{fill:#0a0a1a;opacity:0.15;}body.dark-mode .swl-3{fill:#0a0a1a;opacity:0.25;}body.dark-mode .swl-4{fill:#0a0a1a;opacity:0.38;}body.dark-mode .swl-5{fill:#0a0a1a;opacity:0.55;}@media (max-width:768px){.seoturbo-topbar-wave-wrapper{bottom:-90px;}.seoturbo-topbar-wave-wrapper svg{height:95px;}}",svg:'<div class="st-dynamic-shape-container seoturbo-topbar-wave-wrapper"><svg preserveAspectRatio="none" viewBox="0 0 1440 300"><path class="swl-1" d="M0,30 C360,5 720,45 1080,20 C1260,8 1350,38 1440,30 L1440,0 L0,0 Z"/><path class="swl-2" d="M0,65 C240,25 480,100 720,55 C960,15 1200,110 1440,65 L1440,0 L0,0 Z"/><path class="swl-3" d="M0,105 C180,45 360,160 540,90 C720,30 900,160 1080,105 C1260,55 1440,160 1440,105 L1440,0 L0,0 Z"/><path class="swl-4" d="M0,150 C150,80 300,215 450,135 C600,55 750,215 900,150 C1050,80 1200,215 1350,150 C1400,125 1420,185 1440,150 L1440,0 L0,0 Z"/><path class="swl-5" d="M0,198 C100,135 200,270 300,180 C400,95 500,270 600,195 C700,135 800,270 900,195 C1000,135 1100,270 1200,195 C1300,135 1400,270 1440,198 L1440,0 L0,0 Z"/></svg></div>'};
-            const _SIMPLE = {css:".seoturbo-topbar-wave-wrapper{position:absolute;bottom:-130px;left:0;width:100%;line-height:0;z-index:0;pointer-events:none;}.seoturbo-topbar-wave-wrapper svg{display:block;width:100%;height:140px;}.swl-1{fill:var(--wave-1-color,var(--blogcolor));opacity:0.035;}.swl-2{fill:var(--wave-2-color,var(--blogcolor));opacity:0.07;}.swl-3{fill:var(--wave-3-color,var(--blogcolor));opacity:0.13;}.swl-4{fill:var(--wave-4-color,var(--blogcolor));opacity:0.22;}.swl-5{fill:var(--wave-5-color,var(--blogcolor));opacity:0.35;}body.dark-mode .swl-1{fill:#0a0a1a;opacity:0.05;}body.dark-mode .swl-2{fill:#0a0a1a;opacity:0.10;}body.dark-mode .swl-3{fill:#0a0a1a;opacity:0.17;}body.dark-mode .swl-4{fill:#0a0a1a;opacity:0.27;}body.dark-mode .swl-5{fill:#0a0a1a;opacity:0.42;}@media (max-width:768px){.seoturbo-topbar-wave-wrapper{bottom:-65px;}.seoturbo-topbar-wave-wrapper svg{height:70px;}}",svg:'<div class="st-dynamic-shape-container seoturbo-topbar-wave-wrapper"><svg preserveAspectRatio="none" viewBox="0 0 1440 320"><path class="swl-1" d="M0,0L60,280L120,0ZM120,0L180,280L240,0ZM240,0L300,280L360,0ZM360,0L420,280L480,0ZM480,0L540,280L600,0ZM600,0L660,280L720,0ZM720,0L780,280L840,0ZM840,0L900,280L960,0ZM960,0L1020,280L1080,0ZM1080,0L1140,280L1200,0ZM1200,0L1260,280L1320,0ZM1320,0L1380,280L1440,0ZM0,300L1440,300L1440,320L0,320Z"/><path class="swl-2" d="M0,0L60,260L120,0ZM120,0L180,260L240,0ZM240,0L300,260L360,0ZM360,0L420,260L480,0ZM480,0L540,260L600,0ZM600,0L660,260L720,0ZM720,0L780,260L840,0ZM840,0L900,260L960,0ZM960,0L1020,260L1080,0ZM1080,0L1140,260L1200,0ZM1200,0L1260,260L1320,0ZM1320,0L1380,260L1440,0ZM0,280L1440,280L1440,300L0,300Z"/><path class="swl-3" d="M0,0L60,240L120,0ZM120,0L180,240L240,0ZM240,0L300,240L360,0ZM360,0L420,240L480,0ZM480,0L540,240L600,0ZM600,0L660,240L720,0ZM720,0L780,240L840,0ZM840,0L900,240L960,0ZM960,0L1020,240L1080,0ZM1080,0L1140,240L1200,0ZM1200,0L1260,240L1320,0ZM1320,0L1380,240L1440,0ZM0,260L1440,260L1440,280L0,280Z"/><path class="swl-4" d="M0,0L60,220L120,0ZM120,0L180,220L240,0ZM240,0L300,220L360,0ZM360,0L420,220L480,0ZM480,0L540,220L600,0ZM600,0L660,220L720,0ZM720,0L780,220L840,0ZM840,0L900,220L960,0ZM960,0L1020,220L1080,0ZM1080,0L1140,220L1200,0ZM1200,0L1260,220L1320,0ZM1320,0L1380,220L1440,0ZM0,240L1440,240L1440,260L0,260Z"/><path class="swl-5" d="M0,0L60,200L120,0ZM120,0L180,200L240,0ZM240,0L300,200L360,0ZM360,0L420,200L480,0ZM480,0L540,200L600,0ZM600,0L660,200L720,0ZM720,0L780,200L840,0ZM840,0L900,200L960,0ZM960,0L1020,200L1080,0ZM1080,0L1140,200L1200,0ZM1200,0L1260,200L1320,0ZM1320,0L1380,200L1440,0ZM0,220L1440,220L1440,240L0,240Z"/></svg></div>'};
-            const _AURORA = {css:".seoturbo-topbar-wave-wrapper{position:absolute;bottom:-155px;left:0;width:100%;line-height:0;z-index:0;pointer-events:none;}.seoturbo-topbar-wave-wrapper svg{display:block;width:100%;height:160px;}.swl-1{fill:var(--wave-1-color,var(--blogcolor));opacity:0.04;}.swl-2{fill:var(--wave-2-color,var(--blogcolor));opacity:0.09;}.swl-3{fill:var(--wave-3-color,var(--blogcolor));opacity:0.16;}.swl-4{fill:var(--wave-4-color,var(--blogcolor));opacity:0.25;}body.dark-mode .swl-1{fill:#0a0a1a;opacity:0.06;}body.dark-mode .swl-2{fill:#0a0a1a;opacity:0.12;}body.dark-mode .swl-3{fill:#0a0a1a;opacity:0.20;}body.dark-mode .swl-4{fill:#0a0a1a;opacity:0.30;}@media (max-width:768px){.seoturbo-topbar-wave-wrapper{bottom:-80px;}.seoturbo-topbar-wave-wrapper svg{height:85px;}}",svg:'<div class="st-dynamic-shape-container seoturbo-topbar-wave-wrapper"><svg preserveAspectRatio="none" viewBox="0 0 1440 300"><path class="swl-1" d="M0,200 C80,20 160,280 240,40 C320,260 400,30 480,250 C560,40 640,270 720,50 C800,260 880,30 960,250 C1040,40 1120,280 1200,50 C1280,260 1360,30 1440,200 L1440,0 L0,0 Z"/><path class="swl-2" d="M0,240 C120,80 240,220 360,100 C480,240 600,60 720,220 C840,80 960,240 1080,100 C1200,240 1320,60 1440,220 L1440,0 L0,0 Z"/><path class="swl-3" d="M0,260 C200,120 400,240 600,140 C800,260 1000,100 1200,240 C1300,160 1400,220 1440,260 L1440,0 L0,0 Z"/><path class="swl-4" d="M0,280 C300,180 600,260 900,160 C1200,280 1350,200 1440,280 L1440,0 L0,0 Z"/></svg></div>'};
-            const _CRYSTAL = {css:".seoturbo-topbar-wave-wrapper{position:absolute;bottom:-125px;left:0;width:100%;line-height:0;z-index:0;pointer-events:none;}.seoturbo-topbar-wave-wrapper svg{display:block;width:100%;height:130px;}.swl-1{fill:var(--wave-1-color,var(--blogcolor));opacity:0.05;}.swl-2{fill:var(--wave-2-color,var(--blogcolor));opacity:0.12;}.swl-3{fill:var(--wave-3-color,var(--blogcolor));opacity:0.22;}body.dark-mode .swl-1{fill:#0a0a1a;opacity:0.07;}body.dark-mode .swl-2{fill:#0a0a1a;opacity:0.16;}body.dark-mode .swl-3{fill:#0a0a1a;opacity:0.28;}@media (max-width:768px){.seoturbo-topbar-wave-wrapper{bottom:-65px;}.seoturbo-topbar-wave-wrapper svg{height:70px;}}",svg:'<div class="st-dynamic-shape-container seoturbo-topbar-wave-wrapper"><svg preserveAspectRatio="none" viewBox="0 0 1440 300"><path class="swl-1" d="M0,200 L100,40 L200,200 L300,40 L400,200 L500,40 L600,200 L700,40 L800,200 L900,40 L1000,200 L1100,40 L1200,200 L1300,40 L1400,200 L1440,40 L1440,0 L0,0 Z"/><path class="swl-2" d="M0,240 L60,90 L120,240 L180,90 L240,240 L300,90 L360,240 L420,90 L480,240 L540,90 L600,240 L660,90 L720,240 L780,90 L840,240 L900,90 L960,240 L1020,90 L1080,240 L1140,90 L1200,240 L1260,90 L1320,240 L1380,90 L1440,240 L1440,0 L0,0 Z"/><path class="swl-3" d="M0,270 L40,130 L80,270 L120,130 L160,270 L200,130 L240,270 L280,130 L320,270 L360,130 L400,270 L440,130 L480,270 L520,130 L560,270 L600,130 L640,270 L680,130 L720,270 L760,130 L800,270 L840,130 L880,270 L920,130 L960,270 L1000,130 L1040,270 L1080,130 L1120,270 L1160,130 L1200,270 L1240,130 L1280,270 L1320,130 L1360,270 L1400,130 L1440,270 L1440,0 L0,0 Z"/></svg></div>'};
-            const _LIQUID = {css:".seoturbo-topbar-wave-wrapper{position:absolute;bottom:-195px;left:0;width:100%;line-height:0;z-index:0;pointer-events:none;}.seoturbo-topbar-wave-wrapper svg{display:block;width:100%;height:200px;}.swl-1{fill:var(--wave-1-color,var(--blogcolor));opacity:0.04;}.swl-2{fill:var(--wave-2-color,var(--blogcolor));opacity:0.09;}.swl-3{fill:var(--wave-3-color,var(--blogcolor));opacity:0.16;}.swl-4{fill:var(--wave-4-color,var(--blogcolor));opacity:0.28;}body.dark-mode .swl-1{fill:#0a0a1a;opacity:0.06;}body.dark-mode .swl-2{fill:#0a0a1a;opacity:0.12;}body.dark-mode .swl-3{fill:#0a0a1a;opacity:0.20;}body.dark-mode .swl-4{fill:#0a0a1a;opacity:0.33;}@media (max-width:768px){.seoturbo-topbar-wave-wrapper{bottom:-95px;}.seoturbo-topbar-wave-wrapper svg{height:100px;}}",svg:'<div class="st-dynamic-shape-container seoturbo-topbar-wave-wrapper"><svg preserveAspectRatio="none" viewBox="0 0 1440 300"><path class="swl-1" d="M0,60 C200,200 400,-30 600,180 C800,260 1000,0 1440,60 L1440,0 L0,0 Z"/><path class="swl-2" d="M0,120 C240,-20 480,220 720,80 C960,240 1200,20 1440,120 L1440,0 L0,0 Z"/><path class="swl-3" d="M0,180 C180,280 360,40 540,200 C720,50 900,260 1080,80 C1260,240 1350,60 1440,180 L1440,0 L0,0 Z"/><path class="swl-4" d="M0,230 C300,80 600,270 900,120 C1200,260 1350,100 1440,230 L1440,0 L0,0 Z"/></svg></div>'};
-            const _PRISM = {css:".seoturbo-topbar-wave-wrapper{position:absolute;bottom:-148px;left:0;width:100%;line-height:0;z-index:0;pointer-events:none;}.seoturbo-topbar-wave-wrapper svg{display:block;width:100%;height:154px;}.swl-1{fill:var(--wave-1-color,var(--blogcolor));opacity:0.05;}.swl-2{fill:var(--wave-2-color,var(--blogcolor));opacity:0.10;}.swl-3{fill:var(--wave-3-color,var(--blogcolor));opacity:0.17;}.swl-4{fill:var(--wave-4-color,var(--blogcolor));opacity:0.25;}.swl-5{fill:var(--wave-5-color,var(--blogcolor));opacity:0.34;}body.dark-mode .swl-1{fill:#0a0a1a;opacity:0.07;}body.dark-mode .swl-2{fill:#0a0a1a;opacity:0.13;}body.dark-mode .swl-3{fill:#0a0a1a;opacity:0.21;}body.dark-mode .swl-4{fill:#0a0a1a;opacity:0.30;}body.dark-mode .swl-5{fill:#0a0a1a;opacity:0.39;}@media (max-width:768px){.seoturbo-topbar-wave-wrapper{bottom:-76px;}.seoturbo-topbar-wave-wrapper svg{height:82px;}}",svg:'<div class="st-dynamic-shape-container seoturbo-topbar-wave-wrapper"><svg preserveAspectRatio="none" viewBox="0 0 1440 300"><path class="swl-1" d="M0,210 L220,55 L440,210 L660,55 L880,210 L1100,55 L1320,210 L1440,125 L1440,0 L0,0 Z"/><path class="swl-2" d="M0,245 L180,95 L360,245 L540,95 L720,245 L900,95 L1080,245 L1260,95 L1440,245 L1440,0 L0,0 Z"/><path class="swl-3" d="M0,280 L260,120 L520,280 L780,120 L1040,280 L1300,120 L1440,210 L1440,0 L0,0 Z"/><path class="swl-4" d="M0,300 L160,165 L320,300 L480,165 L640,300 L800,165 L960,300 L1120,165 L1280,300 L1440,165 L1440,0 L0,0 Z"/><path class="swl-5" d="M0,300 L0,248 L120,150 L240,248 L360,150 L480,248 L600,150 L720,248 L840,150 L960,248 L1080,150 L1200,248 L1320,150 L1440,248 L1440,300 Z"/></svg></div>'};
-            const _DIAMOND = {css:".seoturbo-topbar-wave-wrapper{position:absolute;bottom:-155px;left:0;width:100%;line-height:0;z-index:0;pointer-events:none;}.seoturbo-topbar-wave-wrapper svg{display:block;width:100%;height:176px;}.swl-1{fill:var(--wave-1-color,var(--blogcolor));opacity:0.07;}.swl-2{fill:var(--wave-2-color,var(--blogcolor));opacity:0.13;}.swl-3{fill:var(--wave-3-color,var(--blogcolor));opacity:0.22;}.swl-4{fill:var(--wave-4-color,var(--blogcolor));opacity:0.31;}.swl-5{fill:var(--wave-5-color,var(--blogcolor));opacity:0.46;}body.dark-mode .swl-1{fill:#0a0a1a;opacity:0.08;}body.dark-mode .swl-2{fill:#0a0a1a;opacity:0.16;}body.dark-mode .swl-3{fill:#0a0a1a;opacity:0.26;}body.dark-mode .swl-4{fill:#0a0a1a;opacity:0.36;}body.dark-mode .swl-5{fill:#0a0a1a;opacity:0.50;}@media (max-width:768px){.seoturbo-topbar-wave-wrapper{bottom:-75px;}.seoturbo-topbar-wave-wrapper svg{height:90px;}}",
-svg:'<div class="st-dynamic-shape-container seoturbo-topbar-wave-wrapper"><svg preserveAspectRatio="none" viewBox="0 0 1440 300"><path class="swl-1" d="M0,260 L120,120 L240,260 L360,120 L480,260 L600,120 L720,260 L840,120 L960,260 L1080,120 L1200,260 L1320,120 L1440,260 L1440,0 L0,0 Z"/><path class="swl-2" d="M0,300 L90,205 L180,300 L270,205 L360,300 L450,205 L540,300 L630,205 L720,300 L810,205 L900,300 L990,205 L1080,300 L1170,205 L1260,300 L1350,205 L1440,300 L1440,0 L0,0 Z"/><path class="swl-3" d="M0,300 L120,150 L240,300 L360,150 L480,300 L600,150 L720,300 L840,150 L960,300 L1080,150 L1200,300 L1320,150 L1440,300 L1440,0 L0,0 Z"/><path class="swl-4" d="M0,190 L120,55 L240,190 L360,55 L480,190 L600,55 L720,190 L840,55 L960,190 L1080,55 L1200,190 L1320,55 L1440,190 L1440,0 L0,0 Z"/><path class="swl-5" d="M0,300 L0,230 L120,90 L240,230 L360,90 L480,230 L600,90 L720,230 L840,90 L960,230 L1080,90 L1200,230 L1320,90 L1440,230 L1440,300 Z"/></svg></div>'};
-
-            const _ROYAL = {css:".seoturbo-topbar-wave-wrapper{position:absolute;bottom:-215px;left:0;width:100%;line-height:0;z-index:0;pointer-events:none;}.seoturbo-topbar-wave-wrapper svg{display:block;width:100%;height:220px;}.swl-1{fill:var(--wave-1-color,var(--blogcolor));opacity:0.04;}.swl-2{fill:var(--wave-2-color,var(--blogcolor));opacity:0.08;}.swl-3{fill:var(--wave-3-color,var(--blogcolor));opacity:0.14;}.swl-4{fill:var(--wave-4-color,var(--blogcolor));opacity:0.22;}.swl-5{fill:var(--wave-5-color,var(--blogcolor));opacity:0.35;}body.dark-mode .swl-1{fill:#0a0a1a;opacity:0.05;}body.dark-mode .swl-2{fill:#0a0a1a;opacity:0.10;}body.dark-mode .swl-3{fill:#0a0a1a;opacity:0.18;}body.dark-mode .swl-4{fill:#0a0a1a;opacity:0.26;}body.dark-mode .swl-5{fill:#0a0a1a;opacity:0.38;}@media (max-width:768px){.seoturbo-topbar-wave-wrapper{bottom:-110px;}.seoturbo-topbar-wave-wrapper svg{height:115px;}}",svg:'<div class="st-dynamic-shape-container seoturbo-topbar-wave-wrapper"><svg preserveAspectRatio="none" viewBox="0 0 1440 300"><path class="swl-1" d="M0,50 C180,200 360,10 540,180 C720,300 900,20 1080,170 C1260,280 1350,50 1440,50 L1440,0 L0,0 Z"/><path class="swl-2" d="M0,100 C240,280 480,40 720,220 C960,300 1200,60 1440,100 L1440,0 L0,0 Z"/><path class="swl-3" d="M0,150 C300,40 600,280 900,80 C1200,260 1350,100 1440,150 L1440,0 L0,0 Z"/><path class="swl-4" d="M0,200 C360,100 720,290 1080,120 C1260,260 1350,160 1440,200 L1440,0 L0,0 Z"/><path class="swl-5" d="M0,250 C400,160 800,290 1200,180 C1320,260 1380,220 1440,250 L1440,0 L0,0 Z"/></svg></div>'};
-            const _ECHO = {css:".seoturbo-topbar-wave-wrapper{position:absolute;bottom:-165px;left:0;width:100%;line-height:0;z-index:0;pointer-events:none;}.seoturbo-topbar-wave-wrapper svg{display:block;width:100%;height:170px;}.swl-1{fill:var(--wave-1-color,var(--blogcolor));opacity:0.06;}.swl-2{fill:var(--wave-2-color,var(--blogcolor));opacity:0.12;}.swl-3{fill:var(--wave-3-color,var(--blogcolor));opacity:0.22;}.swl-4{fill:var(--wave-4-color,var(--blogcolor));opacity:0.32;}body.dark-mode .swl-1{fill:#0a0a1a;opacity:0.08;}body.dark-mode .swl-2{fill:#0a0a1a;opacity:0.16;}body.dark-mode .swl-3{fill:#0a0a1a;opacity:0.26;}body.dark-mode .swl-4{fill:#0a0a1a;opacity:0.36;}@media (max-width:768px){.seoturbo-topbar-wave-wrapper{bottom:-82px;}.seoturbo-topbar-wave-wrapper svg{height:86px;}}",svg:'<div class="st-dynamic-shape-container seoturbo-topbar-wave-wrapper"><svg preserveAspectRatio="none" viewBox="0 0 1440 300"><path class="swl-1" d="M0,180 C180,20 360,260 540,40 C720,220 900,20 1080,200 C1260,50 1440,180 L1440,0 L0,0 Z"/><path class="swl-2" d="M0,220 C240,80 480,260 720,120 C960,20 1200,240 1440,140 L1440,0 L0,0 Z"/><path class="swl-3" d="M0,260 C300,120 600,280 900,140 C1200,40 1320,260 1440,180 L1440,0 L0,0 Z"/><path class="swl-4" d="M0,300 C360,140 720,300 1080,160 C1260,120 1350,250 1440,300 L1440,0 L0,0 Z"/></svg></div>'};
-            const _HORIZON = {css:".seoturbo-topbar-wave-wrapper{position:absolute;bottom:-130px;left:0;width:100%;line-height:0;z-index:0;pointer-events:none;}.seoturbo-topbar-wave-wrapper svg{display:block;width:100%;height:140px;}.swl-1{fill:var(--wave-1-color,var(--blogcolor));opacity:0.08;}.swl-2{fill:var(--wave-2-color,var(--blogcolor));opacity:0.15;}.swl-3{fill:var(--wave-3-color,var(--blogcolor));opacity:0.25;}body.dark-mode .swl-1{fill:#0a0a1a;opacity:0.10;}body.dark-mode .swl-2{fill:#0a0a1a;opacity:0.18;}body.dark-mode .swl-3{fill:#0a0a1a;opacity:0.30;}@media (max-width:768px){.seoturbo-topbar-wave-wrapper{bottom:-68px;}.seoturbo-topbar-wave-wrapper svg{height:70px;}}",svg:'<div class="st-dynamic-shape-container seoturbo-topbar-wave-wrapper"><svg preserveAspectRatio="none" viewBox="0 0 1440 300"><path class="swl-1" d="M0,80 C240,220 480,10 720,120 C960,220 1200,30 1440,100 L1440,0 L0,0 Z"/><path class="swl-2" d="M0,140 C360,40 720,240 1080,110 C1320,40 1440,130 1440,140 L1440,0 L0,0 Z"/><path class="swl-3" d="M0,210 C420,120 840,280 1260,120 C1380,70 1440,210 1440,210 L1440,0 L0,0 Z"/></svg></div>'};
-            const DB = {peaks:_GS,simple:_SIMPLE,aurora:_AURORA,crystal:_CRYSTAL,liquid:_LIQUID,multi_crystal:_PRISM,diamond:_DIAMOND,royal:_ROYAL,echo:_ECHO,horizon:_HORIZON};
-
-            const config = DB[STYLE_KEY];
-            if (!config) {
-                pendingUpdate = false;
-                return;
-            }
-
-            const styleTag = document.createElement('style');
-            styleTag.id = 'seoturbo-dynamic-css';
-            styleTag.textContent = `.seoturbo-topbar { border-bottom: none !important; } ${config.css}`;
-            document.head.appendChild(styleTag);
-            topbar.insertAdjacentHTML('beforeend', config.svg);
-            
-            lastAppliedStyle = STYLE_KEY;
-            
-        } catch (error) {
-            console.warn('⚠️ SEOTurbo error:', error);
-        }
-        
-        pendingUpdate = false;
-    };
-
-    const initStyleWatcher = function() {
-        const targetSection = document.getElementById('topbar-styles-library');
-        if (!targetSection) return;
-
-        const observer = new MutationObserver((mutations) => {
-            let needsUpdate = false;
-            
-            for (const mutation of mutations) {
-                if (mutation.type === 'childList') {
-                    needsUpdate = true;
-                    break;
-                }
-                if (mutation.type === 'attributes' && 
-                    (mutation.attributeName === 'style' || mutation.attributeName === 'class')) {
-                    needsUpdate = true;
-                    break;
-                }
-            }
-
-            if (needsUpdate) {
-                clearTimeout(window.stUpdateTimer);
-                window.stUpdateTimer = setTimeout(runExclusiveStyle, 100);
-            }
-        });
-
-        observer.observe(targetSection, { 
-            childList: true, 
-            subtree: true, 
-            attributes: true, 
-            attributeFilter: ['style', 'class'] 
-        });
-    };
-
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', () => {
-            runExclusiveStyle();
-            initStyleWatcher();
-        });
-    } else {
-        runExclusiveStyle();
-        initStyleWatcher();
-    }
-    
-    window.addEventListener('load', runExclusiveStyle);
-    window.addEventListener('popstate', () => setTimeout(runExclusiveStyle, 200));
-
-})();
-//]]>
-</script>
+<!-- ===== MODULE 65: وصف رئيسي طويل (Homepage Description) - CDN ===== -->
+<!-- CDN: موديول 65 - منقول لسجل CDN آخر القالب -->
+<!-- ========== MODULE 67: Trust-Box (مصداقية المحتوى) - CDN ========== -->
+<!-- CDN: trust-box67.js - منقول لسجل CDN آخر القالب -->
   
-<!-- 67-متنوع-جملة-الموثوقية.js -->
-<b:if cond='data:view.isPost'>
-<script>
-//<![CDATA[
-(function() {
-    'use strict';
-    
-    var freeContainer = document.getElementById('seoturbo-trust-placeholder');
-    if(freeContainer) freeContainer.remove();
-    
-    document.addEventListener('DOMContentLoaded', function() {
-        const postBody = document.querySelector('.post-body.entry-content');
-        if (!postBody) return;
+<!-- ===== MODULE 68: الوضع المظلم (Dark Mode Tables) - CDN ===== -->
+<!-- CDN: موديول 68 - منقول لسجل CDN آخر القالب -->
 
-        let existingTrustContainer = postBody.querySelector('section.trust-container');
-        if (existingTrustContainer) {
-          console.log('Trust Container: Found manual trust container. Skipping auto-insertion.');
-        } else {
-          function createTrustContainerHTML(lang) {
-            let trustContainerHTML = '';
-            if (lang === 'ar') {
-              trustContainerHTML = `
-                <section class="trust-container" title="ضمانة الجودة والمصداقية لهذا المحتوى الرقمي">
-                  <h3 class="multiline-title" style="color: var(--blogcolor); text-align: center;" title="بيان الالتزام الصارم بمعايير النشر والتوثيق العالمية">
-                    <span style="display: block;">جودة المحتوى وموثوقيته</span>
-                    <span style="display: block;">التزامنا الكامل بمعايير جوجل E-E-A-T</span>
-                  </h3>
-                  <p class="trust-notice-header" title="إفادة رسمية صادرة عن الهيئة التحريرية للموقع">
-                    <span class="notice" title="تنبيه هام حول طبيعة ومصدر المعلومات الواردة">
-                      <span class="warning-icon-style"><svg width="16" height="16" viewBox="0 0 576 512" style="fill: currentColor;"><use href="#icon-exclamation-triangle"/></svg></span>
-                      <span style="color: var(--blogcolor); font-size: 18px;">تنويه:</span>
-                    </span>
-                    <span class="seoturbo-trust-badge" title="شهادة اعتماد تؤكد خضوع المادة للمراجعة والتدقيق قبل النشر">
-                      <svg width="14" height="14" viewBox="0 0 512 512" style="fill: currentColor; margin-left: 5px;"><use href="#icon-check-circle"/></svg>
-                      معتمد من المحررين
-                    </span>
-                  </p>
-                  <p lang="AR-EG" title="بروتوكول فحص وتدقيق المعلومات لضمان الحيادية والشفافية التامة">تم إعداد هذا المحتوى بعناية وتدقيق شامل من قبل فريق التحرير لدينا بالاعتماد على مصادر موثوقة ومتحقق منها، مع الالتزام الكامل بمعايير جوجل E-E-A-T الصارمة، لضمان أعلى مستويات الدقة والموثوقية والحيادية.</p>
-                </section>
-              `;
-            } else {
-              trustContainerHTML = `
-                <section class="trust-container" dir="ltr" title="Content quality and reliability guarantee">
-                  <h3 class="multiline-title" style="color: var(--blogcolor); text-align: center;" title="Statement of full commitment to global publishing standards">
-                    <span class="line1">Content Quality and Reliability</span>
-                    <span class="line2">Our Full Commitment to Google E-E-A-T Standards</span>
-                  </h3>
-                  <p class="trust-notice-header" title="Official editorial statement regarding content integrity">
-                    <span class="notice" title="Important notice regarding information sources">
-                      <span class="warning-icon-style"><svg width="16" height="16" viewBox="0 0 576 512" style="fill: currentColor;"><use href="#icon-exclamation-triangle"/></svg></span>
-                      <span style="color: var(--blogcolor); font-size: 18px;">Notice:</span>
-                    </span>
-                    <span class="seoturbo-trust-badge" title="Verification credential confirming editorial audit completion">
-                      <svg width="14" height="14" viewBox="0 0 512 512" style="fill: currentColor; margin-right: 5px;"><use href="#icon-check-circle"/></svg>
-                      Editor-approved
-                    </span>
-                  </p>
-                  <p dir="ltr" style="text-align: left;" title="Protocol for information verification ensuring accuracy and impartiality">This content has been carefully prepared and thoroughly reviewed by our editorial team, based on trusted and verified sources, with full adherence to Google's stringent E-E-A-T standards to ensure the highest levels of accuracy, reliability, and impartiality.</p>
-                </section>
-              `;
-            }
-            const tempDiv = document.createElement('div');
-            tempDiv.innerHTML = trustContainerHTML.trim();
-            return tempDiv.firstChild;
-          }
-
-          const htmlTag = document.documentElement;
-          const lang = htmlTag.getAttribute('lang')?.toLowerCase() === 'ar' ? 'ar' : 'en';
-          const placeholder = document.getElementById('trust-container-placeholder');
-          
-          if (placeholder) {
-            const newContainer = createTrustContainerHTML(lang);
-            placeholder.parentNode.replaceChild(newContainer, placeholder);
-            existingTrustContainer = newContainer;
-            existingTrustContainer.style.display = 'block';
-          } else { return; }
-        }
-
-        if (existingTrustContainer) {
-            const SeoturbolinkedBlogsContainer = existingTrustContainer.querySelector('.seoturbo-Linked-blogs-Dual-Module-Container');
-            if (SeoturbolinkedBlogsContainer) {
-                existingTrustContainer.parentNode.insertBefore(SeoturbolinkedBlogsContainer, existingTrustContainer.nextSibling);
-            }
-        }
-    });
-})();
-//]]>
-</script>
-</b:if>
-  
-<!-- 68-متنوع-الوضع-المظلم-صناديق-جداول-المقال.js --> 
-<script type='text/javascript'>
-//<![CDATA[
-document.addEventListener('DOMContentLoaded', () => {
-    const SEL = '.post-body section[style*="background-color"], .post-body table, .post-body td, #footer';
-    const CLS = 'dark-mode';
-    const run = () => {
-        const isDark = document.body.classList.contains(CLS);
-        document.querySelectorAll(SEL).forEach(el => {
-            if (isDark) {
-                if (!el.hasAttribute('data-st-style')) el.setAttribute('data-st-style', el.getAttribute('style') || ' ');
-                el.style.setProperty('background-color', '#1a1a1a', 'important');
-                el.style.setProperty('color', '#eeeeee', 'important');
-                el.style.setProperty('border-color', '#444444', 'important');
-                el.querySelectorAll('*').forEach(c => {
-                    if (!c.hasAttribute('data-st-style')) c.setAttribute('data-st-style', c.getAttribute('style') || ' ');
-                    c.style.setProperty('color', '#eeeeee', 'important');
-                });
-            } else if (el.hasAttribute('data-st-style')) {
-                el.setAttribute('style', el.getAttribute('data-st-style').trim());
-                el.removeAttribute('data-st-style');
-                el.querySelectorAll('*').forEach(c => {
-                    if (c.hasAttribute('data-st-style')) {
-                        c.setAttribute('style', c.getAttribute('data-st-style').trim());
-                        c.removeAttribute('data-st-style');
-                    }
-                });
-            }
-        });
-    };
-    run();
-    new MutationObserver(ms => {
-        ms.forEach(m => { if (m.attributeName === 'class') run(); });
-    }).observe(document.body, { attributes: true });
-});
-//]]>
-</script>  
-   
-<!-- 69-متنوع-تصميم-أداة-بحث-جوجل.js -->  
-<script type='text/javascript'>
-//<![CDATA[
-(function() {
-    'use strict';
-    function centralizeGoogleWidget() {
-        const iframes = document.querySelectorAll('iframe.BLOG_object_iframe[src*="share-widget"]');
-        if (iframes.length === 0) return;
-        const favicon = document.querySelector('link[rel="icon"][sizes="192x192"]')?.href ||
-                        document.querySelector('link[rel="icon"]')?.href ||
-                        window.location.origin + '/favicon.ico';
-        if (!document.getElementById('st-share-fixed-v1')) {
-            const style = document.createElement('style');
-            style.id = 'st-share-fixed-v1';
-            style.textContent = `
-                .st-share-master {
-                    display: block !important;
-                    width: 100% !important;
-                    margin: 35px 0 !important;
-                    background: #fff;
-                    border: 1px solid #e5e7eb;
-                    border-right: 6px solid var(--blogcolor, #CC0000);
-                    border-radius: 12px;
-                    overflow: hidden;
-                    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-                    direction: rtl;
-                }
-                .st-share-header {
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-                    padding: 8px 15px;
-                    background: #f9fafb;
-                    border-bottom: 1px solid #e5e7eb;
-                }
-                .st-share-header span {
-                    font-size: 12px;
-                    font-weight: 800;
-                    color: var(--blogcolor, #CC0000);
-                }
-                .st-share-header img {
-                    width: 18px;
-                    height: 18px;
-                    border-radius: 4px;
-                }
-                .st-share-body-central {
-                    display: flex !important;
-                    justify-content: center !important;
-                    align-items: center !important;
-                    padding: 15px 5px !important;
-                    background: #fff;
-                    overflow-x: auto;
-                }
-                .st-share-body-central iframe {
-                    width: 560px !important; 
-                    height: 130px !important; 
-                    border: none !important;
-                    display: block !important;
-                    margin: 0 !important;
-                    background: transparent !important;
-                }
-                body.dark-mode .st-share-master { background: #111; border-color: #333; }
-                body.dark-mode .st-share-header { background: #1a1a1a; border-bottom-color: #2a2a2a; }
-                body.dark-mode .st-share-header span { color: #fff; }
-                body.dark-mode .st-share-body-central { background: #111; }
-            `;
-            document.head.appendChild(style);
-        }
-        iframes.forEach(iframe => {
-            if (iframe.closest('.st-share-master')) return;
-            const masterDiv = document.createElement('div');
-            masterDiv.className = 'st-share-master';
-            const headerDiv = document.createElement('div');
-            headerDiv.className = 'st-share-header';
-            headerDiv.innerHTML = `<img src="${favicon}" alt="icon"> <span>🔍 بحث ومشاركة في ${document.title.split(' - ')[0]}</span>`;
-            const centralDiv = document.createElement('div');
-            centralDiv.className = 'st-share-body-central';
-            iframe.parentNode.insertBefore(masterDiv, iframe);
-            masterDiv.appendChild(headerDiv);
-            masterDiv.appendChild(centralDiv);
-            centralDiv.appendChild(iframe);
-        });
-    }
-    centralizeGoogleWidget();
-    window.addEventListener('load', centralizeGoogleWidget);
-    setTimeout(centralizeGoogleWidget, 1000);
-    setTimeout(centralizeGoogleWidget, 3000);
-})();
-//]]>
-</script>
+<!-- ===== MODULE 69: أداة مشاركة جوجل (Google Share Widget) - CDN ===== -->
+<!-- CDN: موديول 69 - منقول لسجل CDN آخر القالب -->
  
-<!-- 70-متنوع-محرك-فحص-حجب-الإعلانات.js -->
-<script type='text/javascript'>
-//<![CDATA[
-(function() {
-    'use strict';
-    if (!window.ST_ADBLOCK_ACTIVE) return;
+<!-- ===== MODULE 70: فحص حجب الإعلانات (Ad-Block Detection) - CDN ===== -->
+<!-- CDN: موديول 70 - منقول لسجل CDN آخر القالب -->
 
-    function startDetection() {
-        const bait = document.createElement('div');
-        bait.className = 'adsbygoogle ad-unit ad-zone';
-        bait.style.cssText = 'width:1px!important;height:1px!important;position:fixed!important;left:-100px!important;top:-100px!important;visibility:hidden!important;';
-        document.documentElement.appendChild(bait);
-        
-        window.setTimeout(function() {
-            const forceScreen = document.getElementById('seoturbo-force-screen');
-            const isBlocked = bait.offsetHeight === 0 || bait.offsetParent === null;
-            
-            if (isBlocked && forceScreen) {
-                forceScreen.style.display = 'flex';
-                document.documentElement.classList.add('seoturbo-lock-active');
-            }
-            if (bait.parentNode) bait.parentNode.removeChild(bait);
-        }, 1000);
-    }
-    
-    const events = ['touchstart', 'scroll', 'mousedown', 'keydown'];
-    const trigger = function() {
-        startDetection();
-        events.forEach(e => window.removeEventListener(e, trigger));
-    };
-    events.forEach(e => window.addEventListener(e, trigger, { passive: true }));
-})();
-//]]>
-</script>
- 
 <!-- 71-متنوع-زر-نسخ-الكود-البرمجي.js -->
 <script type='text/javascript'>
 //<![CDATA[
@@ -22045,6 +21993,42 @@ window.addEventListener('load',addSignature);
 
 
 <b:if cond='not data:view.isLayoutMode'>&lt;!--</b:if>
+<script>!function(){function f(){document.querySelectorAll(&#39;a.snippet-fade:not([aria-label])&#39;).forEach(function(a){a.setAttribute(&#39;aria-label&#39;,&#39;اقرأ المزيد&#39;)})}f();var g=new MutationObserver(f);g.observe(document.documentElement,{childList:!0,subtree:!0})}();</script>
+
+
+<!-- ========== سجل روابط CDN ========== -->
+
+<!-- 1. waves.js - موديول 66 - نظام رشق الأمواج - يحقن 10 أشكال SVG أمواج ديناميكية في أعلى القالب -->
+<script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/waves.js'></script>
+
+<!-- 2. batch-63-69.js - موديول 63 - ينشئ رمز QR للموقع تلقائياً -->
+<script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='63'></script>
+
+<!-- 3. batch-63-69.js - موديول 64 - يحدث سكيما المنظمة (Organization) تلقائياً من بيانات meta -->
+<b:if cond='data:view.isHomepage'>
+<script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='64'></script>
+</b:if>
+
+<!-- 4. batch-63-69.js - موديول 65 - يضبط وصف الصفحة الرئيسية ديناميكياً -->
+<b:if cond='data:view.isHomepage'>
+<script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='65'></script>
+</b:if>
+
+<!-- 5. trust-box67.js - موديول 67 - صندوق مصداقية المحتوى E-E-A-T - يظهر في المقالات -->
+<b:if cond='data:view.isPost'>
+<script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/trust-box67.js'></script>
+</b:if>
+
+<!-- 6. batch-63-69.js - موديول 68 - يحول الصناديق والجداول للوضع المظلم تلقائياً -->
+<script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='68'></script>
+
+<!-- 7. batch-63-69.js - موديول 69 - أداة مشاركة جوجل - تجميل واجهة المشاركة -->
+<script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='69'></script>
+
+<!-- 8. batch-63-69.js - موديول 70 - كشف مانع الإعلانات - يظهر شاشة إجبارية عند وجود adblock -->
+<script defer src='https://cdn.jsdelivr.net/gh/Mojo966/seoturbo-apex-assets@main/assets/batch-63-69.js' data-st-module='70'></script>
+
+<!-- ========== نهاية سجل CDN ========== -->
 </body>
 <b:if cond='not data:view.isLayoutMode'>--&gt;&lt;/body&gt;</b:if>
 </html>

@@ -1,0 +1,33 @@
+================================================================================
+RankTurboSeo Medical Edition v1.0 — Version Modifications
+================================================================================
+Base Template: RankTurboSeo.Apex.v16.original.1.xml
+
+1. HEADER IDENTITY
+   - Name: "RankTurboSeo Medical Edition v1.0"
+   - "قالب طبي متخصص"
+
+2. PRIMARY SCHEMA
+   - MedicalWebPage (primary)
+   - MedicalCondition
+   - Drug
+   - Article
+   - BreadcrumbList
+   - SpeakableSpecification
+
+3. COLOR SCHEME
+   --primary:        #00695C (teal green)
+   --primary-dark:   #004D40
+   --accent:         #4DB6AC (light teal)
+
+4. FEATURE TOGGLES
+   - Medical disclaimer: ON
+   - EEAT trust box: ON
+   - Author credentials: ON
+   - Health content labels: ON
+
+5. TARGET
+   - Medical blogs, health websites
+   - Arabic (RTL) + English twin (LTR)
+
+================================================================================

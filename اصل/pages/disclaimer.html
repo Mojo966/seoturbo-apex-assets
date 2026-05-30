@@ -1,0 +1,268 @@
+<style>
+  .terms-page-wrapper {
+    background-color: var(--widget-bg, #ffffff);
+    color: var(--text-color, #000000);
+    padding: 25px 20px;
+    font-family: inherit;
+    direction: rtl;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+    text-align: justify;
+    box-sizing: border-box;
+  }
+  
+  .terms-banner {
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-color, #f8f9fa);
+    border-radius: 12px;
+    border-right: 6px solid var(--blogcolor, #006C35);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin: 15px 0 30px 0;
+    padding: 20px;
+  }
+  .terms-banner-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+  }
+  .terms-banner-row1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .terms-banner-logo {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    object-fit: contain;
+  }
+  .terms-banner-title {
+    font-size: 1.15em;
+    font-weight: 800;
+    color: var(--text-color, #000000);
+  }
+  .terms-banner-row2 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95em;
+    font-weight: 700;
+    color: var(--text-meta, #444444);
+  }
+  .terms-banner-tag {
+    color: var(--blogcolor, #006C35);
+  }
+  .terms-banner-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--blogcolor, #006C35);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .terms-author-signature {
+    margin: 20px 0;
+    border-bottom: 2px solid var(--border-color, #cccccc);
+    padding-bottom: 8px;
+    font-size: 0.95em;
+    font-weight: 700;
+    color: var(--text-meta, #444444);
+  }
+  .terms-author-signature strong {
+    color: var(--text-color, #000000);
+    font-weight: 900;
+  }
+
+  .terms-article h2 {
+    font-size: 1.4em;
+    font-weight: 800;
+    color: var(--text-color, #000000);
+    margin: 30px 0 15px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--border-color, #cccccc);
+  }
+  .terms-article p {
+    margin-bottom: 15px;
+    font-size: 1.05em;
+  }
+  .terms-article a {
+    color: var(--blogcolor, #006C35);
+    text-decoration: underline;
+    font-weight: 600;
+  }
+  .terms-article a:hover {
+    opacity: 0.8;
+  }
+
+  .terms-special-section {
+    background-color: var(--seoturbo-smooth, rgba(0,108,53,0.03));
+    border-right: 4px solid var(--blogcolor, #006C35);
+    margin: 25px 0;
+    padding: 20px;
+    border-radius: 0 8px 8px 0;
+    border-top: 1px solid var(--border-color, #cccccc);
+    border-bottom: 1px solid var(--border-color, #cccccc);
+    border-left: 1px solid var(--border-color, #cccccc);
+  }
+  .terms-special-section p {
+    margin-bottom: 0;
+    font-size: 1.02em;
+    font-weight: 700;
+    color: var(--text-color, #000000);
+  }
+
+  .faq-page-footer {
+    border-top: 1px solid var(--border-color, #cccccc);
+    border-bottom: 3px solid var(--blogcolor, #006C35);
+    padding: 15px;
+    text-align: center;
+    margin-top: 40px;
+    background-color: var(--bg-color, #f8f9fa);
+    border-radius: 8px;
+  }
+  .faq-page-footer p {
+    margin: 0;
+    color: var(--text-meta, #444444);
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .faq-page-footer a {
+    color: var(--text-color, #000000);
+    text-decoration: none;
+    font-weight: 900;
+  }
+  .faq-page-footer a span {
+    color: var(--blogcolor, #006C35);
+    font-weight: 700;
+  }
+
+  body.dark-mode .terms-page-wrapper {
+    background-color: var(--darkmode-widget-bg, #111111);
+    color: var(--darkmode-text-color, #ffffff);
+  }
+  body.dark-mode .terms-banner {
+    background-color: var(--darkmode-widget-bg, #111111);
+    border-color: var(--blogcolor, #006C35);
+  }
+  body.dark-mode .terms-banner-title,
+  body.dark-mode .terms-author-signature strong,
+  body.dark-mode .terms-article h2,
+  body.dark-mode .faq-page-footer a,
+  body.dark-mode .terms-special-section p {
+    color: var(--darkmode-text-color, #ffffff);
+  }
+  body.dark-mode .terms-banner-row2,
+  body.dark-mode .terms-author-signature,
+  body.dark-mode .faq-page-footer p {
+    color: var(--darkmode-text-meta, #eeeeee);
+  }
+  body.dark-mode .terms-author-signature,
+  body.dark-mode .terms-article h2,
+  body.dark-mode .terms-special-section,
+  body.dark-mode .faq-page-footer {
+    border-color: var(--darkmode-border-color, #333333);
+  }
+  body.dark-mode .terms-special-section {
+    background-color: #1a1a1a;
+    border-right-color: var(--blogcolor, #006C35);
+  }
+  body.dark-mode .faq-page-footer {
+    background-color: var(--darkmode-widget-bg, #111111);
+  }
+</style>
+
+<div class="terms-page-wrapper">
+  <section class="terms-banner">
+    <div class="terms-banner-content">
+      <div class="terms-banner-row1">
+        <img alt="أيقونة الموقع" class="terms-banner-logo" onerror="this.style.display='none'" src="/favicon.ico" />
+        <span class="terms-banner-title">مساحة نيوز - Masaha News</span>
+      </div>
+      <div class="terms-banner-row2">
+        <span class="terms-banner-tag">وثيقة قانونية معتمدة</span>
+        <span>|</span>
+        <span class="terms-banner-icon">
+          <svg viewbox="0 0 448 512"><path d="M400 224h-24v-72C376 68.2 307.8 0 224 0S72 68.2 72 152v72H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48zm-104 0H152v-72c0-39.7 32.3-72 72-72s72 32.3 72 72v72z"></path></svg>
+        </span>
+        <span class="terms-banner-tag">إخلاء المسؤولية القانونية</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="terms-author-signature">
+    إصدار: <strong>مساحة نيوز</strong> <span color="var(--border-color)" style="margin: 0px 10px;">|</span> قسم الشؤون القانونية وتنظيم المحتوى
+  </section>
+
+  <article class="terms-article">
+    <p>
+      مرحباً بك في بوابة <strong>مساحة نيوز</strong> (masaha-news.blogspot.com). يرجى قراءة إخلاء المسؤولية القانوني التالي بعناية قبل تصفح الموقع أو استخدام معلوماته. إن استخدامك للموقع وتصفحه يعني موافقتك الكاملة غير المشروطة على كافة البنود الواردة في هذه الصفحة.
+    </p>
+
+    <div class="terms-special-section">
+      <p>تُقدّم جميع المعلومات والبيانات والأخبار والتقارير المنشورة على بوابة مساحة نيوز "كما هي" ولأغراض إعلامية وتثقيفية وتوعوية عامة فقط، ولا تحمل أي صفة استشارية متخصصة ومستقلة.</p>
+    </div>
+
+    <h2>1. طبيعة المعلومات والبيانات المنشورة</h2>
+    <p>
+      نحن نبذل أقصى جهد ممكن للتحقق من دقة وصحة المصادر الواردة في مقالاتنا، إلا أننا لا نقدم أي ضمانات صريحة أو ضمنية بشأن اكتمال أو دقة أو حداثة أو ملائمة هذه المعلومات للأغراض الخاصة بكل مستخدم على حدة.
+    </p>
+
+    <h2>2. الخدمات الحكومية والجهات الرسمية</h2>
+    <p>
+      بوابة مساحة نيوز هي منصة إعلامية رقمية مستقلة تماماً، و<strong>ليست جهة حكومية ولا تتبع لأي تطبيق أو بوابة رسمية</strong>. الشروحات والأخبار والخطوات المنشورة هي شروحات توضيحية واجتهادية لمساعدة المستخدمين وتسهيل الوصول للمعلومة، ويجب دائماً الرجوع للمنصات والقنوات الرسمية المعتمدة للتحقق من القرارات والتواريخ والإجراءات الرسمية وصحة تقديم المعاملات.
+    </p>
+
+    <h2>3. أسعار الذهب والعملات والتحليلات الاقتصادية</h2>
+    <p>
+      تخضع أسعار الذهب، العملات، وأسهم الأسواق المالية للتحديثات والتقلبات اللحظية المستمرة. المعلومات المنشورة في قسم الاقتصاد وأسعار المال هي معلومات استرشادية فقط تعتمد على متوسط أسعار السوق وقت النشر.
+    </p>
+    <div class="terms-special-section" style="border-right-color: rgb(211, 47, 47);">
+      <p style="color: var(--text-color, #000000);">⚠️ إن بوابة مساحة نيوز لا تقدم أي استشارات مالية أو استثمارية أو توصيات بالبيع والشراء، ويتحمل المستخدم وحده كامل المسؤولية القانونية والمالية المترتبة على أي قرارات بيع أو شراء أو استثمار يتخذها بناءً على الأسعار المعروضة في موقعنا. يرجى دائماً مراجعة الأسواق الرسمية والمحلات المعتمدة قبل إجراء أي معاملة تجارية فعلية.</p>
+    </div>
+
+    <h2>4. النصائح الصحية والطبية</h2>
+    <p>
+      المعلومات والنصائح المنشورة في قسم الصحة والجمال هي معلومات تثقيفية عامة و<strong>لا يمكن اعتبارها بأي حال من الأحوال بديلاً عن الاستشارة الطبية المتخصصة</strong> أو التشخيص الطبي أو العلاج من قبل الأطباء والكوادر المؤهلة والجهات الصحية المعنية. يجب على المستخدم دائماً استشارة الطبيب المختص قبل البدء في أي نظام غذائي أو تناول مكملات أو اتباع أي نصيحة علاجية.
+    </p>
+
+    <h2>5. الروابط الخارجية والمواقع الشريكة</h2>
+    <p>
+      قد يحتوي موقعنا على روابط تشعبية تؤدي إلى مواقع إلكترونية خارجية تديرها أطراف أخرى لا تخضع لسيطرتنا. نحن نوفر هذه الروابط لتسهيل وصولك للمعلومات، ولكننا لا نتحمل أي مسؤولية قانونية أو أخلاقية عن محتوى هذه المواقع الخارجية، أو سياسات الخصوصية الخاصة بها، أو أي أضرار قد تنجم عن استخدامك وتصفحك لها.
+    </p>
+
+    <h2>6. حدود المسؤولية القانونية</h2>
+    <p>
+      لا تتحمل بوابة مساحة نيوز (بما في ذلك الإدارة، المحررون، والشركاء) المسؤولية عن أي خسائر أو أضرار مباشرة أو غير مباشرة، مادية أو معنوية، قد تنجم عن استخدام الموقع، أو الاعتماد على المعلومات المنشورة فيه، أو العجز عن الوصول للموقع لأي سبب تقني طارئ.
+    </p>
+
+    <h2>7. تحديث هذه الصفحة</h2>
+    <p>
+      نحتفظ بالحق الكامل في تعديل أو تحديث بنود إخلاء المسؤولية هذه في أي وقت وبدون إشعار مسبق لضمان مواكبتها للقوانين والسياسات المحدثة.
+    </p>
+    <p>
+      إذا كان لديك أي استفسار حول هذه السياسات، أو إذا وجدت أي معلومة غير دقيقة وتحتاج إلى تصحيح أو تحديث، يرجى التواصل معنا مباشرة عبر صفحة <a href="https://masaha-news.blogspot.com/p/contact-us.html">اتصل بنا</a>، أو إرسال بريد إلكتروني رسمي للإدارة على: <strong style="color: var(--blogcolor, #006C35);">info@masaha-news.com</strong>.
+    </p>
+  </article>
+
+  <footer class="faq-page-footer" id="footer">
+    <p>
+      المصدر المعتمد: 
+      <a href="/" title="مساحة نيوز">
+        <cite style="cursor: pointer; font-style: normal;">مساحة نيوز</cite>
+        <span> - masaha-news.blogspot.com</span>
+      </a> 
+      <span color="var(--border-color)" style="margin: 0px 10px;">|</span> 
+      جميع الحقوق محفوظة © 2026
+    </p>
+  </footer>
+</div>
+
+<script id="manual-keywords" type="application/json">
+{
+  "keywords": "إخلاء المسؤولية, إخلاء المسؤولية القانونية, مساحة نيوز, أسعار الذهب, الاستشارات الطبية, المسؤولية القانونية"
+}
+</script>

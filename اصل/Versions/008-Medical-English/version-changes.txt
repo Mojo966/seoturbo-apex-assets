@@ -1,0 +1,36 @@
+================================================================================
+RankTurboSeo Medical English Edition v1.0 — Version Modifications
+================================================================================
+Base Template: RankTurboSeo.Apex.v16.original.1.xml
+
+1. HEADER IDENTITY
+   - Name: "RankTurboSeo Medical English Edition v1.0"
+   - "Medical Blog Template in English"
+
+2. PRIMARY SCHEMA
+   - MedicalWebPage (primary)
+   - MedicalCondition
+   - Drug
+   - Article
+   - BreadcrumbList
+
+3. COLOR SCHEME
+   --primary:        #1565C0 (medical blue)
+   --primary-dark:   #003C8F
+   --accent:         #64B5F6
+
+4. LTR MODE
+   - Direction: LTR
+   - English labels and content
+
+5. FEATURE TOGGLES
+   - Medical disclaimer: ON
+   - EEAT trust box: ON
+   - Clinical content labels: ON
+   - LTR layout: ON
+
+6. TARGET
+   - International medical/health blogs
+   - English-speaking healthcare professionals
+
+================================================================================
