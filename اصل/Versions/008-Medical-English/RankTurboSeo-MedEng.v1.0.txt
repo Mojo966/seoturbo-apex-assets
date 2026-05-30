@@ -1,0 +1,35 @@
+================================================================================
+RankTurboSeo Medical English Edition v1.0
+Medical Blog Template in English — قالب طبي إنجليزي
+================================================================================
+Version: 1.0 | Version Code: RTS-MEDEN-1.0
+Framework: RankTurboSeo Apex v16.0
+Platform: Blogger | Language: English (LTR) + Arabic twin (RTL)
+Developers: قدر يحيى & Dr. Mohamed Elgendy
+
+================================================================================
+CERTIFICATION
+================================================================================
+Certificate ID: RTS-MED-EN-CERT-001
+Signature: RTS-9F3A8E2D1C7B4F6A9E8D7C6B5A4F3E2D1C
+Verification: https://rankturboseo-imperial.blogspot.com/p/verify.html
+
+================================================================================
+VERSION-SPECIFIC FEATURES
+================================================================================
+- MedicalWebPage schema (English)
+- MedicalCondition schema
+- Drug schema
+- Clinical disclaimer (English)
+- EEAT trust box with medical credentials
+- LTR layout optimized for English
+- 347+ features from RankTurboSeo Apex Engine
+- 45+ schema types
+- 15+ ad placements
+
+================================================================================
+TARGET: International medical bloggers, healthcare professionals, clinics (global)
+================================================================================
+
+CORE TECH: Same as RankTurboSeo Apex v16.0 (ST_MASTER_PROMISE, Identity Vault, 71 JS modules)
+================================================================================

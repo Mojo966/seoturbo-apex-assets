@@ -1,0 +1,42 @@
+================================================================================
+RankTurboSeo English Master Edition v1.0 — Version Modifications
+================================================================================
+Base Template: RankTurboSeo.Apex.v16.original.1.xml
+
+Changes from Master:
+
+1. HEADER IDENTITY
+   - SoftwareApplication.name: "RankTurboSeo English Master Edition v1.0"
+   - SoftwareApplication.description: "Premium Blogger template for English blogs"
+   - Language: English (LTR)
+
+2. PRIMARY SCHEMA TYPES
+   - Article / BlogPosting (primary)
+   - TechArticle
+   - BreadcrumbList
+   - Person / Organization
+
+3. DEFAULT COLOR SCHEME
+   --primary:        #1E3A5F (navy blue)
+   --primary-dark:   #0F2440 (deep navy)
+   --accent:         #4A90D9 (sky blue)
+
+4. LTR MODE
+   - Direction: LTR (default)
+   - English fonts (system default)
+   
+5. FEATURE TOGGLES (Default ON)
+   - Article schema: ON
+   - English labels: ON
+   - LTR layout: ON
+
+6. TWIN FILE (Arabic)
+   - This IS the twin for the original Arabic master
+   - RankTurboSeo-English-Master-Arabic.v1.0.xml
+
+7. TARGET AUDIENCE
+   - English-speaking bloggers worldwide
+   - International content creators
+   - English tech/review blogs
+
+================================================================================

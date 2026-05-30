@@ -1,0 +1,30 @@
+================================================================================
+RankTurboSeo Alternative Medicine Edition v1.0 — Version Modifications
+================================================================================
+Base Template: RankTurboSeo.Apex.v16.original.1.xml
+
+1. HEADER IDENTITY
+   - Name: "RankTurboSeo Alternative Medicine Edition v1.0"
+   - "قالب طب بديل وصحة طبيعية"
+
+2. PRIMARY SCHEMA
+   - MedicalWebPage (primary)
+   - Article
+   - BreadcrumbList
+   - HowTo (natural remedies steps)
+
+3. COLOR SCHEME
+   --primary:        #2E7D32 (natural green)
+   --primary-dark:   #1B5E20
+   --accent:         #81C784 (sage green)
+
+4. FEATURE TOGGLES
+   - Natural health disclaimer: ON
+   - EEAT trust box: ON
+   - Herbal remedy labels: ON
+
+5. TARGET
+   - Natural health, herbal, holistic blogs
+   - Arabic + English twin
+
+================================================================================

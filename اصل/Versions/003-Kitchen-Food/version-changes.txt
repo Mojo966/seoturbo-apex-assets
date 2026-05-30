@@ -1,0 +1,64 @@
+================================================================================
+RankTurboSeo Kitchen Edition v1.0 — Version Modifications
+================================================================================
+Base Template: RankTurboSeo.Apex.v16.original.1.xml
+
+Changes from Master:
+
+1. HEADER IDENTITY
+   - Change: All "RankTurboSeo Apex" references → "RankTurboSeo Kitchen"
+   - SoftwareApplication.name: "RankTurboSeo Kitchen Edition v1.0"
+   - SoftwareApplication.description: "Recipe & food blog template"
+   
+2. PRIMARY SCHEMA TYPE
+   - Recipe schema → primary (already exists in master)
+   - Enable: Recipe auto-extraction
+   - Enable: NutritionInformation
+   - Enable: HowTo for cooking steps
+   - Enable: VideoObject for recipe videos
+   
+3. DEFAULT COLOR SCHEME (CSS Variables)
+   --primary:        #D4732F (warm orange)
+   --primary-dark:   #B85C1D (deep orange)
+   --accent:         #E8B86D (golden)
+   --bg-warm:        #FFF8F0 (cream)
+   --food-red:       #C0392B (tomato)
+   --food-green:     #27AE60 (fresh)
+   
+4. DEFAULT CONTENT
+   - Header slogan: "أطيب الوصفات في مكان واحد"
+   - Default category: "وصفات"
+   - Breadcrumb prefix: "الرئيسية / وصفات /"
+   
+5. RTL MODE
+   - Direction: RTL (default)
+   - Arabic fonts enabled
+   
+6. TWIN FILE (English)
+   - RankTurboSeo-Kitchen-English.v1.0.xml
+   - Direction: LTR
+   - English labels
+   - Schema descriptions in English
+   
+7. FEATURE TOGGLES (Default ON)
+   - Recipe schema: ON
+   - Nutrition info: ON
+   - HowTo schema: ON
+   - Video schema: ON
+   - Print button: ON
+   - Ingredients checklist: ON
+   
+8. FEATURE TOGGLES (Default OFF)
+   - Medical schema: OFF
+   - News schema: OFF
+   - Tech schema: OFF
+   - Beauty schema: OFF
+   
+9. SELLING POINTS (Khamsat)
+   - "مثالي لمدونات الطبخ والوصفات"
+   - "سكيما Recipe تلقائي — يظهر في نتائج البحث الغنية"
+   - "معلومات غذائية تلقائية"
+   - "قائمة مكونات تفاعلية"
+   - "دعم فيديوهات الطبخ"
+   
+================================================================================

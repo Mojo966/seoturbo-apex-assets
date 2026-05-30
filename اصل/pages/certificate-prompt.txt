@@ -1,0 +1,220 @@
+{
+  "task": "generate_certificate_image",
+  "style": "photorealistic_formal_certificate",
+  "language": "arabic_primary_english_secondary",
+  "certificate_type": "digital_accreditation_verification_certificate",
+  "orientation": "landscape",
+  "aspect_ratio": "16:10",
+  "resolution": "high_detail_4K_ready",
+  "design_theme": {
+    "background": {
+      "style": "premium_parchment_texture",
+      "base_color": "#F5F0E8",
+      "vignette": true,
+      "border_pattern": "ornamental_gold_arabesque",
+      "border_width": "8px",
+      "border_color": "#D4AF37",
+      "inner_border_line": "double_line_gold_3px",
+      "corner_ornaments": "diagonal_gold_cut_corners"
+    },
+    "header": {
+      "top_banner": "gold_gradient_bar_with_embossed_pattern",
+      "colors": ["#D4AF37", "#996515", "#FFD700"],
+      "height": "15%",
+      "has_royal_seal": true,
+      "seal": {
+        "position": "center_top",
+        "type": "golden_embossed_shield_seal",
+        "icon": "checkmark_shield_combination",
+        "diameter": "45px",
+        "effect": "3D_embossed_with_glow",
+        "inner_icon_color": "#006C35"
+      }
+    },
+    "typography": {
+      "title": {
+        "text": "شهادة اعتماد رقمي",
+        "font_family": "Traditional_Arabic_Calligraphy_Diwan",
+        "font_size": "42px",
+        "color": "#1A1A2E",
+        "weight": "bold",
+        "alignment": "center",
+        "effect": "gold_foil_stamping",
+        "letter_spacing": "3px",
+        "shadow": "subtle_drop_shadow"
+      },
+      "subtitle": {
+        "text": "Digital Accreditation Certificate",
+        "font_family": "Serif_Traditional_English",
+        "font_size": "18px",
+        "color": "#996515",
+        "weight": "normal",
+        "alignment": "center",
+        "letter_spacing": "4px",
+        "text_transform": "uppercase"
+      },
+      "body_arabic": {
+        "font_family": "Traditional_Arabic_Naskh",
+        "font_size": "16px",
+        "color": "#2C2C2C",
+        "line_height": "2.0",
+        "alignment": "right",
+        "direction": "rtl"
+      },
+      "body_english": {
+        "font_family": "Serif_Traditional",
+        "font_size": "11px",
+        "color": "#555555",
+        "alignment": "left",
+        "direction": "ltr"
+      }
+    },
+    "content_sections": [
+      {
+        "type": "certification_statement",
+        "position": "center_upper",
+        "text_arabic": "نصدر هذه الشهادة الرقمية المعتمدة للسيدة",
+        "text_english": "This Digital Accreditation Certificate is hereby issued to",
+        "has_underline": true
+      },
+      {
+        "type": "recipient_name",
+        "position": "center_middle",
+        "text_arabic": "قدر يحيى",
+        "text_arabic_sub": "رئيسة مجلس الإدارة والمطورة",
+        "text_english": "Qdar Yahya",
+        "text_english_sub": "Chairwoman & Lead Developer",
+        "font_size": "32px",
+        "font_weight": "bold",
+        "color": "#006C35",
+        "effect": "elegant_gold_underline",
+        "decoration": "golden_line_above_and_below"
+      },
+      {
+        "type": "verification_details",
+        "position": "center_lower",
+        "lines": [
+          {
+            "label_arabic": "الجهة المصدرة",
+            "label_english": "Issuing Authority",
+            "value_arabic": "مساحة نيوز - Masaha News",
+            "value_english": "Masaha News Digital Platform"
+          },
+          {
+            "label_arabic": "نوع الاعتماد",
+            "label_english": "Accreditation Type",
+            "value_arabic": "شهادة اعتماد رقمي وتوثيق رسمي",
+            "value_english": "Digital Accreditation & Official Verification"
+          },
+          {
+            "label_arabic": "تقنية القالب",
+            "label_english": "Template Technology",
+            "value_arabic": "RankTurboSeo Apex v12.0 — نظام السيو الخوارزمي الذكي",
+            "value_english": "RankTurboSeo Apex v12.0 — Algorithmic SEO Engine"
+          },
+          {
+            "label_arabic": "رقم الشهادة",
+            "label_english": "Certificate Number",
+            "value_arabic": "MH-QY-XC7K9L-2026",
+            "value_english": "MH-QY-XC7K9L-2026"
+          },
+          {
+            "label_arabic": "تاريخ الإصدار",
+            "label_english": "Issue Date",
+            "value_arabic": "30 مايو 2026",
+            "value_english": "May 30, 2026"
+          },
+          {
+            "label_arabic": "حالة الشهادة",
+            "label_english": "Certificate Status",
+            "value_arabic": "ساري المفعول - نشط",
+            "value_english": "Valid & Active"
+          }
+        ],
+        "layout": "two_column_grid",
+        "alignment": "right"
+      },
+      {
+        "type": "digital_fingerprint",
+        "position": "bottom",
+        "label_arabic": "البصمة الرقمية",
+        "label_english": "Digital Fingerprint",
+        "value": "MH-QY-9F3A8E2D1C7B4F6A9E8D7C6B5A4F3E",
+        "font": "monospace",
+        "font_size": "9px",
+        "color": "#666666",
+        "background": "light_gray_box",
+        "has_copy_icon": true
+      },
+      {
+        "type": "qr_code_section",
+        "position": "bottom_right",
+        "count": 2,
+        "qr_1": {
+          "label": "رمز التحقق",
+          "data": "https://masaha-news.blogspot.com/p/verification.html"
+        },
+        "qr_2": {
+          "label": "رقم الترخيص",
+          "data": "MH-NEWS-XC7K9L-QY2026"
+        },
+        "style": "rounded_square",
+        "size": "80x80"
+      }
+    ],
+    "footer": {
+      "style": "gold_bar_divider",
+      "color": "#D4AF37",
+      "height": "2px",
+      "has_watermark": true,
+      "watermark_text": "MASHA NEWS - DIGITAL ACCREDITATION",
+      "watermark_opacity": "5%",
+      "watermark_font_size": "60px",
+      "watermark_rotation": "-30deg",
+      "watermark_position": "center_background"
+    },
+    "security_features": [
+      "guilloche_pattern_background",
+      "microtext_borders",
+      "holographic_gold_stamp_effect",
+      "embossed_raised_seal",
+      "serial_number_watermark",
+      "anti_copy_rainbow_lines"
+    ],
+    "decorative_elements": [
+      "golden_arabesque_corner_patterns",
+      "geometric_islamic_border_frame",
+      "elegant_floral_margin_ornaments",
+      "golden_rosette_center_ornament",
+      "marbling_paper_texture_base"
+    ],
+    "colors_palette": {
+      "primary_gold": "#D4AF37",
+      "dark_gold": "#996515",
+      "light_gold": "#FFD700",
+      "deep_green": "#006C35",
+      "dark_navy": "#1A1A2E",
+      "cream_background": "#F5F0E8",
+      "text_dark": "#2C2C2C",
+      "text_medium": "#555555",
+      "seal_red": "#8B0000",
+      "elegant_blue_accent": "#1B3A5C"
+    },
+    "lighting_and_shadows": {
+      "light_source": "top_left_diagonal",
+      "shadow_depth": "moderate",
+      "reflection": "subtle_metallic_sheen_on_gold",
+      "paper_texture": "natural_cotton_fiber_visible",
+      "emboss_depth": "medium_raised_effect"
+    },
+    "output_requirements": {
+      "format": "PNG",
+      "background_transparent": false,
+      "color_space": "sRGB",
+      "dpi": "300",
+      "size_pixels": "4096x2560",
+      "no_watermark_on_output": true,
+      "no_text_outside_certificate": true
+    }
+  }
+}

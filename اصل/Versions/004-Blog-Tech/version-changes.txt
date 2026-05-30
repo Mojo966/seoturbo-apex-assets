@@ -1,0 +1,32 @@
+================================================================================
+RankTurboSeo Blog & Tech Edition v1.0 — Version Modifications
+================================================================================
+Base Template: RankTurboSeo.Apex.v16.original.1.xml
+
+1. HEADER IDENTITY
+   - Name: "RankTurboSeo Blog & Tech Edition v1.0"
+   - "قالب تدوين وتقنية"
+
+2. PRIMARY SCHEMA
+   - TechArticle (primary)
+   - BlogPosting
+   - Article
+   - SoftwareApplication
+   - BreadcrumbList
+
+3. COLOR SCHEME
+   --primary:        #0D47A1 (tech blue)
+   --primary-dark:   #002171
+   --accent:         #00BCD4 (cyan)
+
+4. FEATURE TOGGLES
+   - Code block styling: ON
+   - Tech article layout: ON
+   - Reading time: ON
+   - TOC: ON
+
+5. TARGET
+   - Tech bloggers, programming blogs
+   - Arabic + English twin
+
+================================================================================
